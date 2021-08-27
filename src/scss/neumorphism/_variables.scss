@@ -77,6 +77,7 @@ $twitch:        #4B367C;
 $paypal:        #ecb32c;
 $behance:       #0057ff;
 $reddit:        #E84422;
+$spotify: #1db954;
 
 // Theme colors
 $theme-colors: ();
@@ -128,7 +129,8 @@ $brand-colors: map-merge((
   "paypal":       $paypal,
   "behance":      $behance,
   "reddit" :      $reddit,  
-  "github":       $github
+  "github":       $github,
+  "spotify": $spotify,
 ), $brand-colors);
 
 
