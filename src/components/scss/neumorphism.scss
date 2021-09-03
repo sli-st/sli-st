@@ -1,0 +1,98 @@
+/*
+
+=========================================================
+* Neumorphism UI - v1.0.0
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui
+* Copyright 2020 Themesberg MIT LICENSE (https://www.themesberg.com/licensing#mit)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+
+// Bootstrap mixins and functions
+@import "bootstrap/mixins";
+@import "bootstrap/functions";
+
+// Change variables here
+@import "neumorphism/variables";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Vendor
+@import "neumorphism/vendor";
+
+// mixins & functions
+@import "neumorphism/mixins";
+@import "neumorphism/functions";
+
+// Utilities
+@import "neumorphism/reboot";
+@import "neumorphism/utilities";
+
+// Layout
+@import "neumorphism/layout";
+
+// Components
+@import "neumorphism/components";
+
+// write your custom styles here!
+
+.offer .icon span {
+  color: $dark;
+}
+
+.perks ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+.btn,
+.card {
+  border: none;
+}
+
+.hearts {
+  color: black;
+}
+
+.igcard {
+  border: 2px solid #e4405f !important;
+}
+
+.fbcard {
+  border: 2px solid #3b5999 !important;
+}
+
+button.navbar-toggler {
+  z-index: 2000;
+}
+
+.photogridrow {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.photogridcol {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 20%;
+  padding: 0px;
+}
+
+.photogridcol img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
