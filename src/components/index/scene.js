@@ -1,15 +1,10 @@
 import * as React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faDrumSteelpan,
-  faDungeon,
-  faDumpsterFire,
-} from "@fortawesome/free-solid-svg-icons"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Scene = () => {
   return (
     <section className="section section-lg d-flex justify-content-center">
-      <div className="container card-md bg-primary shadow-soft shadow-inset border-light py-5 pt-lg-7 mx-0">
+      <div className="container card-md bg-primary shadow-inset py-5 pt-lg-7 mx-0">
         <div className="card-body bg-primary px-0">
           <div className="text-md-center d-flex flex-column justify-content-center">
             <p className="h4 text-danger">damn güey</p>
@@ -82,7 +77,62 @@ const Scene = () => {
                 Funktion-One sound systems. If you know you know.
               </p>
             </div>
-            <div className="col-12 col-md-2 col-lg-4 bg-yellow">IMG</div>
+            <div className="col-12 col-md-2 col-lg-4 ">
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer1.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer3.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer5.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer6.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer10.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer11.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer13.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer14.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+              <StaticImage
+                className="gridphoto"
+                src="../../images/flyer16.jpeg"
+                alt="me"
+                placeholder="dominantColor"
+              />
+            </div>
             <div className="col-12 col-md-5 col-lg-4">
               <p>
                 <b>Fridays</b> are the best for my music tastes atm. I like

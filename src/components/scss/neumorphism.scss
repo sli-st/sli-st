@@ -82,17 +82,35 @@ button.navbar-toggler {
   display: flex;
   -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0px 4px;
 }
 
 .photogridcol {
   -ms-flex: 50%; /* IE 10 */
   flex: 20%;
-  padding: 0px;
+  padding: 8px;
 }
 
 .photogridcol img {
-  margin-top: 0px;
+  margin-top: 16px;
   vertical-align: middle;
   width: 100%;
+}
+
+.intro-bg {
+  background-color:#100c08;
+}
+
+.photogrid-bg {
+  background: #100c08;
+background: linear-gradient(180deg, #100c08 0%, #000, #e6e7ee);
+}
+
+.bgtoblack {
+  
+  background: linear-gradient(180deg, #e6e7ee, #100c08 );
+  }
+
+.text-spotify {
+  color: #1db954;
 }

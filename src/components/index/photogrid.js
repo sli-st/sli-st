@@ -3,9 +3,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Photogrid = () => {
   return (
-    <section>
-      <div class="photogridrow">
-        <div class="photogridcol">
+    <section className="photogrid-bg">
+      <div className="photogridrow">
+        <div className="photogridcol">
           <StaticImage
             className="gridphoto"
             src="../../images/1.jpeg"
@@ -27,6 +27,12 @@ const Photogrid = () => {
           <StaticImage
             className="gridphoto"
             src="../../images/4.jpeg"
+            alt="me"
+            placeholder="dominantColor"
+          />
+          <StaticImage
+            className="gridphoto"
+            src="../../images/20.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
@@ -68,7 +74,7 @@ const Photogrid = () => {
           />
         </div>
 
-        <div class="photogridcol">
+        <div className="photogridcol">
           <StaticImage
             className="gridphoto"
             src="../../images/11.jpeg"
@@ -123,15 +129,9 @@ const Photogrid = () => {
             alt="me"
             placeholder="dominantColor"
           />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/20.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
         </div>
 
-        <div class="photogridcol">
+        <div className="photogridcol">
           <StaticImage
             className="gridphoto"
             src="../../images/21.jpeg"
@@ -194,7 +194,7 @@ const Photogrid = () => {
           />
         </div>
 
-        <div class="photogridcol">
+        <div className="photogridcol">
           <StaticImage
             className="gridphoto"
             src="../../images/31.jpeg"
@@ -257,7 +257,7 @@ const Photogrid = () => {
           />
         </div>
 
-        <div class="photogridcol">
+        <div className="photogridcol">
           <StaticImage
             className="gridphoto"
             src="../../images/41.jpeg"
@@ -296,7 +296,7 @@ const Photogrid = () => {
           />
           <StaticImage
             className="gridphoto"
-            src="../../images47.jpeg"
+            src="../../images/47.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
@@ -320,8 +320,8 @@ const Photogrid = () => {
           />
         </div>
       </div>
-      <p className="text-center pt-7">
-        Got some cool pics you'd like to share?
+      <p className="display-4 pl-3 pl-md-7 py-5">
+        Got pics?
         <br />
         <a href="mailto:partypics@sli.st">partypics@sli.st</a>
       </p>

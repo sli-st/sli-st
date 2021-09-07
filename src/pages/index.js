@@ -4,16 +4,23 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Intro from "../components/index/intro"
 import Photogrid from "../components/index/photogrid"
-import Scene from "../components/index/scene"
+import Story from "../components/index/story"
+import How from "../components/index/how"
+import Share from "../components/index/share"
+import Thanks from "../components/index/thanks"
+import Sharing from "../components/index/sharing"
 
 import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="SLIST" />
+    <Seo title="CDMX" />
     <Intro />
     <Photogrid />
-    <Scene />
+    <Story/>
+    <Sharing/>
+    <Share/>
+    <Thanks/>
   </Layout>
 )
 
