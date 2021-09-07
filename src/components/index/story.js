@@ -28,7 +28,7 @@ const Story = () => (
           <div className="col-md-4 mb-5">
             <div className="card bg-primary shadow-soft shadow-inset border-light p-3">
               <StaticImage
-                src="../images/me.jpg"
+                src="../../images/me.jpg"
                 className="img-fluid"
                 alt="me"
                 placeholder="dominantColor"
