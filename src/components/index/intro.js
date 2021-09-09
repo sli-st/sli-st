@@ -1,10 +1,4 @@
 import * as React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faFacebookSquare,
-  faSpotify,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons"
 
 const Intro = () => {
   return (
@@ -17,14 +11,14 @@ const Intro = () => {
           <div className="col-lg-8 col-xl-8 mb-md-4">
             <h1 className="px-md-6 mb-2 text-center display-1 px-md-6 text-center">S LI.ST</h1>
             <p className="px-md-6">
-              Sharing and listing underground events. 
+              A project for re-sharing underground events.
             </p>
             <p>
-            Bookmark for #official #accounts.
+              Bookmark for official social media accounts.
             </p>
-          
+
+          </div>
         </div>
-      </div>
       </div>
     </section>
   )

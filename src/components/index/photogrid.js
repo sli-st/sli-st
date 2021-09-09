@@ -4,71 +4,48 @@ import { StaticImage } from "gatsby-plugin-image"
 const Photogrid = () => {
   return (
     <section className="photogrid-bg">
+      <p className="text-center">A small gallery of beautiful flyers from before. The stuff I'm sharing.</p>
       <div className="photogridrow">
         <div className="photogridcol">
           <StaticImage
             className="gridphoto"
-            src="../../images/1.jpeg"
+            src="../../images/flyer/6.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/2.jpeg"
+            src="../../images/flyer/11.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/3.jpeg"
+            src="../../images/flyer/16.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/4.jpeg"
+            src="../../images/flyer/21.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/20.jpeg"
+            src="../../images/flyer/26.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/5.jpeg"
+            src="../../images/flyer/31.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/6.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/7.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/8.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/9.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/10.jpeg"
+            src="../../images/flyer/36.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
@@ -77,55 +54,43 @@ const Photogrid = () => {
         <div className="photogridcol">
           <StaticImage
             className="gridphoto"
-            src="../../images/11.jpeg"
+            src="../../images/flyer/7.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/12.jpeg"
+            src="../../images/flyer/12.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/13.jpeg"
+            src="../../images/flyer/17.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/14.jpeg"
+            src="../../images/flyer/22.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/15.jpeg"
+            src="../../images/flyer/27.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/16.jpeg"
+            src="../../images/flyer/32.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/17.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/18.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/19.jpeg"
+            src="../../images/flyer/37.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
@@ -134,61 +99,43 @@ const Photogrid = () => {
         <div className="photogridcol">
           <StaticImage
             className="gridphoto"
-            src="../../images/21.jpeg"
+            src="../../images/flyer/3.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/22.jpeg"
+            src="../../images/flyer/13.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/23.jpeg"
+            src="../../images/flyer/18.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/24.jpeg"
+            src="../../images/flyer/23.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/25.jpeg"
+            src="../../images/flyer/28.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/26.jpeg"
+            src="../../images/flyer/33.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/27.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/28.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/29.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/30.jpeg"
+            src="../../images/flyer/38.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
@@ -197,61 +144,43 @@ const Photogrid = () => {
         <div className="photogridcol">
           <StaticImage
             className="gridphoto"
-            src="../../images/31.jpeg"
+            src="../../images/flyer/4.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/32.jpeg"
+            src="../../images/flyer/9.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/33.jpeg"
+            src="../../images/flyer/14.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/34.jpeg"
+            src="../../images/flyer/19.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/35.jpeg"
+            src="../../images/flyer/24.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/36.jpeg"
+            src="../../images/flyer/29.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/37.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/38.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/39.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/40.jpeg"
+            src="../../images/flyer/34.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
@@ -260,71 +189,55 @@ const Photogrid = () => {
         <div className="photogridcol">
           <StaticImage
             className="gridphoto"
-            src="../../images/41.jpeg"
+            src="../../images/flyer/5.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/42.jpeg"
+            src="../../images/flyer/10.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/43.jpeg"
+            src="../../images/flyer/15.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/44.jpeg"
+            src="../../images/flyer/20.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/45.jpeg"
+            src="../../images/flyer/25.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/46.jpeg"
+            src="../../images/flyer/30.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/47.jpeg"
+            src="../../images/flyer/35.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
           <StaticImage
             className="gridphoto"
-            src="../../images/48.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/49.jpeg"
-            alt="me"
-            placeholder="dominantColor"
-          />
-          <StaticImage
-            className="gridphoto"
-            src="../../images/50.jpeg"
+            src="../../images/flyer/40.jpeg"
             alt="me"
             placeholder="dominantColor"
           />
         </div>
       </div>
-      <p className="display-4 pl-3 pl-md-7 py-5">
-        Got pics?
-        <br />
-        <a href="mailto:partypics@sli.st">partypics@sli.st</a>
-      </p>
+
     </section>
   )
 }
