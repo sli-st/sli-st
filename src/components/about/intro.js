@@ -7,17 +7,16 @@ const Intro = () => {
       id="intro"
     >
       <div className="container z-2">
-        <div className="row justify-content-center text-center">
+        <div className="row justify-content-center text-center pt-6">
           <div className="col-lg-8 col-xl-8 mb-md-4">
-            <p>
-              ^ all events sorted by date
-            </p>
-
             <h1 className="px-md-6 mb-2 text-center display-1 px-md-6 text-center">S LI.ST</h1>
-
             <p className="px-md-6">
-              v personal recommendations
+              A project for re-sharing underground events.
             </p>
+            <p>
+              Bookmark for official social media accounts.
+            </p>
+
           </div>
         </div>
       </div>

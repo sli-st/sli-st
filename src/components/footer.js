@@ -21,7 +21,6 @@ const Footer = () => {
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} className="mr-1" />
-          Follow
         </a>
         <a
           href="/"

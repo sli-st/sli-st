@@ -5,7 +5,7 @@ import { faFileImage } from '@fortawesome/free-solid-svg-icons'
 const Share = () => {
     return (
         <div class="">
-            <div class="container pb-7">
+            <div class="container pt-7">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10">
                         <div class="card bg-primary shadow-soft border-light shadow-inset mb-6">

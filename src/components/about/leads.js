@@ -5,14 +5,14 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons"
 const Leads = () => (
   <section className="container pt-7">
     <div className="text-center py-4">
-      <h2 className="">All leads and events welcome!</h2>
+      <h2 className="">All leads and events are welcome!</h2>
       <p className="">
         DM or <a href="mailto:s@sli.st">s@sli.st
         </a>
       </p>
     </div>
     <div className="row justify-content-center">
-      <div className="col-11 col-md-9 shadow-inset py-md-1">
+      <div className="col-11 col-md-9 shadow-inset py-2">
 
 
         <div className="">
