@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <footer
       aria-label="Primary navigation"
-      className="footer intro-bg text-soft"
+      className="footer fixed-bottom intro-bg text-soft"
     >
-      <div className="container d-flex justify-content-around">
+      <div className="container-fluid d-flex justify-content-around">
         <a
           href="https://www.instagram.com/dm.para.link/"
           target="_blank"

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 
 const Leads = () => (
-  <section className="container pt-7">
+  <section className="container pt-4">
     <div className="text-center py-4">
       <h2 className="">All leads and events are welcome!</h2>
       <p className="">

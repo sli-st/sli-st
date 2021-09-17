@@ -16,7 +16,7 @@ const Navbar = () => {
         aria-label="Primary navigation"
         className="navbar navbar-expand-lg intro-bg text-soft"
       >
-        <div className="d-flex justify-content-between flex-wrap flex-row">
+        <div className="d-flex justify-content-around flex-wrap flex-row">
           <Link to="/1">1</Link>
           <Link to="/2">2</Link>
           <Link to="/3">3</Link>

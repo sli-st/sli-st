@@ -5,6 +5,7 @@ const Photogrid = () => {
   return (
     <section className="photogrid-bg">
       <p className="text-center">Personal recommendations. I like dark nasty techno, experimental music, and unique events.</p>
+
       <div className="photogridrow">
         <div className="photogridcol">
           <StaticImage
