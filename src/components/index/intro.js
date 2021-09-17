@@ -3,7 +3,7 @@ import * as React from "react"
 const Intro = () => {
   return (
     <section
-      className="intro-bg text-soft pt-5 pt-md-7 p-2"
+      className="intro-bg text-soft pt-5 pb-3"
       id="intro"
     >
       <div className="container-fluid">
