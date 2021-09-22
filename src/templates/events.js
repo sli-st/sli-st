@@ -2,18 +2,28 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import DatesNav from "../components/datesnav"
+import Footer from "../components/footer"
 
 
 export default function EventsList({ data }) {
   const list = data.allFile.edges
   return (
     <Layout>
-      <h2 className="pt-7">fail</h2>
-      {list.map(({ node }) => (
-        <GatsbyImage image={getImage(node)} alt={"fail"} />
-      )
-      )}
+      <div className="vh-100 container-fluid intro-bg d-flex flex-column justify-content-between">
+        <DatesNav />
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            {list.map(({ node }) => (
+              <GatsbyImage image={getImage(node)} alt={"fail"}
+                className="flyer" />
 
+            )
+            )}
+          </div>
+        </div>
+        <Footer />
+      </div>
 
     </Layout>)
 

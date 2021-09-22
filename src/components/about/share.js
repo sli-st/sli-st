@@ -20,9 +20,7 @@ const Share = () => {
                                     </div>
                                     <div class="col-12 col-md-6 mt-4 text-md-right">
                                         <div class="d-flex flex-column"></div>
-                                        <a href="flyer.jpeg" target="_blank" rel="noreferrer" class="btn btn-primary my-3 mx-2 mx-md-3">
-                                            <FontAwesomeIcon icon={faFileImage} /> Story Flyer
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>

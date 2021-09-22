@@ -1,16 +1,24 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
+import DatesNav from "../components/datesnav"
 import Intro from "../components/index/intro"
+import Footer from "../components/footer"
 import Eventrecs from "../components/index/eventrecs"
+
 
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <Layout className="h-100 overflow-hidden">
+  <Layout>
     <Seo title="CDMX" />
-    <Intro />
-    <Eventrecs />
+    <div className="vh-100 d-flex flex-column justify-content-between intro-bg">
+      <DatesNav />
+      <Intro />
+      <Eventrecs />
+      <Footer />
+    </div>
+
   </Layout>
 )
 
