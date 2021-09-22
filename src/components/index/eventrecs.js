@@ -1,14 +1,12 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Leads from "../../components/about/leads"
-import Card1 from "../../components/index/card1"
 
 const Eventsrecs = () => {
   return (
-    <section className="intro-bg px-4 container-fluid">
-      <div className="row justify-content-center">
-        <div className="col-md-9">
-          <div className="scrolling-wrapper event-recs-row">
+    <section className="intro-bg pt-5 px-4 container-fluid">
+      <div className="row justify-content-center ">
+        <div className="col-md-9 ">
+          <div className="scrolling-wrapper event-recs-row shadow-lg ">
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/1.jpg"

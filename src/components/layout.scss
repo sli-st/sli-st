@@ -1,1 +1,53 @@
-@import "./scss/neumorphism"
+$primary: #080000;
+$danger: rgba(158, 6, 6, 0.589);
+@import "~bootstrap/scss/bootstrap";
+
+
+html {
+    overflow-x: hidden;
+  }
+  
+  html, .intro-bg {
+    background-color:#080000;
+  }
+  
+  .bgtoblack {
+    
+    background: linear-gradient(180deg, #e6e7ee, #000000 );
+    }
+  
+  .text-spotify {
+    color: #1db954;
+  }
+  
+  
+  .scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .event-rec-img, .leads {
+      flex: 0 0 auto;
+      margin: 0px;
+      width: 40%;
+    }
+  
+    .flyer {
+      flex: 0 0 auto;
+      width: calc((100% - 60px)/3);
+      margin: 10px;
+    }
+  
+    .datesnav a, .datesnav span {
+      padding: 20px;
+    }
+  
+
+  
+  .test {
+    border-radius: 0px;
+background: linear-gradient(145deg, #2e0000, #370000);
+box-shadow:  5px 5px 12px #140000,
+             -5px -5px 12px #520000;
+  }

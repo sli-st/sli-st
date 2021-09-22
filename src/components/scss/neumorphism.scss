@@ -22,27 +22,27 @@
 @import "bootstrap/functions";
 
 // Change variables here
-@import "neumorphism/variables";
+// @import "neumorphism/variables";
 
 // Bootstrap
 @import "bootstrap/bootstrap";
 
 // Vendor
-@import "neumorphism/vendor";
+// @import "neumorphism/vendor";
 
 // mixins & functions
-@import "neumorphism/mixins";
-@import "neumorphism/functions";
+// @import "neumorphism/mixins";
+// @import "neumorphism/functions";
 
 // Utilities
-@import "neumorphism/reboot";
-@import "neumorphism/utilities";
+// @import "neumorphism/reboot";
+// @import "neumorphism/utilities";
 
 // Layout
-@import "neumorphism/layout";
+// @import "neumorphism/layout";
 
 // Components
-@import "neumorphism/components";
+// @import "neumorphism/components";
 
 // write your custom styles here!
 
@@ -52,7 +52,7 @@ html {
 }
 
 html, .intro-bg {
-  background-color:#121212;
+  background-color:#330000;
 }
 
 .bgtoblack {
@@ -73,7 +73,7 @@ html, .intro-bg {
 }
 .event-rec-img, .leads {
     flex: 0 0 auto;
-    margin: 0 8px;
+    margin: 0px;
     width: 50%;
   }
 
@@ -137,4 +137,11 @@ html, .intro-bg {
   border-left: 6px solid yellow;
   height: 30px;
   margin-top: 10px;
+}
+
+.test {
+  border-radius: 0px;
+background: #420000;
+box-shadow:  50px 50px 100px #1a0000,
+             -50px -50px 100px #6a0000;
 }

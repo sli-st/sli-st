@@ -12,7 +12,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="CDMX" />
-    <div className="vh-100 d-flex flex-column justify-content-between intro-bg">
+    <div className="vh-100 d-flex flex-column justify-content-center intro-bg">
       <DatesNav />
       <Intro />
       <Eventrecs />

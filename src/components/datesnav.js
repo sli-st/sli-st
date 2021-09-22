@@ -88,17 +88,17 @@ export default function DatesNav() {
       }
       `}
       render={data => (
-        <nav aria-label="event dates navigation" className=" datesnav text-soft pt-2 container-fluid">
-          <div className="row justify-content-center">
+        <nav aria-label="event dates navigation" className="datesnav fixed-top text-danger pt-2 container-fluid shadow-sm bg-primary">
+          <div className="row justify-content-center ">
             <div className="col-md-8">
-              <div className="d-flex justify-content-between scrolling-wrapper " >
+              <div className="d-flex justify-content-between scrolling-wrapper align-items-center" >
                 {data.currentmonth.edges.map(({ node }) => (
-                  <Link to={"/" + currentMonthNum + "/" + node.name}>{node.name}</Link>
+                  <Link to={"/" + currentMonthNum + "/" + node.name} className="text-danger text-decoration-none">{node.name}</Link>
                 )
                 )}
-                <div class="vl"></div>
+                <div>-</div>
                 {data.nextmonth.edges.map(({ node }) => (
-                  <Link to={"/" + nextMonthNum + "/" + node.name}>{node.name}</Link>
+                  <Link to={"/" + nextMonthNum + "/" + node.name} className="text-danger text-decoration-none">{node.name}</Link>
                 )
                 )}
               </div>
