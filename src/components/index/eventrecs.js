@@ -10,39 +10,46 @@ const Eventsrecs = () => {
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/1.jpg"
-              alt="me"
+              alt="flyer"
               placeholder="dominantColor"
             />
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/2.jpg"
-              alt="me"
+              alt="flyer"
               placeholder="dominantColor"
             />
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/3.jpg"
-              alt="me"
+              alt="flyer"
               placeholder="dominantColor"
             />
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/4.jpg"
-              alt="me"
+              alt="flyer"
               placeholder="dominantColor"
             />
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/5.jpg"
-              alt="me"
+              alt="flyer"
               placeholder="dominantColor"
             />
             <StaticImage
               className="gridphoto event-rec-img"
               src="../../images/flyer/6.jpg"
-              alt="me"
+              alt="flyer"
               placeholder="dominantColor"
             />
+            <StaticImage
+              className="gridphoto event-rec-img"
+              src="../../images/flyer/7.jpg"
+              alt="flyer"
+              placeholder="dominantColor"
+            />
+
           </div>
         </div>
       </div>
