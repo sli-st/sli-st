@@ -15,7 +15,7 @@ const IndexPage = () => (
     <div className="vh-100 d-flex flex-column justify-content-center intro-bg">
       <DatesNav />
       <Intro />
-      <Eventrecs />
+      {/* <Eventrecs /> */}
       <Footer />
     </div>
 
