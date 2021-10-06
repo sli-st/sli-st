@@ -62,9 +62,10 @@ export default function DatesNav() {
   return (
     <StaticQuery
       query={graphql`
-      query dates{
+      query dates {
         currentmonth: allDirectory(
           filter: {relativeDirectory: {eq: "dates/currentmonth"}, size: {gt: 64}}
+          sort: {order: ASC, fields: name}
         ) {
           edges {
             node {
@@ -76,6 +77,7 @@ export default function DatesNav() {
         }
         nextmonth: allDirectory(
           filter: {relativeDirectory: {eq: "dates/nextmonth"}, size: {gt: 64}}
+          sort: {order: ASC, fields: name}
         ) {
           edges {
             node {
@@ -86,6 +88,7 @@ export default function DatesNav() {
           }
         }
       }
+      
       `}
       render={data => (
         <nav aria-label="event dates navigation" className="datesnav fixed-top text-danger pt-2 container-fluid shadow-sm bg-primary">
