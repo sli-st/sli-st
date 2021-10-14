@@ -14,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -24,6 +25,22 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`
+        },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `reflections`,
+        path: `${__dirname}/reflections/`,
+      },
+    },
+    "gatsby-plugin-mdx",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

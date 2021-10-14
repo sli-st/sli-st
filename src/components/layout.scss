@@ -1,5 +1,7 @@
-$primary: #080000;
+$primary: black;
 $danger: rgba(158, 6, 6, 0.589);
+$light: #999999;
+$dark: #111111;
 @import "~bootstrap/scss/bootstrap";
 
 
@@ -8,7 +10,7 @@ html {
   }
   
   html, .intro-bg {
-    background-color:#080000;
+    background-color: $primary;
   }
   
   .bgtoblack {
@@ -51,3 +53,41 @@ background: linear-gradient(145deg, #2e0000, #370000);
 box-shadow:  5px 5px 12px #140000,
              -5px -5px 12px #520000;
   }
+.flyer-link {
+  flex: 0 0 auto;
+  width: calc((100% - 80px)/4);
+      margin: 10px;
+}
+
+.mw-60ch {
+  max-width: 60ch;
+}
+
+.likes {
+  ul {
+  
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+.spotifyicon {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  fill: $danger;
+}
+
+.markedbutton {
+  line-height: 16px;
+}
+
+.reflection {
+  max-height: 50vh;
+}
