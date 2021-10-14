@@ -7,7 +7,6 @@ import Footer from "../../components/footer"
 import Seo from "../../components/seo"
 
 const BlogPost = ({ data }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image)
   return (
     <div className="vh-100">
       <Layout >
@@ -17,7 +16,7 @@ const BlogPost = ({ data }) => {
             <div className="col-md-7 col-xl-5">
               <div className="row justify-content-center align-items-center sticky-md-top px-0">
                 <div className="col-lg-12 sticky-md-top px-0">
-                  <GatsbyImage image={image} className="img-fluid" />
+
                 </div>
               </div>
             </div>
