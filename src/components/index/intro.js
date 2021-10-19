@@ -5,6 +5,7 @@ const Intro = () => {
   return (
     <section className="text-center">
       <div className="container-fluid">
+        <p>STILL UPDATING. CHECK WEDNESDAY FOR NEW FLYERS AND SIGN UP FORM. UNDER CONSTRUCTION!</p>
         <section className="pb-3">
           <form>
             <div className="form-group d-flex">
