@@ -40,6 +40,13 @@ module.exports = {
         path: `${__dirname}/reflections/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `offers`,
+        path: `${__dirname}/offers/`,
+      },
+    },
     "gatsby-plugin-mdx",
     {
       resolve: `gatsby-plugin-manifest`,
