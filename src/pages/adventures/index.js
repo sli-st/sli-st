@@ -6,13 +6,13 @@ import Footer from "../../components/footer"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Reflections" >
+    <Layout pageTitle="Adventures" >
       <div className="container-full pb-5 bg-primary ">
         <div className="row justify-content-center g-0">
           <div className="col-11 col-md-8 rerow d-flex flex-wrap flex-row justify-content-center align-items-center p-0">
             {
               data.allMdx.nodes.map(node => (
-                <Link className="flyer-link" to={`/reflections/${node.slug}`}>
+                <Link className="flyer-link" to={`/adventures/${node.slug}`}>
                   <GatsbyImage
                     image={getImage(node.frontmatter.hero_image)}
 
@@ -30,7 +30,10 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-      allMdx(sort: {fields: slug, order: DESC}) {
+      allMdx(
+        filter: {fileAbsolutePath: {regex: "/content/adventures/"}}
+        sort: {fields: slug, order: DESC}
+        ) {
         nodes {
           frontmatter {
             date(formatString: "MMMM D, YYYY")

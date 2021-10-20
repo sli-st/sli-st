@@ -91,7 +91,7 @@ export default function DatesNav() {
       
       `}
       render={data => (
-        <nav aria-label="event dates navigation" className="datesnav fixed-top text-danger container-fluid shadow-sm bg-primary">
+        <nav aria-label="event dates navigation" className="datesnav sticky-top text-danger container-fluid shadow-sm bg-primary">
           <div className="row justify-content-center ">
             <div className="col-md-8 d-flex flex-row align-items-center overflow-hidden">
               <Link to="/slist" className="text-danger p-0 m-0 markedbutton">

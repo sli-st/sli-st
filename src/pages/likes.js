@@ -15,34 +15,22 @@ const JSONbuildtime = () => (
       <div className="row justify-content-center" >
         <div className="col-11 col-md-5 recommendations">
           {JSONData.category.map((data, index) => {
-            return <div className="row border border-danger border-bottom-0 my-3 p-2">
-              <div className="col-11 col-md-4 ">
-                <p className="p-0">{data.name}</p>
-                <div className="d-flex flex-row justify-content-between">
-                </div>
-              </div>
-              <div className="col-1 col-md-1 ">
-                <p className="p-0"><FontAwesomeIcon icon={faSpotify} size="md" className="text-danger" /></p>
-                <div className="d-flex flex-row justify-content-between">
-                </div>
-              </div>
-              <div className="col-md-7 d-flex align-items-cente">
-                <p className="text-start">
+            return <div className="row border-danger border-end pt-2 my-2">
+              <p className="text-danger">
+                <FontAwesomeIcon icon={faSpotify} size="sm" className="text-danger" /> {data.name}</p>
+              <p>
 
-                  {data.people.map((person, index) => {
-                    var finalURL = ""
-                    var googleURLfragment = "https://www.google.com/search?q="
-                    var personURLfragment = person.replace(" ", "+")
-                    var keywordsURLfragment = " music | dj"
-                    finalURL = googleURLfragment + personURLfragment + keywordsURLfragment
-                    return <a className="text-decoration-none text-light" href={finalURL}>
-                      <>{person} &nbsp;</>
-                    </a>
-                  })}
-                </p>
-
-              </div>
-
+                {data.people.map((person, index) => {
+                  var finalURL = ""
+                  var googleURLfragment = "https://www.google.com/search?q="
+                  var personURLfragment = person.replace(" ", "+")
+                  var keywordsURLfragment = " music | dj"
+                  finalURL = googleURLfragment + personURLfragment + keywordsURLfragment
+                  return <a className="text-decoration-none text-light" href={finalURL}>
+                    <>{person} &nbsp;</>
+                  </a>
+                })}
+              </p>
             </div>
           })}
         </div>

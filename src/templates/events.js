@@ -10,8 +10,8 @@ export default function EventsList({ data }) {
   const list = data.allFile.edges
   return (
     <Layout>
-      <div className="container-fluid py-5 mt-5 intro-bg d-flex flex-column justify-content-between">
-        <DatesNav />
+      <DatesNav />
+      <div className="container-fluid pb-5 intro-bg d-flex flex-column">
         <div className="row justify-content-center">
           <div className="col-md-8">
             {list.map(({ node }) => (

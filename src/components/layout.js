@@ -7,7 +7,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div>
       <title>{pageTitle}</title>
-      <main>{children}</main>
+      <main className="bg-primary">{children}</main>
     </div>
   )
 }

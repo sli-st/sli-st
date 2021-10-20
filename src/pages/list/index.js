@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => {
             <section>
               <nav className="bg-primary sticky-top pt-3 pb-3 border-bottom border-danger">
                 <div className="nav nav-justified gap-2 mx-auto d-md-flex justify-content-md-center  " id="nav-tab" role="tablist">
-                  <button className="nav-link btn btn-outline-danger active text-danger" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Offers</button>
+                  <button className="nav-link btn btn-outline-danger active text-danger" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
                   <button className="nav-link btn btn-outline-danger text-danger text-decoration-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Members</button>
                 </div>
 
@@ -25,13 +25,13 @@ const BlogPage = ({ data }) => {
                   {
                     data.allMdx.nodes.map(node => (
                       <div className="row justify-content-around align-items-center py-1 g-0">
-                        <div className="col-3 col-md-2 border py-3 px-2 text-center">
+                        <div className="col-3 col-md-4  py-3 px-2 text-center">
                           <GatsbyImage
                             image={getImage(node.frontmatter.flyer)}
 
                           /></div>
 
-                        <div className="col-8 col-md-2"><MDXRenderer>
+                        <div className="col-8 col-md-7 text-danger"><MDXRenderer>
                           {node.body}
                         </MDXRenderer></div>
                       </div>
@@ -83,9 +83,6 @@ const BlogPage = ({ data }) => {
 
           </div>
         </div>
-
-
-        <Footer />
       </div>
       <Footer />
     </Layout >
@@ -95,7 +92,7 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
 query {
   allMdx(
-    filter: {fileAbsolutePath: {regex: "/offers/"}}
+    filter: {fileAbsolutePath: {regex: "/content/perks/"}}
     sort: {fields: frontmatter___flyer___relativeDirectory}
   ) {
     nodes {
