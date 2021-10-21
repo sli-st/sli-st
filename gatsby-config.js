@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `S LI.ST`,
+    title: `S Li.ST`,
     description: `The S List of underground raves, nightclubs, and other (interesting) music and art events in CDMX. By SLi.ST`,
     author: `SLi.ST`,
   },
@@ -91,7 +91,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://sli.us5.list-manage.com/subscribe/post?u=ffa00e0e7d456f08048753fe5&amp;id=3a59f86a3b" method="post', // string; add your MC list endpoint here; see instructions below
+        endpoint: "https://sli.us5.list-manage.com/subscribe/post?u=ffa00e0e7d456f08048753fe5&amp;id=3a59f86a3b", // string; add your MC list endpoint here; see instructions below
         timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
