@@ -44,18 +44,34 @@ export default function DatesNav() {
       render={data => (
         <nav aria-label="event dates navigation" className="dates-nav sticky-top pt-4 pb-3 bg-black text-white container-fluid">
           <div className="row justify-content-center ">
-            <div className="col-md-8 d-flex flex-row align-items-center overflow-hidden">
-              <Link to="/slist" className="text-red px-3">
+            <div className="col-md-5 d-flex flex-row align-items-center overflow-hidden">
+              <Link
+                to="/"
+                className="text-white px-3"
+                activeClassName="nav-active"
+              >
                 <FontAwesomeIcon icon={faBookmark} />
               </Link>
               <div className="d-flex justify-content-between scrolling-wrapper align-items-center" >
                 {data.currentmonth.edges.map(({ node }) => (
-                  <Link to={"/" + currentMonthNum + "/" + node.name} className="text-white text-decoration-none px-3">{node.name}</Link>
+                  <Link
+                    to={"/" + currentMonthNum + "/" + node.name}
+                    className="text-white text-decoration-none px-3"
+                    activeClassName="nav-active"
+                    partiallyActive={true}>
+                    {node.name}
+                  </Link>
                 )
                 )}
                 <div>|</div>
                 {data.nextmonth.edges.map(({ node }) => (
-                  <Link to={"/" + nextMonthNum + "/" + node.name} className="text-light text-decoration-none px-3">{node.name}</Link>
+                  <Link
+                    to={"/" + nextMonthNum + "/" + node.name}
+                    className="text-light text-decoration-none px-3"
+                    activeClassName="nav-active"
+                    partiallyActive={true}>
+                    {node.name}
+                  </Link>
                 )
                 )}
               </div>

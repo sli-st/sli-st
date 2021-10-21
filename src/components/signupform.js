@@ -45,14 +45,14 @@ const SignUpForm = () => {
           type="text"
           name="username"
           className="form-control bg-black border-primary text-soft rounded-0 text-center" id="exampleInputEmail1"
-          placeholder="IG.username"
+          placeholder="@socialmedia.username"
           value={username}
           onChange={event => setUsername(event.currentTarget.value)}
         />
       </div>
       <div className="d-grid gap-2 col-12 mx-auto pt-2">
-        <button type="submit" className="btn text-primary btn-outline-primary rounded-0">
-          Put me on the S list
+        <button type="submit" className="btn btn-outline-primary rounded-0">
+          put me on the S list
         </button>
       </div>
       <p>{result.result}</p>

@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="List" >
       <div className="intro-bg container-fluid pb-5 mb-5">
         <div className="row justify-content-center">
-          <div className="col-md-6">
+          <div className="col-md-5">
             <section>
               <div className="sticky-top bg-black border-bottom border-primary py-3">
                 <SignUpForm />
