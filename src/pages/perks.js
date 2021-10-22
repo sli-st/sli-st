@@ -13,8 +13,8 @@ const BlogPage = ({ data }) => {
           <div className="col-md-5">
             <nav className="bg-black pt-3 pb-3 border-bottom border-primary">
               <div className="nav nav-justified gap-2 mx-auto d-md-flex justify-content-md-center" id="nav-tab" role="tablist">
-                <button className="nav-link btn btn-outline-primary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
-                <button className="nav-link btn btn-outline-primary text-decoration-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Conditions</button>
+                <button className="nav-link btn btn-outline-secondary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
+                <button className="nav-link btn btn-outline-secondary text-decoration-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Conditions</button>
               </div>
             </nav>
           </div>
@@ -33,7 +33,7 @@ const BlogPage = ({ data }) => {
                             image={getImage(node.frontmatter.flyer)}
                           /></div>
 
-                        <div className="col-8 text-primary">
+                        <div className="col-8 text-secondary">
                           <div className="border-end border-primary">
                             <MDXRenderer>{node.body}</MDXRenderer>
                           </div>

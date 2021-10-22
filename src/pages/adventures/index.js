@@ -7,17 +7,17 @@ import Footer from "../../components/footer"
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Adventures" >
-      <div className="container-full pb-5">
-        <div className="row justify-content-center g-0">
-          <div className="col-11 col-md-12 rerow d-flex flex-wrap flex-row justify-content-center align-items-center p-0">
-            {
-              data.allMdx.nodes.map(node => (
+      <div className="container-fluid pb-5">
+        <div className="row justify-content-center g-3 align-items-center mb-5">
+          {
+            data.allMdx.nodes.map(node => (
+              <div className="col-4 col-sm-3">
                 <Link className="flyer-link" to={`/adventures/${node.slug}`}>
                   <GatsbyImage image={getImage(node.frontmatter.hero_image)} />
                 </Link>
-              ))
-            }
-          </div>
+              </div>
+            ))
+          }
         </div>
       </div>
       <Footer />

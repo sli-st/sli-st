@@ -1,8 +1,8 @@
 
 // $primary: rgba(158, 6, 6, 0.589);
 
-$primary: darkred;
-$secondary:green;
+$primary: red;
+$secondary:darkred;
 $info:  blue;
 $light: silver;
 $dark: #030101;
@@ -25,11 +25,11 @@ html {
       margin: 10px;
     }
 
-.flyer-link {
-  flex: 0 0 auto;
-  width: calc((100% - 80px)/4);
-      margin: 10px;
-}
+// .flyer-link {
+//   flex: 0 0 auto;
+//   width: calc((100% - 80px)/4);
+//       margin: 10px;
+// }
 
 .markedbutton {
   line-height: 16px;

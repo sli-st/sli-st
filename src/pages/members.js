@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
                 <SignUpForm />
               </div>
               <div className="pt-3" id="nav-tabContent">
-                <ol className="text-primary text-end">
+                <ol className="text-secondary text-end">
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>

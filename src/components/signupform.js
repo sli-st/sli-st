@@ -35,24 +35,30 @@ const SignUpForm = () => {
         <input
           type="email"
           name="email"
-          className="form-control bg-dark border-light rounded-0 text-center py-3 my-2"
+          className="form-control bg-dark border border-light rounded-0 rounded-0 text-center py-sm-3 my-1"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
-          placeholder="EMAIL"
+          placeholder="EMAIL | CORREO ELECTRÓNICO"
           value={email}
           onChange={event => setEmail(event.currentTarget.value)}
         />
-        <input
-          type="text"
-          name="username"
-          className="form-control bg-dark border border-light rounded-0 rounded-0 text-center py-3 my-2" id="exampleInputEmail1"
-          placeholder="INSTAGRAM USUARIO | USERNAME"
-          value={username}
-          onChange={event => setUsername(event.currentTarget.value)}
-        />
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <span class="input-group-text text-light bg-dark border border-light rounded-0 rounded-0 text-center py-sm-3 my-2" id="basic-addon1">@</span>
+          </div>
+          <input
+            type="text"
+            name="username"
+            className="form-control bg-dark border border-light rounded-0 rounded-0 text-center py-sm-3 my-2" id="exampleInputEmail1"
+            placeholder="IG - USERNAME | USUARIO"
+            value={username}
+            onChange={event => setUsername(event.currentTarget.value)}
+          />
+        </div>
+
       </div>
-      <div className="d-grid gap-2 col-12 mx-auto mt-2">
-        <button type="submit" className="bg-dark btn btn-outline-primary rounded-0">
+      <div className="d-grid col-12 mx-auto mt-1">
+        <button type="submit" className="bg-dark btn btn-outline-secondary border-2 text-primary rounded-0">
           <div className="lead">⇩</div>
           <div className="lead">list</div>
         </button>
