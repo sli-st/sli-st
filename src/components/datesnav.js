@@ -45,7 +45,7 @@ export default function DatesNav() {
         <nav aria-label="event dates navigation" className="dates-nav sticky-top pt-4 pb-3 bg-black text-white container">
           <div className="row justify-content-center">
             <div className="col-sm-6 d-flex overflow-hidden">
-              <div className="">
+              <div className="d-none">
                 <Link
                   to="/"
                   className="text-white py-1 border-en border-2"
