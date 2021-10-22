@@ -5,6 +5,7 @@ module.exports = {
     author: `SLi.ST`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

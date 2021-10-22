@@ -7,18 +7,21 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="List" >
+    <Layout pageTitle="Perks" >
       <div className="container-fluid pb-5 mb-5">
+        <div className="row justify-content-center sticky-top">
+          <div className="col-md-5">
+            <nav className="bg-black pt-3 pb-3 border-bottom border-primary">
+              <div className="nav nav-justified gap-2 mx-auto d-md-flex justify-content-md-center" id="nav-tab" role="tablist">
+                <button className="nav-link btn btn-outline-primary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
+                <button className="nav-link btn btn-outline-primary text-decoration-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Conditions</button>
+              </div>
+            </nav>
+          </div>
+        </div>
         <div className="row justify-content-center">
           <div className="col-md-5">
             <section>
-              <nav className="bg-black sticky-top pt-3 pb-3 border-bottom border-primary">
-                <div className="nav nav-justified gap-2 mx-auto d-md-flex justify-content-md-center" id="nav-tab" role="tablist">
-                  <button className="nav-link btn btn-outline-primary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
-                  <button className="nav-link btn btn-outline-primary text-decoration-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Conditions</button>
-                </div>
-
-              </nav>
               <div className="tab-content mx-auto pt-2" id="nav-tabContent">
                 <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><section>
                   {
@@ -62,7 +65,6 @@ const BlogPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout >
   )
 }

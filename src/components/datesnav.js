@@ -42,33 +42,35 @@ export default function DatesNav() {
       
       `}
       render={data => (
-        <nav aria-label="event dates navigation" className="dates-nav sticky-top pt-4 pb-3 bg-black text-white container-fluid">
-          <div className="row">
-            <div className="col-md-6 d-flex overflow-hidden">
-              <Link
-                to="/"
-                className="text-white"
-                activeClassName="nav-active"
-              >
-                <FontAwesomeIcon icon={faBookmark} />
-              </Link>
-              <div className="px-2 text-black">|</div>
-              <div className="scrolling-wrapper align-items-center" >
+        <nav aria-label="event dates navigation" className="dates-nav sticky-top pt-4 pb-3 bg-black text-white container">
+          <div className="row justify-content-center">
+            <div className="col-sm-6 d-flex overflow-hidden">
+              <div className="">
+                <Link
+                  to="/"
+                  className="text-white py-1 border-en border-2"
+
+                  activeClassName="nav-active"
+                >
+                  <FontAwesomeIcon icon={faBookmark} size="2x" rotation={270} />
+                </Link>
+              </div>
+              <div className="scrolling-wrapper align-items-center hide-scroll" >
                 {data.currentmonth.edges.map(({ node }) => (
                   <Link
                     to={"/" + currentMonthNum + "/" + node.name}
-                    className="text-white text-decoration-none px-3"
+                    className="text-white text-decoration-none px-3 px-xs-4"
                     activeClassName="nav-active"
                     partiallyActive={true}>
                     {node.name}
                   </Link>
                 )
                 )}
-                <div>|</div>
+                <div className="text-light">-</div>
                 {data.nextmonth.edges.map(({ node }) => (
                   <Link
                     to={"/" + nextMonthNum + "/" + node.name}
-                    className="text-light text-decoration-none px-3"
+                    className="text-light text-decoration-none px-3 px-xs-4"
                     activeClassName="nav-active"
                     partiallyActive={true}>
                     {node.name}

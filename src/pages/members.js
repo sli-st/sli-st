@@ -8,7 +8,7 @@ import SignUpForm from "../components/signupform"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="List" >
+    <Layout pageTitle="Members" >
       <div className="intro-bg container-fluid pb-5 mb-5">
         <div className="row justify-content-center">
           <div className="col-md-5">
@@ -18,30 +18,30 @@ const BlogPage = ({ data }) => {
               </div>
               <div className="pt-3" id="nav-tabContent">
                 <ol className="text-primary text-end">
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
-                  <li>@socialmediahhandle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
+                  <li>@your.Social.Media.Handle</li>
                 </ol>
               </div>
             </section>

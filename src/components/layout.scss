@@ -9,7 +9,6 @@ $dark: #111111;
 @import "~bootstrap/scss/bootstrap";
 
 html {
-    overflow-x: hidden;
     background: black;
   }
 
@@ -27,8 +26,8 @@ html {
 
 .flyer-link {
   flex: 0 0 auto;
-  width: calc((100% - 80px)/4);
-      margin: 10px;
+  width: calc((100%)/4);
+      margin: 0px;
 }
 
 .markedbutton {
@@ -63,4 +62,23 @@ ol {
   color: $primary!important;
   border-color: $primary !important;
   // margin-bottom: 10px;
+}
+
+p {
+  max-width: 66ch;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.tl-edges {
+  overflow-x: unset;
 }

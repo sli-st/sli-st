@@ -9,14 +9,11 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="Adventures" >
       <div className="container-full pb-5">
         <div className="row justify-content-center g-0">
-          <div className="col-11 col-md-8 rerow d-flex flex-wrap flex-row justify-content-center align-items-center p-0">
+          <div className="col-11 col-md-12 rerow d-flex flex-wrap flex-row justify-content-center align-items-center p-0">
             {
               data.allMdx.nodes.map(node => (
                 <Link className="flyer-link" to={`/adventures/${node.slug}`}>
-                  <GatsbyImage
-                    image={getImage(node.frontmatter.hero_image)}
-
-                  />
+                  <GatsbyImage image={getImage(node.frontmatter.hero_image)} />
                 </Link>
               ))
             }
