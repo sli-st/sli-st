@@ -5,7 +5,7 @@ const MainNavLink = ({ partiallyActive, className, to, children }) => {
   return (
     <AniLink
       cover
-      direction="up"
+      direction="down"
       duration={1}
       bg="#000000"
       activeClassName="nav-active"

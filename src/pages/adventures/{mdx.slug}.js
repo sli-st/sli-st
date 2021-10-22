@@ -23,7 +23,7 @@ const BlogPost = ({ data }) => {
             </div>
             <div className="col-md-7 col-xl-4 pt-3 pb-5 mb-5">
               <h1 className="h6 text-white pt-3 pb-3 border-bottom border-3 border-primary bg-black sticky-top">{data.mdx.frontmatter.title}</h1>
-              <div className="text-white pt-4">
+              <div className="text-light bg-dark pt-4">
                 <MDXRenderer>
                   {data.mdx.body}
                 </MDXRenderer>

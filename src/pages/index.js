@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 
 import DatesNav from "../components/datesnav"
 import SignUpForm from "../components/signupform"
-import InstagramLink from "../components/instagramlink"
+import ContactLinks from "../components/contactlinks"
 import FlyerButton from "../components/flyerbutton"
 
 const IndexPage = () => (
@@ -20,7 +20,7 @@ const IndexPage = () => (
       <section className="row justify-content-center d-flex py-3">
         <div className="col-md-4">
           <p className="text-info text-end">
-            <InstagramLink />
+            <ContactLinks />
           </p>
         </div>
       </section>

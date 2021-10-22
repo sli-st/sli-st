@@ -17,7 +17,7 @@ const PrimaryNav = () => {
             <MainNavLink to="/adventures/">§</MainNavLink>
             <MainNavLink
               to="/"
-              className="text-white text-decoration-none border px-2 "
+              className="text-white text-decoration-none border px-2 lead"
               partiallyActive={false}>
               SLi.ST
             </MainNavLink>

@@ -1,11 +1,12 @@
 
 // $primary: rgba(158, 6, 6, 0.589);
 
-$primary: #FF0000;
+$primary: darkred;
 $secondary:green;
-$info: blue;
-$light: #999999;
-$dark: #111111;
+$info:  blue;
+$light: silver;
+$dark: #030101;
+$black: #000000;
 @import "~bootstrap/scss/bootstrap";
 
 html {
@@ -26,8 +27,8 @@ html {
 
 .flyer-link {
   flex: 0 0 auto;
-  width: calc((100%)/4);
-      margin: 0px;
+  width: calc((100% - 80px)/4);
+      margin: 10px;
 }
 
 .markedbutton {
