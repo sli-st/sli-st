@@ -3,7 +3,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import DatesNav from "../components/datesnav"
-import Footer from "../components/footer"
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 
 
 export default function EventsList({ data }) {
@@ -13,16 +15,23 @@ export default function EventsList({ data }) {
       <DatesNav />
       <div className="container-fluid pb-5 intro-bg d-flex flex-column">
         <div className="row justify-content-center">
-          <div className="col-md-8">
-            {list.map(({ node }) => (
-              <GatsbyImage image={getImage(node)} alt={"fail"}
-                className="flyer" />
+          <div className="col-lg-8">
+            <div className="row justify-content-center">
+              {list.map(({ node }) => (
 
-            )
-            )}
+                <div className="col-3">
+                  <Zoom>
+                    <GatsbyImage image={getImage(node)} alt={"fail"}
+                    />
+                  </Zoom>
+                </div>
+
+              )
+              )}
+
+            </div>
           </div>
         </div>
-        <Footer />
       </div>
 
     </Layout>)

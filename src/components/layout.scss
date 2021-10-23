@@ -2,7 +2,7 @@
 // $primary: rgba(158, 6, 6, 0.589);
 
 $primary: red;
-$secondary:darkred;
+$secondary: rgb(212, 0, 0);
 $info:  blue;
 $light: silver;
 $dark: #030101;
@@ -82,4 +82,7 @@ p {
 
 .tl-edges {
   overflow-x: unset;
+}
+[data-rmiz-overlay] {
+  background-color: #00000090 !important;
 }
