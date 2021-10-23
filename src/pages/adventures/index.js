@@ -3,10 +3,12 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Footer from "../../components/footer"
+import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Adventures" >
+      <Seo title="Adventures" />
       <div className="container-fluid pb-5">
         <div className="row justify-content-center g-3 align-items-center mb-5">
           {

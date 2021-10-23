@@ -55,8 +55,8 @@ module.exports = {
         name: `slist`,
         short_name: `slist`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#000`,
+        theme_color: `#000`,
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

@@ -1,15 +1,13 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
 import DatesNav from "../components/datesnav"
 import SignUpForm from "../components/signupform"
 import ContactLinks from "../components/contactlinks"
-import FlyerButton from "../components/flyerbutton"
 
 const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
+  <Layout pageTitle="Index">
+    <Seo title="Index" />
     <DatesNav />
     <div className="container-fluid text-start mt-5 pb-5 pt-5">
       <section className="row justify-content-center">
@@ -19,7 +17,7 @@ const IndexPage = () => (
       </section>
       <section className="row justify-content-center d-flex py-3">
         <div className="col-md-5">
-          <p className="text-info text-end">
+          <p className="text-end">
             <ContactLinks />
           </p>
         </div>

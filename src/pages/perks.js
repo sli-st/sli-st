@@ -1,13 +1,14 @@
 import * as React from 'react'
-import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Footer from "../components/footer"
+import Seo from "../components/seo"
+import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Perks" >
+      <Seo title="Perks" />
       <div className="container-fluid pb-5 mb-5">
         <div className="row justify-content-center sticky-top">
           <div className="col-md-5">
@@ -59,9 +60,6 @@ const BlogPage = ({ data }) => {
                 </div>
               </div>
             </section>
-
-
-
           </div>
         </div>
       </div>

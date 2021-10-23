@@ -1,14 +1,13 @@
 import * as React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Footer from "../components/footer"
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SignUpForm from "../components/signupform"
+import Seo from "../components/seo"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Members" >
+      <Seo title="Members" />
       <div className="intro-bg container-fluid pb-5 mb-5">
         <div className="row justify-content-center">
           <div className="col-md-5">
@@ -18,10 +17,11 @@ const BlogPage = ({ data }) => {
               </div>
               <div className="pt-3" id="nav-tabContent">
                 <ol className="text-secondary text-end">
-                  <li>@dhiramprzz</li>
-                  <li>@axchacon</li>
-                  <li>@nos_autem</li>
+                  <li>@_felix.vazquez_</li>
                   <li>@_ironboard_</li>
+                  <li>@axchacon</li>
+                  <li>@dhiramprzz</li>
+                  <li>@nos_autem</li>
                   <li>@simontechyes</li>
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>

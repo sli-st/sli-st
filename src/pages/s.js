@@ -6,8 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const Me = () => (
-  <Layout>
-    <Seo title="S List" />
+  <Layout pageTitle="S">
+    <Seo title="S" />
     <div className="container">
       <section className="row justify-content-center p-md-5">
         <div className="col-md-12 text-light">

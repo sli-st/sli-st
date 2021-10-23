@@ -1,21 +1,17 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Seo from "../components/seo"
 import DatesNav from "../components/datesnav"
-import { Link } from "gatsby"
-
-import DateFlyer from "../components/dateflyer"
-
+import { graphql } from "gatsby"
 import SimpleReactLightbox from 'simple-react-lightbox'
-import { SRLWrapper } from "simple-react-lightbox";
-
+import { SRLWrapper } from "simple-react-lightbox"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function EventsList({ data }) {
-
   const list = data.allFile.edges
   return (
-    <Layout>
+    <Layout pageTitle="Flyers by date" >
+      <Seo title="Flyers by date" />
       <DatesNav />
       <SimpleReactLightbox>
         <SRLWrapper>
@@ -35,7 +31,6 @@ export default function EventsList({ data }) {
         </SRLWrapper>
       </SimpleReactLightbox>
     </Layout >)
-
 }
 
 export const events = graphql
@@ -56,9 +51,3 @@ export const events = graphql
     }
   }
 `
-
-
-
-
-
-

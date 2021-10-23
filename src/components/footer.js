@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { TransitionPortal } from "gatsby-plugin-transition-link"
 import MainNavLink from "../components/mainnavlink"
 
