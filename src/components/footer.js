@@ -10,7 +10,7 @@ const PrimaryNav = () => {
         aria-label="Primary navigation"
         className="primary-nav container-fluid fixed-bottom bg-black pb-4 pt-3"
       >
-        <div className="row justify-content-center text-center">
+        <div className="row justify-content-center text-center pb-1">
           <div className="col-sm-5 d-flex justify-content-between align-items-center">
             <MainNavLink to="/s">§</MainNavLink>
             <MainNavLink to="/adventures/">§</MainNavLink>

@@ -10,7 +10,18 @@ const Me = () => (
     <Seo title="S" />
     <div className="container">
       <section className="row justify-content-center p-md-5">
-        <div className="col-md-12 text-light">
+        <div className="text-light">
+          <h1>Update "2": Registrations coming in.<br />Flyers can now be clicked on.<br />Lots of to-dos.</h1>
+          <p className="lead">OCT 23 6:50AM: Finally made the flyers clickale for zoomed in views. People are signing up for future perks. The S page is the only large section that needs major work.</p>
+          <p>I'm not sure if I should bring back the recommendations section. I've been limitting my partying time recently which has made me I'm pickier than ever --- so maybe --- I'll take a survey once the IG page gets a bit bigger.</p>
+          <p>I need to automate the members list. Right now I'm just copying and pasting the usernames that are signing up - it's tedious and untimely. </p>
+          <p>Made the perks page a little funnier. I need to work on the copy and translations so visitors can better understand why they would want to sign up. Also need some perks for this upcoming weekend.</p>
+          <p>The home page has the signup form but it's not very intuitive so maybe I need better content. Or maybe I'll just go back to sharing the events I'm looking forward to.</p>
+          <p>I also need to write some Speed Pieces for previous events. Should be fun. Also need to find a way to make them easier to share.</p>
+          <p>I've mostly settled on the icons and colors I will be using. Keeping it red for eye strain, night use, and techno vibes.</p>
+          <p>I need to come up with a design for the S page where you're reading this. Someone suggested I keep writing and saving my thoughts as blog posts. Not sure. Happy Saturday!</p>
+        </div>
+        <div className="text-light">
           <h1>This website will never be finised.</h1>
           <p className="lead">OCT 21 7pm: Big update.Playing with colors.Higher contrast with red.Membership registrations are finally open.New sections.50+ flyers added today.Analytics looking good.More users everyday.Some people are actually reading some of this stuff xoxo.</p>
           <p>Already recieved some DMs regarding perks and deals for members...but no one has joined the list yet lol!I was a bit afraid of getting stuck in a "chicken and egg situation" (do I first work on getting people to sign-up or try to get perks to attract sign-ups).Looks like I won't have to worry too much about the latter, but the former is probably a bit harder?? </p>

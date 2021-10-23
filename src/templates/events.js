@@ -15,13 +15,13 @@ export default function EventsList({ data }) {
       <DatesNav />
       <SimpleReactLightbox>
         <SRLWrapper>
-          <div className="container py-5">
-            <div className="row justify-content-center g-3 align-items-center mb-5">
+          <div className="container-fluid">
+            <div className="row justify-content-center my-5 pb-5">
               <div className="col-sm-8">
-                <div className="row">
+                <div className="row g-3 justify-content-center align-items-center pb-5">
                   {list.map(({ node }) => (
                     <div className="col-4">
-                      <GatsbyImage image={getImage(node)} alt={"fail"} />
+                      <GatsbyImage image={getImage(node)} />
                     </div>
                   ))}
                 </div>

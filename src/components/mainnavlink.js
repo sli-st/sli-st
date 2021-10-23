@@ -19,7 +19,7 @@ const MainNavLink = ({ partiallyActive, className, to, children }) => {
 
 MainNavLink.defaultProps = {
   partiallyActive: true,
-  className: "text-light text-decoration-none lead px-3",
+  className: "text-light text-decoration-none lead p-3",
 }
 
 export default MainNavLink
