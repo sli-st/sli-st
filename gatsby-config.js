@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `S Li.ST`,
+    title: `SLi.ST`,
     description: `The S List of underground raves, nightclubs, and other (interesting) music and art events in CDMX. By SLi.ST`,
     author: `SLi.ST`,
   },

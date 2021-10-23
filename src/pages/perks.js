@@ -50,8 +50,9 @@ const BlogPage = ({ data }) => {
                 </section></div>
                 <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                   <ul className="text-light">
-                    <li>perks can only be redeemed by members on the list</li>
-                    <li>monetary perks such as discounts, cortesias, and presale prices do not expire and are valid for the entire duration of an event</li>
+                    <li>monetary perks such as discounts, cortesias, and presale prices can not expire and must be valid for the entire duration of an event</li>
+                    <li>consumable perks must be redeemable while supplies last</li>
+                    <li>your IG username needs to be on the list in order for you to redeem a perk</li>
                     <li>opening the socialmedia profile while logged-in is proof of membership</li>
                     <li>proof of membership is the only thing required to redeem a perk</li>
                     <li>all members have access to all current and future perks</li>
