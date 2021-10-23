@@ -1,8 +1,7 @@
 import * as React from "react"
 import { useState } from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 
-import { Link } from "gatsby"
+
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 

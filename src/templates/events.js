@@ -3,9 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import DatesNav from "../components/datesnav"
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
-
+import { Link } from "gatsby"
 
 
 export default function EventsList({ data }) {
@@ -20,10 +18,9 @@ export default function EventsList({ data }) {
               {list.map(({ node }) => (
 
                 <div className="col-3">
-                  <Zoom>
-                    <GatsbyImage image={getImage(node)} alt={"fail"}
-                    />
-                  </Zoom>
+                  <Link to={node.publicURL}>
+                    <GatsbyImage image={getImage(node)} alt={"fail"} />
+                  </Link>
                 </div>
 
               )
@@ -50,6 +47,7 @@ export const events = graphql
           childImageSharp {
             gatsbyImageData
           }
+          publicURL
         }
       }
     }
