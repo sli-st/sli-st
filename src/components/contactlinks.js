@@ -11,7 +11,7 @@ const ContactLinks = () => {
       <a
         href="mailto:s@sli.st"
         target="_blank"
-        className="text-light text-decoration-none mb-3"
+        className="text-secondary text-decoration-none mb-3"
       >
         s@sli.st
       </a>
@@ -19,7 +19,7 @@ const ContactLinks = () => {
       <a
         href="https://www.instagram.com/slistslist/"
         target="_blank"
-        className="text-light text-decoration-none"
+        className="text-secondary text-decoration-none"
       >
         @slistslist
       </a>

@@ -18,9 +18,9 @@ const BlogPage = ({ data }) => {
               </div>
               <div className="pt-3" id="nav-tabContent">
                 <ol className="text-secondary text-end">
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
+                  <li>@dhiramprzz</li>
+                  <li>@nos_autem</li>
+                  <li>@simontechyes</li>
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>

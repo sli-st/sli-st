@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <DatesNav />
-    <div className="container-fluid text-start mt-5 pb-5 pt-lg-5">
+    <div className="container-fluid text-start mt-5 pb-5 pt-5">
       <section className="row justify-content-center">
         <div className="col-md-5 py-3">
           <SignUpForm />
