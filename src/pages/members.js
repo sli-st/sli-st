@@ -21,6 +21,7 @@ const BlogPage = ({ data }) => {
                   <li>@_ironboard_</li>
                   <li>@axchacon</li>
                   <li>@dhiramprzz</li>
+                  <li>@nobinari_mxL</li>
                   <li>@nos_autem</li>
                   <li>@simontechyes</li>
                   <li>@your.Social.Media.Handle</li>

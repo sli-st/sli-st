@@ -1,0 +1,84 @@
+{
+    "category": [
+        {
+            "name": "acid",
+            "people": [
+                "Lindsey Herbert",
+                "Miss Crafty"
+            ]
+        },
+        {
+            "name": "break beat",
+            "people": [
+                "VALAC",
+                "Lolo Batten"
+            ]
+        },
+        {
+            "name": "dark",
+            "people": [
+                "Anders Bart",
+                "k1lltheelite",
+                "Miss Crafty",
+                "SOEL",
+                "Sonico",
+                "Vendex"
+            ]
+        },
+        {
+            "name": "experimental",
+            "people": [
+                "GOTSHELL",
+                "LYO.XS",
+                "Vanderlinden"
+            ]
+        },
+        {
+            "name": "industrial",
+            "people": [
+                "Lindsey Herbert",
+                "Secret Raver",
+                "Sonico",
+                "Vendex"
+            ]
+        },
+        {
+            "name": "international",
+            "people": [
+                "BastardLove",
+                "Gledd",
+                "Héctor Oaks"
+            ]
+        },
+        {
+            "name": "live instruments",
+            "people": [
+                "WhatYouWantNYC"
+            ]
+        },
+        {
+            "name": "minimal",
+            "people": [
+                "SOEL"
+            ]
+        },
+        {
+            "name": "psy",
+            "people": [
+                "Anders Bart"
+            ]
+        },
+        {
+            "name": "tech house",
+            "people": [
+                "Rafiko"
+            ]
+        },
+        {
+            "name": "versatile",
+            "people": [
+                "Chipsy Riot"
+            ]
+        }
+    ]
+}
