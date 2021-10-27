@@ -20,13 +20,13 @@ const BlogPage = ({ data }) => {
                   <li>@_felix.vazquez_</li>
                   <li>@_ironboard_</li>
                   <li>@axchacon</li>
+                  <li>@b_wxng</li>
                   <li>@dhiramprzz</li>
+                  <li>@elissavinh</li>
                   <li>@nobinari_mxL</li>
                   <li>@nos_autem</li>
                   <li>@simontechyes</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
+                  <li>@v.o.t.e.x.p.e.d.r.o</li>
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>
                   <li>@your.Social.Media.Handle</li>
