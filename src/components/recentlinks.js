@@ -4,8 +4,6 @@ import { Link, graphql } from 'gatsby'
 const RecentLinks = () => {
   return (
     <>
-      <span className="text-primary">some links aren't ready, coming soon, gotta get ready to party :^</span>
-      <br />
       <span className="text-secondary">
         Update Post - {' '}
         <Link
