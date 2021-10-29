@@ -5,7 +5,7 @@ const SNavLink = ({ partiallyActive, className, to, children }) => {
   return (
     <AniLink
       cover
-      direction="up"
+      direction="down"
       duration={1}
       bg="#000000"
       to={to}
@@ -17,7 +17,7 @@ const SNavLink = ({ partiallyActive, className, to, children }) => {
 
 SNavLink.defaultProps = {
   partiallyActive: true,
-  className: "text-center text-decoration-none pt-3 text-light lead mb-5 border border-primary border-bottom-0",
+  className: "row justify-content-center align-items-center py-3 text-light text-decoration-none lead mb-5 border border-primary border-bottom-0",
 }
 
 export default SNavLink

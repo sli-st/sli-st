@@ -41,6 +41,7 @@ module.exports = {
         path: `${__dirname}/content/adventures/`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,7 +49,27 @@ module.exports = {
         path: `${__dirname}/content/perks/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `slist`,
+        path: `${__dirname}/content/slist/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `release-notes`,
+        path: `${__dirname}/content/release-notes`,
+      },
+    },
     "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/content/release-notes`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

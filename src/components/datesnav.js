@@ -42,19 +42,9 @@ export default function DatesNav() {
       `}
       render={data => (
         <nav aria-label="event dates navigation" className="dates-nav sticky-top pt-4 pb-3 bg-black text-white container-fluid">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center pt-1">
             <div className="col-sm-6 d-flex overflow-hidden">
-              <div className="d-none">
-                <Link
-                  to="/"
-                  className="text-white py-1 border-en border-2"
-
-                  activeClassName="nav-active"
-                >
-                  <FontAwesomeIcon icon={faBookmark} size="2x" rotation={270} />
-                </Link>
-              </div>
-              <div className="scrolling-wrapper align-items-center hide-scroll" >
+              <div className="scrolling-wrapper align-items-center hide-scroll lead" >
                 {data.currentmonth.edges.map(({ node }) => (
                   <Link
                     to={"/" + currentMonthNum + "/" + node.name}

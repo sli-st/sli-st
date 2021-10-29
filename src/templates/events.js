@@ -7,6 +7,28 @@ import SimpleReactLightbox from 'simple-react-lightbox'
 import { SRLWrapper } from "simple-react-lightbox"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
+const options = {
+  settings: {
+    overlayColor: "rgba(0, 0, 0, 0.9)",
+    autoplaySpeed: 0,
+    transitionSpeed: 200,
+    disablePanzoom: true,
+  },
+  buttons: {
+    backgroundColor: "#000",
+    iconColor: "rgb(255, 0, 0)",
+    showAutoplayButton: false,
+    showCloseButton: false,
+    showDownloadButton: false,
+    showFullscreenButton: false,
+    showThumbnailsButton: false
+
+  },
+  caption: {
+    showCaption: false,
+  }
+};
+
 export default function EventsList({ data }) {
   const list = data.allFile.edges
   return (
@@ -14,7 +36,7 @@ export default function EventsList({ data }) {
       <Seo title="Flyers by date" />
       <DatesNav />
       <SimpleReactLightbox>
-        <SRLWrapper>
+        <SRLWrapper options={options}>
           <div className="container-fluid">
             <div className="row justify-content-center my-5 pb-5">
               <div className="col-sm-8">

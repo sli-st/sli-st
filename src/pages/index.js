@@ -5,26 +5,16 @@ import DatesNav from "../components/datesnav"
 import SignUpForm from "../components/signupform"
 import ContactLinks from "../components/contactlinks"
 import RecentLinks from "../components/recentlinks"
-import { Link } from 'gatsby'
+import SList from "../components/slist"
 
 const IndexPage = () => (
   <Layout pageTitle="Index">
     <Seo title="Index" />
     <DatesNav />
-    <div className="container-fluid">
-      <section className="row justify-content-center py-5 my-5">
-        <div className="col-md-5 text-start">
-          <RecentLinks />
-        </div>
-      </section>
-      <section className="row justify-content-center py-5 my-5">
-        <div className="col-md-5 text-center">
-          <Link to="/members" className="p-3 border border-primary">Membership signups are finally open!</Link>
-        </div>
-      </section>
-      <section className="row justify-content-center d-flex py-5 my-5">
-        <div className="col-md-5 text-end">
-          <ContactLinks />
+    <div className="container-fluid pb-5 mb-5">
+      <section className="row justify-content-center pt-5">
+        <div className="col-md-6 px-0">
+          <SList />
         </div>
       </section>
     </div>
