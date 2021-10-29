@@ -17,6 +17,7 @@ const BlogPage = ({ data }) => {
               </div>
               <div className="pt-3" id="nav-tabContent">
                 <ol className="text-secondary text-end">
+                  <li>@_____hcanyun</li>
                   <li>@_felix.vazquez_</li>
                   <li>@_ironboard_</li>
                   <li>@axchacon</li>
