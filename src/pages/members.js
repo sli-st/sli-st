@@ -28,30 +28,9 @@ const BlogPage = ({ data }) => {
                   <li>@nos_autem</li>
                   <li>@simontechyes</li>
                   <li>@v.o.t.e.x.p.e.d.r.o</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
-                  <li>@your.Social.Media.Handle</li>
                 </ol>
               </div>
             </section>
-
-
-
           </div>
         </div>
       </div>
