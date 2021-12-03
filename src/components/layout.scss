@@ -1,29 +1,29 @@
-
 // $primary: rgba(158, 6, 6, 0.589);
 
 $primary: rgb(255, 0, 0);
 $secondary: rgb(212, 0, 0);
-$info:  blue;
+$info: blue;
 $light: #999999;
 $dark: #030101;
 $black: #000000;
 @import "~bootstrap/scss/bootstrap";
 
 html {
-    background: black;
-  }
+  background: black;
+}
 
-  .event-rec-img, .leads {
-      flex: 0 0 auto;
-      margin: 0px;
-      width: 40%;
-    }
-  
-    .flyer {
-      flex: 0 0 auto;
-      width: calc((100% - 60px)/3);
-      margin: 10px;
-    }
+.event-rec-img,
+.leads {
+  flex: 0 0 auto;
+  margin: 0px;
+  width: 40%;
+}
+
+.flyer {
+  flex: 0 0 auto;
+  width: calc((100% - 60px) / 3);
+  margin: 10px;
+}
 
 // .flyer-link {
 //   flex: 0 0 auto;
@@ -32,7 +32,7 @@ html {
 // }
 
 a {
-  color: $light
+  color: $light;
 }
 .markedbutton {
   line-height: 16px;
@@ -41,13 +41,13 @@ a {
 ol {
   list-style-type: decimal-leading-zero;
 }
-  
-  .scrolling-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 .primary-nav {
   border-top: 1px solid #ffffff10;
@@ -63,7 +63,7 @@ ol {
 }
 
 .nav-active {
-  color: $primary!important;
+  color: $primary !important;
   border-color: $primary !important;
   // margin-bottom: 10px;
 }
@@ -79,8 +79,8 @@ p {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .tl-edges {
@@ -90,10 +90,68 @@ p {
   background-color: #00000090 !important;
 }
 
-img, body {
-  background-color: black!important;
+img,
+body {
+  background-color: black !important;
 }
 
 html {
   background-color: black;
+}
+
+:root {
+  --clr-neon: hsl(0 100% 54%);
+  --clr-bg: hsl(323 0% 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.neon-button {
+  font-size: 4rem;
+
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.0625em solid;
+  padding: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
 }
