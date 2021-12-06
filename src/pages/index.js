@@ -14,7 +14,7 @@ const IndexPage = () => (
     <div className="container-fluid pb-5 mb-5">
       <section className="row justify-content-center pt-5">
         <div className="col-md-6 px-0">
-          <SList />
+          <RecentLinks />
         </div>
       </section>
     </div>
