@@ -12,9 +12,10 @@ const IndexPage = () => (
     <Seo title="Index" />
     <DatesNav />
     <div className="container-fluid pb-5 mb-5">
-      <section className="row justify-content-center pt-5">
-        <div className="col-md-6 px-0">
-          <RecentLinks />
+      <section className="row justify-content-center">
+        <div className="col-8 col-md-6 d-flex flex-column">
+          <div className="text-center my-5 h1 text-primary">^ FLYERS UPDATED 8/12/21^</div>
+          <div className="text-center my-5 h3 text-primary">Big layout changes soon.</div>
         </div>
       </section>
     </div>
