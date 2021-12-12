@@ -7,14 +7,14 @@ import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Adventures" >
-      <Seo title="Adventures" />
+    <Layout pageTitle="Experiences" >
+      <Seo title="Experiences" />
       <div className="container-fluid pb-5">
         <div className="row justify-content-center g-3 align-items-center mb-5">
           {
             data.allMdx.nodes.map(node => (
               <div className="col-4 col-sm-3">
-                <Link className="flyer-link" to={`/adventures/${node.slug}`}>
+                <Link className="flyer-link" to={`/x/${node.slug}`}>
                   <GatsbyImage image={getImage(node.frontmatter.hero_image)} />
                 </Link>
               </div>
@@ -30,7 +30,7 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
   query {
       allMdx(
-        filter: {fileAbsolutePath: {regex: "/content/adventures/"}}
+        filter: {fileAbsolutePath: {regex: "/content/x/"}}
         sort: {fields: slug, order: DESC}
         ) {
         nodes {

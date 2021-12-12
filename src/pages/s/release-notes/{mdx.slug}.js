@@ -1,13 +1,12 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../../../components/layout'
 import Footer from "../../../components/footer"
 import Seo from "../../../components/seo"
 
 const BlogPost = ({ data }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image)
   return (
     <div className="vh-100">
       <Layout >

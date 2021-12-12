@@ -1,11 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import DatesNav from "../components/datesnav"
-import SignUpForm from "../components/signupform"
-import ContactLinks from "../components/contactlinks"
-import RecentLinks from "../components/recentlinks"
-import SList from "../components/slist"
 
 const IndexPage = () => (
   <Layout pageTitle="Index">

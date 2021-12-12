@@ -1,8 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 var d = new Date();
 var currentMonthNum = d.getMonth() + 1;
