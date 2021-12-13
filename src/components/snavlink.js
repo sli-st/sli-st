@@ -17,7 +17,7 @@ const SNavLink = ({ partiallyActive, className, to, children }) => {
 
 SNavLink.defaultProps = {
   partiallyActive: true,
-  className: "text-center text-decoration-none pt-3 text-light lead mb-5 border border-primary border-bottom-0",
+  className: "text-center text-decoration-none pt-1 text-light lead mb-3 border border-primary border-bottom-0",
 }
 
 export default SNavLink

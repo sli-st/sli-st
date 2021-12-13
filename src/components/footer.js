@@ -12,8 +12,7 @@ const PrimaryNav = () => {
       >
         <div className="row justify-content-center text-center pb-1">
           <div className="col-sm-5 d-flex justify-content-between align-items-center">
-            <MainNavLink to="/s">§</MainNavLink>
-            <MainNavLink to="/adventures/">§</MainNavLink>
+            <MainNavLink to="/x/">§</MainNavLink>
             <MainNavLink
               to="/"
               className="text-white text-decoration-none border px-2 "
@@ -21,7 +20,6 @@ const PrimaryNav = () => {
               SLi.ST
             </MainNavLink>
             <MainNavLink to="/perks">§</MainNavLink>
-            <MainNavLink to="/members">§</MainNavLink>
           </div>
         </div>
       </nav>

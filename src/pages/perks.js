@@ -4,6 +4,7 @@ import Seo from "../components/seo"
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import SignUpForm from "../components/signupform"
 
 const BlogPage = ({ data }) => {
   return (
@@ -14,8 +15,8 @@ const BlogPage = ({ data }) => {
           <div className="col-md-5">
             <nav className="bg-black pt-3 pb-3 border-bottom border-primary">
               <div className="nav nav-justified gap-2 mx-auto d-md-flex justify-content-md-center" id="nav-tab" role="tablist">
-                <button className="nav-link btn btn-outline-secondary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
-                <button className="nav-link btn btn-outline-secondary text-decoration-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Conditions</button>
+                <button className="nav-link btn btn-outline-light " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Perks</button>
+                <button className="nav-link btn btn-outline-light text-decoration-none active text-light" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Members</button>
               </div>
             </nav>
           </div>
@@ -24,7 +25,7 @@ const BlogPage = ({ data }) => {
           <div className="col-md-5">
             <section>
               <div className="tab-content mx-auto pt-2" id="nav-tabContent">
-                <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><section>
+                <div className="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><section>
                   {
                     data.allMdx.nodes.map(node => (
                       <div className="row justify-content-around align-items-center py-3">
@@ -48,15 +49,32 @@ const BlogPage = ({ data }) => {
                     </div>
                   </div>
                 </section></div>
-                <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <ul className="text-light">
-                    <li>monetary perks such as discounts, cortesias, and presale prices can not expire and must be redeemable for the entire duration of an event</li>
-                    <li>consumable perks must be redeemable while supplies last (shots, tacos, coffee)</li>
-                    <li>your IG username needs to be on the list in order for you to redeem a perk</li>
-                    <li>opening the socialmedia profile while logged in is proof of membership</li>
-                    <li>all members have access to all current and future perks</li>
-                    <li>this is a lifetime membership with no tiers,</li>
-                  </ul>
+                <div className="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <section>
+              <div className="sticky-top bg-black border-bottom border-primary py-3">
+                <SignUpForm />
+              </div>
+              <div className="pt-3" id="nav-tabContent">
+                <ol className="text-secondary text-end">
+                  <li>@_____hcanyun</li>
+                  <li>@_felix.vazquez_</li>
+                  <li>@_ironboard_</li>
+                  <li>@axchacon</li>
+                  <li>@b_wxng</li>
+                  <li>@dhiramprzz</li>
+                  <li>@elissavinh</li>
+                  <li>@nobinari_mxL</li>
+                  <li>@nos_autem</li>
+                  <li>@simontechyes</li>
+                  <li>@v.o.t.e.x.p.e.d.r.o</li>
+                  <li>@slistcdmx</li>
+                  <li>@slist.cdmx</li>
+                  <li>@sli.stcdmx</li>
+                  <li>@sli.st.cdmx</li>
+                  <li>@slistslist</li>
+                </ol>
+              </div>
+            </section>
                 </div>
               </div>
             </section>

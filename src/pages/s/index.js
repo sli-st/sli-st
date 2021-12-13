@@ -19,7 +19,7 @@ const Me = () => (
         <div className="col-8 col-md-5 d-flex flex-column">
           
           <nav className="d-flex flex-column pb-5 my-5">
-            <SNavLink to="/s/mixes/">mixes</SNavLink>
+            <SNavLink to="/about/">mixes1</SNavLink>
             <SNavLink to="/adventures/">adventures</SNavLink>
             <SNavLink to="/s/release-notes/">release notes</SNavLink>
             <a href="https://instagram.com/slistxmas" className="text-center text-decoration-none pt-3 text-light lead mb-5 border border-primary border-bottom-0">@slistxmas</a>
