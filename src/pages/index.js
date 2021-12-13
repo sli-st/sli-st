@@ -11,38 +11,44 @@ const IndexPage = () => (
     <DatesNav />
     <div className="container-fluid">
       <section className="row pb-2 justify-content-center">
-        <div className="col-8 col-md-5 d-flex flex-column">
-          <div className="text-center neon-button mt-5 text-primary d-flex justify-content-around">
-          <span>↖ </span>
-          <span>FLYERS UPDATED: 12/12</span>
-          <span>↗</span> 
+        <div className="col-11 col-md-5 d-flex flex-column">
+          <div className="text-center neon-button mt-4 mt-md-5 text-primary d-flex justify-content-around">
+            <span>↑ </span>
+            <span>NEW FLYERS - 13/12</span>
+            <span>↑</span>
           </div>
         </div>
       </section>
 
-      <section className="row flex-row justify-content-center align-items-center my-5">
-      <img src={'/sflyer2.jpeg'} className="sflyer" />
-      <img src={'/sflyer3.jpeg'} className="sflyer" />
-      <img src={'/sflyer4.jpeg'} className="sflyer" />
+      <section className="row d-flex flex-row justify-content-center align-items-center py-5 mx-md-5 px-md-5 bg-dark">
+        <div className="col-12 col-md-7">
+          <div className="row g-0">
+            <img src={"/sflyer1.jpeg"} className="sflyer" />
+            <img src={"/sflyer2.jpeg"} className="sflyer" />
+            <img src={"/sflyer3.png"} className="sflyer" />
+          </div>
+        </div>
       </section>
 
       <section className="row justify-content-center">
-        <div className="col-8 col-md-4 d-flex flex-column">
-          
-          <nav className="d-flex flex-column pb-5 mb-5">
+        <div className="col-10 col-md-4 d-flex flex-column">
+          <nav className="d-flex flex-column pt-3 pb-5 mb-5">
             <SNavLink to="/about/">about</SNavLink>
-            <SNavLink to="/s/mixes/">release notes</SNavLink>
-            <a href="https://instagram.com/slistxmas" className="text-center text-decoration-none pt-1 mb-3 text-light lead border border-primary border-bottom-0">@slistxmas</a>
-            <SNavLink to="/s/">sign up</SNavLink>
-            <SNavLink to="/s/">adventiures, Xperiences, rave reflections</SNavLink>
-            <SNavLink to="/s/">special thanks (coming soon)</SNavLink>
-            <SNavLink to="/s/">visual medias (coming soon)</SNavLink>
+            <SNavLink to="/release-notes/">release notes</SNavLink>
+            <a
+              href="https://instagram.com/slistxmas"
+              className="text-center text-decoration-none pt-2 mb-3 text-light lead border border-primary border-bottom-0"
+            >
+              ig: @slistxmas
+            </a>
+            <SNavLink to="/s/">recorded_mixes.wav</SNavLink>
+            <SNavLink to="/x/">xperiences</SNavLink>
+            <SNavLink to="/members/">sign up</SNavLink>
           </nav>
         </div>
-        
       </section>
     </div>
-  </Layout >
+  </Layout>
 )
 
 export default IndexPage

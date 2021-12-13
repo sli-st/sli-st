@@ -111,14 +111,14 @@ html {
 }
 
 .neon-button {
-  font-size: 2rem;
+  font-size: 1.75rem;
 
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.0625em solid;
-  padding: 0.25em;
+  padding: 0.25rem;
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 
@@ -143,10 +143,7 @@ html {
 
 .sflyer {
   @extend .img-fluid;
-  @extend .col-sm-2;
-  @extend .border;
-  @extend .border-secondary;
-  @extend .m-1;
+  @extend .col-4;
 }
 
 .btn-outline-secondary.active {

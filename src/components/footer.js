@@ -2,7 +2,6 @@ import * as React from "react"
 import { TransitionPortal } from "gatsby-plugin-transition-link"
 import MainNavLink from "../components/mainnavlink"
 
-
 const PrimaryNav = () => {
   return (
     <TransitionPortal>
@@ -16,19 +15,16 @@ const PrimaryNav = () => {
             <MainNavLink
               to="/"
               className="text-white text-decoration-none border px-2 "
-              partiallyActive={false}>
+              partiallyActive={false}
+            >
               SLi.ST
             </MainNavLink>
-            <MainNavLink to="/perks">§</MainNavLink>
+            <MainNavLink to="/m">§</MainNavLink>
           </div>
         </div>
       </nav>
-    </TransitionPortal >
-
-
+    </TransitionPortal>
   )
 }
 
 export default PrimaryNav
-
-
