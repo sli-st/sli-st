@@ -1,6 +1,5 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
