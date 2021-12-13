@@ -52,13 +52,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `slist`,
-        path: `${__dirname}/content/slist/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `release-notes`,
         path: `${__dirname}/content/release-notes`,
       },
