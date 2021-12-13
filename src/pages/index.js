@@ -43,7 +43,7 @@ const IndexPage = () => (
             </a>
             <SNavLink to="/s/">recorded_mixes.wav</SNavLink>
             <SNavLink to="/x/">xperiences</SNavLink>
-            <SNavLink to="/members/">sign up</SNavLink>
+            <SNavLink to="/m/">sign up</SNavLink>
           </nav>
         </div>
       </section>
