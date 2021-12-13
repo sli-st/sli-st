@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import DatesNav from "../components/datesnav"
 import SNavLink from "../components/snavlink"
+import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout pageTitle="Index">
@@ -23,9 +24,15 @@ const IndexPage = () => (
       <section className="row d-flex flex-row justify-content-center align-items-center py-5 mx-md-5 px-md-5 bg-dark">
         <div className="col-12 col-md-7">
           <div className="row g-0">
-            <img src={"/sflyer1.jpeg"} className="sflyer" />
-            <img src={"/sflyer2.jpeg"} className="sflyer" />
-            <img src={"/sflyer3.png"} className="sflyer" />
+            <Link to="sflyer1.jpeg" className="col-4">
+              <img src={"/sflyer1.jpeg"} className="img-fluid" />
+            </Link>
+            <Link to="sflyer2.jpeg" className="col-4">
+              <img src={"/sflyer2.jpeg"} className="img-fluid" />
+            </Link>
+            <Link to="sflyer3.png" className="col-4">
+              <img src={"/sflyer3.png"} className="img-fluid" />
+            </Link>
           </div>
         </div>
       </section>

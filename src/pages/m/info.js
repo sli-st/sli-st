@@ -29,11 +29,11 @@ const IndexPage = () => (
               redeem a perk
             </li>
             <li>
-              opening the socialmedia profile while logged in is proof of
+              opening the social media profile while logged in is proof of
               membership
             </li>
             <li>all members have access to all current and future perks</li>
-            <li>this is a lifetime membership with no tiers,</li>
+            <li>this is a lifetime membership with no tiers</li>
           </ul>
         </div>
       </section>
