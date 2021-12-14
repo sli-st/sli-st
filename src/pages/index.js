@@ -10,22 +10,22 @@ const IndexPage = () => (
   <Layout pageTitle="Index">
     <Seo title="Index" />
 
-    <div className="container-fluid index">
-      <section className="row pb-5 ">
-        <Link to="/x/" className="col">
+    <div className="container-fluid">
+      <section className="row pb-5 justify-content-center">
+        <Link to="/x/" className="col-6 col-md">
           <img src={"/sflyer1.jpeg"} className="img-fluid" alt="QR Code" />
         </Link>
-        <Link to="/news/" className="col">
+        <Link to="/news/" className="col-6 col-md">
           <img src={"/sflyer6.jpg"} className="img-fluid" alt="QR Code" />
         </Link>
-        <Link to="/about/" className="col">
+        <Link to="/about/" className="col-6 col-md">
           <img src={"/sflyer4.jpeg"} className="img-fluid" alt="QR Code" />
         </Link>
 
-        <a href="https://www.instagram.com/slistxmas/" className="col">
+        <a href="https://www.instagram.com/slistxmas/" className="col-6 col-md">
           <img src={"/sflyer3.jpeg"} className="img-fluid" alt="QR Code" />
         </a>
-        <Link to="/m/" className="col">
+        <Link to="/m/" className="col-6 col-md">
           <img src={"/sflyer7.jpeg"} className="img-fluid" alt="QR Code" />
         </Link>
       </section>
