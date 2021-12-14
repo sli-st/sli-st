@@ -15,21 +15,16 @@ const IndexPage = () => (
         <Link to="/x/" className="col">
           <img src={"/sflyer1.jpeg"} className="img-fluid" alt="QR Code" />
         </Link>
-        <Link to="/" className="col">
-          <img src={"/sflyer2.png"} className="img-fluid" alt="QR Code" />
-        </Link>
-        <a href="https://www.instagram.com/slistxmas/" className="col">
-          <img src={"/sflyer3.jpeg"} className="img-fluid" alt="QR Code" />
-        </a>
-        <Link to="/about/" className="col">
-          <img src={"/sflyer4.jpeg"} className="img-fluid" alt="QR Code" />
-        </Link>
-        <Link to="/x/210529/" className="col">
-          <img src={"/sflyer5.jpg"} className="img-fluid" alt="QR Code" />
-        </Link>
         <Link to="/news/" className="col">
           <img src={"/sflyer6.jpg"} className="img-fluid" alt="QR Code" />
         </Link>
+        <Link to="/about/" className="col">
+          <img src={"/sflyer4.jpeg"} className="img-fluid" alt="QR Code" />
+        </Link>
+
+        <a href="https://www.instagram.com/slistxmas/" className="col">
+          <img src={"/sflyer3.jpeg"} className="img-fluid" alt="QR Code" />
+        </a>
         <Link to="/m/" className="col">
           <img src={"/sflyer7.jpeg"} className="img-fluid" alt="QR Code" />
         </Link>
