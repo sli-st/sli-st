@@ -9,12 +9,12 @@ const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Perks">
       <Seo title="Perks" />
-      <div className="container-fluid pb-5 mb-5">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-md-5">
             <section>
               {data.allMdx.nodes.map(node => (
-                <div className="row justify-content-around align-items-center py-3">
+                <div className="row justify-content-around align-items-center g-">
                   <div className="col-4">
                     <GatsbyImage
                       className="border-start border-bottom border-primary"

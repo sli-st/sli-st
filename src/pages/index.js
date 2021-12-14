@@ -9,50 +9,49 @@ import Footer from "../components/footer"
 const IndexPage = () => (
   <Layout pageTitle="Index">
     <Seo title="Index" />
-    <DatesNav />
+
     <div className="container-fluid index">
-      <section className="row py-2 justify-content-center">
-        <div className="col-11 col-md-5 d-flex flex-column">
-          <div className="text-center neon-button mt-4 mt-md-5 d-flex justify-content-around">
-            <span>↑ </span>
-            <span>NEW FLYERS - 13/12</span>
-            <span>↑</span>
-          </div>
-        </div>
-      </section>
-      <section className="row justify-content-center py-5">
-        <div className="col-12 col-md-4">
-          <nav className="d-flex flex-column text-center">
-            <Link to="/about/">about</Link>
-            <a href="https://instagram.com/slistxmas" className="text-light">
-              ig: @slistxmas
-            </a>
-            <Link to="#">my-recorded-mixes.wav</Link>
-            <Link to="/release-notes/">project updates</Link>
-          </nav>
-        </div>
-      </section>
-      <section className="row d-flex flex-row justify-content-center align-items-center py-5">
-        <div className="col-12 col-md-6 py-3">
+      <section className="row d-flex flex-row justify-content-center align-items-center pb-5">
+        <div className="col-12 col-md-12 g-0">
           <div className="row">
-            <Link to="sflyer1.jpeg" className="col-6">
-              <img
-                src={"/sflyer1.jpeg"}
-                className="img-fluid"
-                alt="Chain Post"
-              />
+            <Link to="/x/" className="col">
+              <img src={"/sflyer1.jpeg"} className="img-fluid" alt="QR Code" />
             </Link>
-            <Link to="sflyer2.jpeg" className="col-6">
-              <img src={"/sflyer2.jpeg"} className="img-fluid" alt="SFlyer" />
+            <Link to="/" className="col">
+              <img src={"/sflyer2.png"} className="img-fluid" alt="QR Code" />
             </Link>
-            <Link to="sflyer3.png" className="col-6">
-              <img src={"/sflyer3.png"} className="img-fluid" alt="QR Code" />
+            <a href="https://www.instagram.com/slistxmas/" className="col">
+              <img src={"/sflyer3.jpeg"} className="img-fluid" alt="QR Code" />
+            </a>
+            <Link to="/about/" className="col">
+              <img src={"/sflyer4.jpeg"} className="img-fluid" alt="QR Code" />
+            </Link>
+            <Link to="/x/210529/" className="col">
+              <img src={"/sflyer5.jpg"} className="img-fluid" alt="QR Code" />
+            </Link>
+            <Link to="/news/" className="col">
+              <img src={"/sflyer6.jpg"} className="img-fluid" alt="QR Code" />
+            </Link>
+            <Link to="/m/" className="col">
+              <img src={"/sflyer7.jpeg"} className="img-fluid" alt="QR Code" />
             </Link>
           </div>
         </div>
       </section>
+
+      <section className="row justify-content-center py-5">
+        <div className="col-11 col-md-5 d-flex flex-column">
+          <Link to="#" className="text-decoration-none">
+            <div className="text-center neon-button text-primary d-flex justify-content-around">
+              <span>→ </span>
+              <span>Future Event Flyers</span>
+              <span>←</span>
+            </div>
+          </Link>
+        </div>
+      </section>
+      <DatesNav />
     </div>
-    <Footer />
   </Layout>
 )
 

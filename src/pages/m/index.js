@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
-import SignUpForm from "../../components/signupform"
+
 import Seo from "../../components/seo"
 import SNavLink from "../../components/snavlink"
 
@@ -18,7 +18,7 @@ const BlogPage = ({ data }) => {
                   <a className="" aria-current="page" href="/m/perks">
                     Perks
                   </a>
-                  <a className="" href="#join">
+                  <a className="" href="/m/join">
                     Join
                   </a>
                 </nav>
@@ -35,20 +35,13 @@ const BlogPage = ({ data }) => {
                   <a href="#">_ironboard_</a>
                   <a href="#">nobinari_mxL</a>
                   <a href="#">nos_autem</a>
-                  <a href="#">simontechyes</a>
-                  <a href="#">v.o.t.e.x.p.e.d.r.o</a>
-                  <a href="#">nobinari_mxL</a>
-                  <a href="#">nos_autem</a>
-                  <a href="#">simontechyes</a>
-                  <a href="#">v.o.t.e.x.p.e.d.r.o</a>
-                  <a href="#">nobinari_mxL</a>
-                  <a href="#">nos_autem</a>
-                  <a href="#">simontechyes</a>
+                  <a href="#">slistcdmx</a>
+                  <a href="#">slist.cdmx</a>
+                  <a href="#">sli.stcdmx</a>
+                  <a href="#">sli.st.cdmx</a>
+                  <a href="#">slistslist</a>
                   <a href="#">v.o.t.e.x.p.e.d.r.o</a>
                 </nav>
-              </div>
-              <div id="join">
-                <SignUpForm id="join" />
               </div>
             </section>
           </div>
