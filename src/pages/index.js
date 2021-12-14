@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Seo title="Index" />
 
     <div className="container-fluid index">
-      <section className="row d-flex flex-row justify-content-center align-items-center pb-5">
+      <section className="row d-flex flex-row justify-content-center align-items-center pb-5 index-nav">
         <div className="col-12 col-md-12 g-0">
           <div className="row">
             <Link to="/x/" className="col">
