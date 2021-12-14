@@ -165,7 +165,7 @@ nav.mlist a {
   @extend .border-bottom-0;
 }
 
-.index-nav a {
-  @extend .px-1;
+.index a.col {
+  @extend .px-0;
   @extend .px-sm-2;
 }

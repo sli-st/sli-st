@@ -11,32 +11,28 @@ const IndexPage = () => (
     <Seo title="Index" />
 
     <div className="container-fluid index">
-      <section className="row d-flex flex-row justify-content-center align-items-center pb-5 index-nav">
-        <div className="col-12 col-md-12 g-0">
-          <div className="row">
-            <Link to="/x/" className="col">
-              <img src={"/sflyer1.jpeg"} className="img-fluid" alt="QR Code" />
-            </Link>
-            <Link to="/" className="col">
-              <img src={"/sflyer2.png"} className="img-fluid" alt="QR Code" />
-            </Link>
-            <a href="https://www.instagram.com/slistxmas/" className="col">
-              <img src={"/sflyer3.jpeg"} className="img-fluid" alt="QR Code" />
-            </a>
-            <Link to="/about/" className="col">
-              <img src={"/sflyer4.jpeg"} className="img-fluid" alt="QR Code" />
-            </Link>
-            <Link to="/x/210529/" className="col">
-              <img src={"/sflyer5.jpg"} className="img-fluid" alt="QR Code" />
-            </Link>
-            <Link to="/news/" className="col">
-              <img src={"/sflyer6.jpg"} className="img-fluid" alt="QR Code" />
-            </Link>
-            <Link to="/m/" className="col">
-              <img src={"/sflyer7.jpeg"} className="img-fluid" alt="QR Code" />
-            </Link>
-          </div>
-        </div>
+      <section className="row pb-5 ">
+        <Link to="/x/" className="col">
+          <img src={"/sflyer1.jpeg"} className="img-fluid" alt="QR Code" />
+        </Link>
+        <Link to="/" className="col">
+          <img src={"/sflyer2.png"} className="img-fluid" alt="QR Code" />
+        </Link>
+        <a href="https://www.instagram.com/slistxmas/" className="col">
+          <img src={"/sflyer3.jpeg"} className="img-fluid" alt="QR Code" />
+        </a>
+        <Link to="/about/" className="col">
+          <img src={"/sflyer4.jpeg"} className="img-fluid" alt="QR Code" />
+        </Link>
+        <Link to="/x/210529/" className="col">
+          <img src={"/sflyer5.jpg"} className="img-fluid" alt="QR Code" />
+        </Link>
+        <Link to="/news/" className="col">
+          <img src={"/sflyer6.jpg"} className="img-fluid" alt="QR Code" />
+        </Link>
+        <Link to="/m/" className="col">
+          <img src={"/sflyer7.jpeg"} className="img-fluid" alt="QR Code" />
+        </Link>
       </section>
 
       <section className="row justify-content-center py-5 my-5">
