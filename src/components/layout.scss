@@ -166,4 +166,6 @@ nav.mlist a {
 }
 
 .index a.col {
+  @extend .px-0;
+  @extend .px-sm-2;
 }
