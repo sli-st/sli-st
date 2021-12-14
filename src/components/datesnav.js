@@ -46,7 +46,7 @@ export default function DatesNav() {
       render={data => (
         <nav
           aria-label="event dates navigation"
-          className="dates-nav pt-5 bg-black text-white container-fluid"
+          className="dates-nav pt-5 my-5 bg-black text-white container-fluid"
         >
           <div className="row justify-content-center">
             <div className="col-sm-6 d-flex justify-content-center overflow-hidden">

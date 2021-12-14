@@ -30,7 +30,7 @@ const IndexPage = () => (
         </Link>
       </section>
 
-      <section className="row justify-content-center py-5 my-5">
+      <section className="row justify-content-center py-5 my-5 d-none">
         <div className="col-11 col-md-5 d-flex flex-column">
           <Link to="#" className="text-decoration-none">
             <div className="text-center neon-button text-primary d-flex justify-content-around">
