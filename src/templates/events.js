@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import DatesNav from "../components/datesnav"
 import { graphql } from "gatsby"
-import SimpleReactLightbox from 'simple-react-lightbox'
+import SimpleReactLightbox from "simple-react-lightbox"
 import { SRLWrapper } from "simple-react-lightbox"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
@@ -21,19 +21,18 @@ const options = {
     showCloseButton: false,
     showDownloadButton: false,
     showFullscreenButton: false,
-    showThumbnailsButton: false
-
+    showThumbnailsButton: false,
   },
   caption: {
     showCaption: false,
-  }
-};
+  },
+}
 
 export default function EventsList({ data }) {
   const list = data.allFile.edges
   return (
-    <Layout pageTitle="Flyers by date" >
-      <Seo title="Flyers by date" />
+    <Layout pageTitle="Flyers">
+      <Seo title="Flyers" />
       <DatesNav />
       <SimpleReactLightbox>
         <SRLWrapper options={options}>
@@ -52,13 +51,13 @@ export default function EventsList({ data }) {
           </div>
         </SRLWrapper>
       </SimpleReactLightbox>
-    </Layout >)
+    </Layout>
+  )
 }
 
-export const events = graphql
-  `
+export const events = graphql`
   query($slug: String!) {
-    allFile(filter: {relativeDirectory: {eq: $slug}}) {
+    allFile(filter: { relativeDirectory: { eq: $slug } }) {
       edges {
         node {
           name

@@ -9,7 +9,6 @@ const Layout = ({ pageTitle, children }) => {
     <div>
       <title>{pageTitle}</title>
       <main className="bg-black">{children}</main>
-      <Footer />
     </div>
   )
 }

@@ -38,10 +38,6 @@ a {
   line-height: 16px;
 }
 
-ol {
-  list-style-type: decimal-leading-zero;
-}
-
 .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -111,14 +107,14 @@ html {
 }
 
 .neon-button {
-  font-size: 2rem;
+  font-size: 1.75rem;
 
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.0625em solid;
-  padding: 0.25em;
+  padding: 0.25rem;
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 
@@ -143,13 +139,28 @@ html {
 
 .sflyer {
   @extend .img-fluid;
-  @extend .col-sm-2;
-  @extend .border;
-  @extend .border-secondary;
-  @extend .m-1;
+  @extend .col-4;
 }
 
 .btn-outline-secondary.active {
   background-color: $dark;
   color: $primary;
+}
+
+.index nav a {
+  font-size: 1.25rem;
+}
+
+nav.mlist a {
+  @extend .text-end;
+  @extend .text-decoration-none;
+  @extend .pt-2;
+  @extend .mb-3;
+  @extend .text-light;
+  @extend .lead;
+  @extend .border;
+  @extend .border-primary;
+  @extend .border-top-0;
+  @extend .border-end-0;
+  @extend .border-bottom-0;
 }

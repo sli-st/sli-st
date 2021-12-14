@@ -4,14 +4,11 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 const MainNavLink = ({ partiallyActive, className, to, children }) => {
   return (
     <AniLink
-      cover
-      direction="down"
-      duration={1}
-      bg="#000000"
       activeClassName="nav-active"
       partiallyActive={partiallyActive}
       to={to}
-      className={className}>
+      className={className}
+    >
       {children}
     </AniLink>
   )
