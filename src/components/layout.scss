@@ -3,6 +3,7 @@
 $primary: rgb(255, 0, 0);
 $secondary: rgb(212, 0, 0);
 $info: blue;
+$success: green;
 $light: #999999;
 $dark: #030101;
 $black: #000000;
@@ -114,7 +115,6 @@ html {
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.0625em solid;
-  padding: 0.5rem;
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 
@@ -165,17 +165,10 @@ nav.mlist a {
   @extend .border-bottom-0;
 }
 
-#index-nav section {
-  @extend .row;
-  @extend .justify-content-center;
-  @extend .g-0;
-}
-
 #index-nav a {
-  @extend .col-4;
-  @extend .col-md-2;
+  // @extend .col-6;
+  // @extend .col-md-2;
 }
 
 #index-nav img {
-  @extend .img-fluid;
 }

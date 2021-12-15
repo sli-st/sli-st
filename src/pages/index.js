@@ -9,6 +9,15 @@ import IndexNav from "../components/indexnav"
 const IndexPage = () => (
   <Layout pageTitle="Index">
     <Seo title="Index" />
+    <section className="d-flex justify-content-center py-5 my-5 ">
+      <div className="d-flex flex-column">
+        <Link to="#" className="text-decoration-none">
+          <div className="text-center neon-button text-success d-flex justify-content-around py-2 px-3">
+            @slistslist
+          </div>
+        </Link>
+      </div>
+    </section>
     <IndexNav />
   </Layout>
 )
