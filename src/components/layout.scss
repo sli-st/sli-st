@@ -166,8 +166,9 @@ nav.mlist a {
 }
 
 #index-nav a {
-  // @extend .col-6;
-  // @extend .col-md-2;
+  @extend .p-0;
+  // @extend .border;
+  // @extend .border-primary;
 }
 
 #index-nav img {
