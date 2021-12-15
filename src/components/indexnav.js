@@ -10,7 +10,7 @@ const IndexNav = () => {
     <nav
       aria-label="Primary navigation"
       id="index-nav"
-      className=" container-fluid"
+      className="fixed-bottom container-fluid"
     >
       <div className="row justify-content-center">
         <div className="col-md-6 col-lg-4">
