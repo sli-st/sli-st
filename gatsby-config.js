@@ -16,6 +16,23 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-audio",
+            options: {
+              preload: "auto",
+              loop: false,
+              controls: true,
+              muted: false,
+              autoplay: false,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

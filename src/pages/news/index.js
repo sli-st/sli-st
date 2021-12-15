@@ -6,8 +6,8 @@ import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Release Notes">
-      <Seo title="Release Notes" />
+    <Layout pageTitle="Updates">
+      <Seo title="Updates" />
       <div className="container-fluid pb-5">
         <div className="row justify-content-center mb-5 ">
           <div className="col-12 col-sm-6">
