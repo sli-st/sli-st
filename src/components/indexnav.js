@@ -6,7 +6,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const IndexNav = () => {
   return (
-    <nav aria-label="Primary navigation" id="index-nav">
+    <nav
+      aria-label="Primary navigation"
+      id="index-nav"
+      className="container-fluid p-0 fixed-bottom fixed-md-top"
+    >
       <section>
         <Link to="/x/">
           <StaticImage src="../images/index/x.png" alt="A kitten" />
