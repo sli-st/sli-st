@@ -165,7 +165,17 @@ nav.mlist a {
   @extend .border-bottom-0;
 }
 
-.index a.col {
-  @extend .px-0;
-  @extend .px-sm-2;
+#index-nav section {
+  @extend .row;
+  @extend .justify-content-center;
+  @extend .g-3;
+}
+
+#index-nav a {
+  @extend .col-4;
+  @extend .col-md-2;
+}
+
+#index-nav img {
+  @extend .img-fluid;
 }

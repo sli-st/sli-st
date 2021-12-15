@@ -25,7 +25,6 @@ const BlogPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   )
 }
