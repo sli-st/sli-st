@@ -14,17 +14,24 @@ const BlogPage = ({ data }) => {
           <div className="col-md-5">
             <section>
               <div className="sticky-top bg-black border-bottom border-primary pb-3">
-                <nav className="nav justify-content-between py-3">
-                  <a className="" aria-current="page" href="/m/perks">
-                    Perks
+                <nav className="nav justify-content-between pt-4 pb-2 text-decoration-none">
+                  <a
+                    className="text-decoration-none lead"
+                    aria-current="page"
+                    href="/m/perks"
+                  >
+                    About the list
                   </a>
-                  <a className="" href="/m/join">
-                    Join
+                  <a
+                    className="text-primary lead text-decoration-none"
+                    href="/m/join"
+                  >
+                    JOIN
                   </a>
                 </nav>
               </div>
 
-              <div className="pt-3">
+              <div className="">
                 <nav className="text-secondary d-flex flex-column mlist">
                   <a href="#">axchacon</a>
                   <a href="#">b_wxng</a>
