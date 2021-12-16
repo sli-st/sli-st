@@ -13,28 +13,31 @@ const IndexPage = () => (
     <nav
       aria-label="Primary navigation"
       id="index-nav"
-      className="fixed-botto container overflow-hidden"
+      className="fixed-botto container"
     >
       <div className="row justify-content-center">
         <div className="col-md-9 col-lg-5">
           <section className="row d-flex justify-content-center mt-3">
             <div className="d-flex flex-column">
-              <Link to="about" className="text-decoration-none">
-                <div className="neon-button text-primary py-2 fs-4 d-flex justify-content-center">
-                  FLYERS -> @slistxmas highlights
+              <a
+                href="https://www.instagram.com/slistxmas/"
+                className="col text-decoration-none"
+              >
+                <div className="neon-button text-primary py-2 fs-4 d-flex justify-content-center ">
+                  FLYERS {"->"} IG @slistxmas
                 </div>
-              </Link>
+              </a>
             </div>
           </section>
           <section className="row justify-content-center mt-3">
             <div className="col-4">
               <div className="row d-flex justify-content-between flex-column">
                 <div className="col-12 pb-4">
-                  <Link to="/mixes/" className="">
+                  <Link to="#" className="">
                     <StaticImage
                       src="../images/index/recorded.png"
                       alt="A kitten"
-                      className=""
+                      className="grayscale"
                     />
                   </Link>
                 </div>
@@ -48,9 +51,9 @@ const IndexPage = () => (
                 </div>
               </div>
             </div>
-            <Link to="#" className="col-8 grayscale">
+            <a href="/sflyer1.jpeg" className="col-8 ">
               <StaticImage src="../images/index/sflyer1.jpeg" alt="A kitten" />
-            </Link>
+            </a>
           </section>
 
           <section className="row justify-content-center mt-3">
@@ -64,14 +67,12 @@ const IndexPage = () => (
                 </div>
               </span>
             </Link>
-
-            <a href="https://www.instagram.com/slistxmas/" className="col">
-              <StaticImage
-                src="../images/index/igqr.jpg"
-                alt="A kitten"
-                className=""
-              />
-            </a>
+            <Link
+              // to="/sflyers/"
+              className="col text-decoration-none text-center grayscale"
+            >
+              <StaticImage src="../images/index/fire.png" alt="A kitten" />
+            </Link>
           </section>
 
           <section className="row justify-content-center mt-3">
@@ -85,14 +86,17 @@ const IndexPage = () => (
                 </div>
               </span>
             </Link>
-            <Link to="/#/" className="col border-warning">
+            <Link to="/about/" className="col border-warning">
               <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
             </Link>
+
             <Link
-              to="#"
-              className="col text-decoration-none text-center text-primary"
+              // to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false"
+              className="col text-cente d-flex align-items-center text-decoration-none"
             >
-              <StaticImage src="../images/index/fire.png" alt="A kitten" />
+              <span className="w-100 h-100 d-flex align-items-center justify-content-center border\ border-light border-start-0">
+                <div className="text-gray text-center fs-1 ">T&T</div>
+              </span>
             </Link>
           </section>
           <setion className></setion>
