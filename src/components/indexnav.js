@@ -14,7 +14,7 @@ const IndexNav = () => {
     >
       <div className="row justify-content-center">
         <div className="col-md-6 col-lg-4">
-          <section className="row d-flex justify-content-center mb-1">
+          <section className="row d-flex justify-content-center my-4">
             <div className="d-flex flex-column">
               <Link to="about" className="text-decoration-none">
                 <div className="neon-button text-primary py-2 px-5 fs-2 d-flex justify-content-center">
