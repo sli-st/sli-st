@@ -17,16 +17,16 @@ const IndexPage = () => (
     >
       <div className="row justify-content-center">
         <div className="col-md-9 col-lg-5">
-          <section className="row d-flex justify-content-center mt-4">
+          <section className="row d-flex justify-content-center mt-3">
             <div className="d-flex flex-column">
               <Link to="about" className="text-decoration-none">
-                <div className="neon-button text-primary py-2 px-5 fs-3 d-flex justify-content-center">
-                  About SLi.ST
+                <div className="neon-button text-primary py-2 fs-4 d-flex justify-content-center">
+                  FLYERS -> @slistxmas highlights
                 </div>
               </Link>
             </div>
           </section>
-          <section className="row justify-content-center mt-4">
+          <section className="row justify-content-center mt-3">
             <div className="col-4">
               <div className="row d-flex justify-content-between flex-column">
                 <div className="col-12 pb-4">
@@ -53,7 +53,7 @@ const IndexPage = () => (
             </Link>
           </section>
 
-          <section className="row justify-content-center mt-4">
+          <section className="row justify-content-center mt-3">
             <Link to="/x/" className="col">
               <StaticImage src="../images/index/x.png" alt="A kitten" />
             </Link>
@@ -64,15 +64,17 @@ const IndexPage = () => (
                 </div>
               </span>
             </Link>
-            <Link
-              to="#"
-              className="col text-decoration-none text-center text-primary"
-            >
-              <StaticImage src="../images/index/fire.png" alt="A kitten" />
-            </Link>
+
+            <a href="https://www.instagram.com/slistxmas/" className="col">
+              <StaticImage
+                src="../images/index/igqr.jpg"
+                alt="A kitten"
+                className=""
+              />
+            </a>
           </section>
 
-          <section className="row justify-content-center pt-4">
+          <section className="row justify-content-center mt-3">
             <Link
               to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false"
               className="col text-cente d-flex align-items-center text-decoration-none"
@@ -83,17 +85,17 @@ const IndexPage = () => (
                 </div>
               </span>
             </Link>
-            <Link to="/#/" className="col">
+            <Link to="/#/" className="col border-warning">
               <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
             </Link>
-            <a href="https://www.instagram.com/slistxmas/" className="col">
-              <StaticImage
-                src="../images/index/igqr.jpg"
-                alt="A kitten"
-                className=""
-              />
-            </a>
+            <Link
+              to="#"
+              className="col text-decoration-none text-center text-primary"
+            >
+              <StaticImage src="../images/index/fire.png" alt="A kitten" />
+            </Link>
           </section>
+          <setion className></setion>
         </div>
       </div>
     </nav>

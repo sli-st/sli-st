@@ -18,7 +18,7 @@ const IndexNav = () => {
             <div className="d-flex flex-column">
               <Link to="about" className="text-decoration-none">
                 <div className="neon-button text-primary py-2 px-5 fs-2 d-flex justify-content-center">
-                  About SLi.ST
+                  Flyers On INSTAGRAMS
                 </div>
               </Link>
             </div>
