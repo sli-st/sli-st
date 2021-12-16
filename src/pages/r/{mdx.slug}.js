@@ -17,7 +17,7 @@ const BlogPost = ({ data }) => {
             <div className="col-md-7 col-xl-5">
               <div className="row justify-content-center align-items-center sticky-md-top px-0">
                 <div className="col-lg-12 sticky-md-top pb-3 px-0">
-                  <GatsbyImage image={image} className="img-fluid" />
+                  <GatsbyImage image={image} className="img-fluid" />j
                 </div>
               </div>
             </div>

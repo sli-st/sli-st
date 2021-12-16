@@ -57,7 +57,7 @@ const IndexPage = () => (
           </section>
 
           <section className="row justify-content-center mt-3">
-            <Link to="/x/" className="col">
+            <Link to="/r/" className="col">
               <StaticImage src="../images/index/x.png" alt="A kitten" />
             </Link>
             <Link to="/m/" className="col text-decoration-none ">

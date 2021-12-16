@@ -10,8 +10,64 @@ const About = () => (
         <div className="col-md-5 px-0 text-light">
           <h1 className="">About</h1>
           <p>
-            "SLi.ST" is an umbrella term for multiple projects. The website is
-            divided into 3 main sections (bottom navigation links).
+            "SLi.ST", as it is now spelled, is the name of multiple projects: -
+            my unnderground flyer sharing project - my sparingly used DJ name -
+            the name of a "guest list for life" program - a curated list of
+            upcoming events - a list of previous rave expieriences (as
+            reflections).
+          </p>
+
+          <p>
+            For the next couple months I was going to atleast 3 events every
+            week. I was somewhere between a tourist and a regular CDMX raver.
+            When I realized that most of my local friends were Within a month I
+            was already feeling like a regular in the scene and then I realized
+            that I was better at finding good events than most of my friends
+            (including locals in the nightlife). Until then I would just find
+            flyers and
+          </p>
+          <h2>Flyer Finding, Sorting, Sharing:</h2>
+          <h2>Flyer Finding, Sorting, Sharing:</h2>
+          <h2>History:</h2>
+          <p>
+            This all started off as @slistcdmx on Instagram. I needed a fresh
+            account to more efficiently find underground events in CDMX. My feed
+            was currently cluttered with events from NYC which I had no use for.
+            At first the account had a totally fake name. I was just using it to
+            add every single account I could find that had recently shared any
+            underground event. I'd look for flyers and just add everyone
+            mentioned to find even more flyers. For awhile I would just take a
+            screenshot flyers and look through them when trying to making
+            evening plans. Then I met some locals find every account that I
+            could find that were sharing flyers (DJs, promoters, organizers,
+            etc.) When I realized that some of my friends could also use that
+            information, I started screenshotting every flyer I could find and
+            resharing them as individual posts. That got a bunch of people to
+            follow me. Thanks to some of their comments I started tagging the
+            people on the flyers which helped grow the account pretty quickly.
+            It began as a project for sharing flyers. Due to rapid growth, rapid
+            sharing, and rapid following, the first account and the 3 or 4
+            accounts that came after were all suspended. After the 3rd account
+            was taken down, I started working on a website that was simply for
+            directing people to whatever the current "@slist----" handle was
+            being used. Luckily there was enough brand recognition that people
+            were following me back before I even started sharing flyers again.
+            For about 1 month, i stopped sharing flyers while I worked on the
+            website. And at some point I decided to just share the flyers on the
+            website. I figured there was potential for even greater reach with
+            people who weren't using instagram for finding events - (tourists,
+            people searching on google, etc.). I decided to make the website and
+            use social media primarily for sharing the website instead of
+            sharing everything on Instagram. This is to avoid getting flagged by
+            Instagram's automatic spam detectors which are not the best. I only
+            share a few events there - mostly for community building and also
+            for fun. Sometimes I write something and people find it funny. I
+            like the bit of anonymity.
+          </p>
+          <p>
+            "SLi.ST" is now an umbrella term for multiple side projects. It
+            began The website is divided into 3 main sections (bottom navigation
+            links).
           </p>
           <p></p>
           <p>
@@ -71,36 +127,6 @@ const About = () => (
             Some other goals are to connect event organizers in CDMX and NYC,
             starting a magazine, and a few other bold ideas, but the main goal
             is to increase viewership and signups.
-          </p>
-          <h2>History:</h2>
-          <p>
-            SLi.ST, as it is now called, started off as @slistcdmx on Instagram.
-            It started off as an Instagram account (@slistcdmx) for finding,
-            sorting, and sharing event flyers. At first I was simply following
-            every account that I could find that were sharing flyers (DJs,
-            promoters, organizers, etc.) When I realized that some of my friends
-            could also use that information, I started screenshotting every
-            flyer I could find and resharing them as individual posts. That got
-            a bunch of people to follow me. Thanks to some of their comments I
-            started tagging the people on the flyers which helped grow the
-            account pretty quickly. It began as a project for sharing flyers.
-            Due to rapid growth, rapid sharing, and rapid following, the first
-            account and the 3 or 4 accounts that came after were all suspended.
-            After the 3rd account was taken down, I started working on a website
-            that was simply for directing people to whatever the current
-            "@slist----" handle was being used. Luckily there was enough brand
-            recognition that people were following me back before I even started
-            sharing flyers again. For about 1 month, i stopped sharing flyers
-            while I worked on the website. And at some point I decided to just
-            share the flyers on the website. I figured there was potential for
-            even greater reach with people who weren't using instagram for
-            finding events - (tourists, people searching on google, etc.). I
-            decided to make the website and use social media primarily for
-            sharing the website instead of sharing everything on Instagram. This
-            is to avoid getting flagged by Instagram's automatic spam detectors
-            which are not the best. I only share a few events there - mostly for
-            community building and also for fun. Sometimes I write something and
-            people find it funny. I like the bit of anonymity.
           </p>
           <p>
             In September I saw a post from "El Real Under" about their open deck

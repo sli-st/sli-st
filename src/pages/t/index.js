@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
                 <h1 className="lead text-primary">{node.frontmatter.title}</h1>
                 <Link
                   className="text-centr text-decoration-none text-light lead"
-                  to={`/tt/${node.slug}`}
+                  to={`/t/${node.slug}`}
                 ></Link>
               </div>
             ))}
@@ -31,7 +31,7 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "/content/tt/" } }
+      filter: { fileAbsolutePath: { regex: "/content/t/" } }
       sort: { fields: slug, order: DESC }
     ) {
       nodes {

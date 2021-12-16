@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => {
               <div className="py-3 my-5">
                 <Link
                   className="text-centr text-decoration-none text-light lead"
-                  to={`/release-notes/${node.slug}`}
+                  to={`/u/${node.slug}`}
                 >
                   <h1 className="lead text-primary">{node.frontmatter.date}</h1>
                   <h1 className="lead">{node.frontmatter.title}</h1>
@@ -32,7 +32,7 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "/content/release-notes/" } }
+      filter: { fileAbsolutePath: { regex: "/content/u/" } }
       sort: { fields: slug, order: DESC }
     ) {
       nodes {

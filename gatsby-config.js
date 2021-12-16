@@ -54,36 +54,36 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `x`,
-        path: `${__dirname}/content/x/`,
+        name: `r`,
+        path: `${__dirname}/content/r/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `tt`,
-        path: `${__dirname}/content/tt/`,
+        name: `t`,
+        path: `${__dirname}/content/t/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `perks`,
-        path: `${__dirname}/content/perks/`,
+        name: `p`,
+        path: `${__dirname}/content/p/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `release-notes`,
-        path: `${__dirname}/content/release-notes`,
+        name: `u`,
+        path: `${__dirname}/content/u`,
       },
     },
     "gatsby-plugin-mdx",
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/content/release-notes`,
+        path: `${__dirname}/content/u`,
       },
     },
     {
