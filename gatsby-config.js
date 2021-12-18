@@ -79,6 +79,13 @@ module.exports = {
         path: `${__dirname}/content/u`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `a`,
+        path: `${__dirname}/content/a`,
+      },
+    },
     "gatsby-plugin-mdx",
     {
       resolve: "gatsby-plugin-page-creator",

@@ -4,35 +4,39 @@ import Seo from "../components/seo"
 import DatesNav from "../components/datesnav"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import IndexNav from "../components/indexnav"
 
 const IndexPage = () => (
   <Layout pageTitle="Index">
     <Seo title="Index" />
-    <section className="row justify-content-center py-5">
-      <div className="col-md-8 text-center d-flex flex-column align-items-center text-light pt-5">
-        <h1 className="text-center">Title: "not for dancing (in public."</h1>
-        <p className="text-center pb-5">
-          Same music. Two different sources. The 2nd link is the original wav
-          file hosted on Google Drive. It seems to sound better.
-        </p>
-        <iframe
-          width="100%"
-          height="300"
-          scrolling="no"
-          frameborder="no"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1170268132&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe>
+    <div className="container-fluid">
+      <div className="row justify-content-center pt-5">
+        <div className="col-lg-6 text-center text-light">
+          <h1 className="text-center py-4">not for dancing (in public.</h1>
 
-        <iframe
-          frameborder="0"
-          width="100%"
-          height="200"
-          src="https://drive.google.com/file/d/1FL9N2FEyCNPTtjxp25CYmmaCd5QksJu9/preview?usp=sharing"
-          crossorigin="anonymous"
-        ></iframe>
+          <p className="text-center pb-5 ">
+            I had a falling out with an ex-friend in early 2020 (just before the
+            lockdowns). Less than a year later I tried to find her Instagram on
+            Google, but instead I found her obituary. I went through every
+            emotion. Especially regret. I didn't feel like dancing.
+          </p>
+
+          <iframe
+            className="mb-5"
+            width="100%"
+            scrolling="no"
+            frameborder="no"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1170268132&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
+          <a
+            href="https://www.googleapis.com/drive/v3/files/1FL9N2FEyCNPTtjxp25CYmmaCd5QksJu9?alt=media&key=AIzaSyAP4ujJMv90h9GJpoezieXoRLq9NRW9Wzk&v=[.wav]"
+            download="not for dancing.png"
+            className="pt-5 text-primary text-decoration-none"
+          >
+            Download Original .WAV
+          </a>
+        </div>
       </div>
-    </section>
+    </div>
   </Layout>
 )
 

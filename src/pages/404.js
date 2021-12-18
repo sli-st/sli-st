@@ -10,7 +10,7 @@ const NotFoundPage = () => (
     <div className="container-fluid d-flex flex-column justify-content-center align-items-center text-center my-5">
       <Link to="/" className="py-5">
         <h1>
-          404: Not Found <br></br>Go back to SLi.ST
+          404: Not Found <br></br>Go to SLi.ST
         </h1>
       </Link>
       <p className="text-center text-secondary">

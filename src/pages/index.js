@@ -1,10 +1,8 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import DatesNav from "../components/datesnav"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import IndexNav from "../components/indexnav"
 
 const IndexPage = () => (
   <Layout pageTitle="Index">
@@ -33,16 +31,16 @@ const IndexPage = () => (
             <div className="col-4">
               <div className="row d-flex justify-content-between flex-column">
                 <div className="col-12 pb-4">
-                  <Link to="#" className="">
+                  <Link to="/mixes" className="">
                     <StaticImage
                       src="../images/index/recorded.png"
                       alt="A kitten"
-                      className="grayscale"
+                      className=""
                     />
                   </Link>
                 </div>
                 <div className="col-12">
-                  <Link to="/news/" className="bg-primary">
+                  <Link to="/u/" className="bg-primary">
                     <StaticImage
                       src="../images/index/news.png"
                       alt="A kitten"
@@ -51,7 +49,7 @@ const IndexPage = () => (
                 </div>
               </div>
             </div>
-            <a href="/sflyer1.jpeg" className="col-8 ">
+            <a href="#" className="col-8 ">
               <StaticImage src="../images/index/sflyer1.jpeg" alt="A kitten" />
             </a>
           </section>
@@ -60,17 +58,14 @@ const IndexPage = () => (
             <Link to="/r/" className="col">
               <StaticImage src="../images/index/x.png" alt="A kitten" />
             </Link>
-            <Link to="/m/" className="col text-decoration-none ">
+            <Link to="/l/" className="col text-decoration-none ">
               <span className="w-100 h-100 d-flex align-items-center justify-content-center">
                 <div className="border border-primary text-primary px-3 fs-3">
                   LIST
                 </div>
               </span>
             </Link>
-            <Link
-              // to="/sflyers/"
-              className="col text-decoration-none text-center grayscale"
-            >
+            <Link to="/f/" className="col text-decoration-none text-center">
               <StaticImage src="../images/index/fire.png" alt="A kitten" />
             </Link>
           </section>
@@ -86,16 +81,18 @@ const IndexPage = () => (
                 </div>
               </span>
             </Link>
-            <Link to="/about/" className="col border-warning">
+            <Link to="/a/" className="col border-warning">
               <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
             </Link>
 
             <Link
-              // to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false"
+              to="/a/"
               className="col text-cente d-flex align-items-center text-decoration-none"
             >
               <span className="w-100 h-100 d-flex align-items-center justify-content-center border\ border-light border-start-0">
-                <div className="text-gray text-center fs-1 ">T&T</div>
+                <div className="text-primary text-center fs-1 d-flex flex-column">
+                  <span>T+T</span>
+                </div>
               </span>
             </Link>
           </section>
