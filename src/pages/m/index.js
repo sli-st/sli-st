@@ -1,13 +1,10 @@
 import * as React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import DatesNav from "../components/datesnav"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
 const IndexPage = () => (
-  <Layout pageTitle="Index">
-    <Seo title="Index" />
+  <Layout pageTitle="Recorded Mixes">
+    <Seo title="Recorded Mixes" />
     <div className="container-fluid">
       <div className="row justify-content-center pt-5">
         <div className="col-lg-6 text-center text-light">
@@ -16,8 +13,9 @@ const IndexPage = () => (
           <p className="text-center pb-5 ">
             I had a falling out with an ex-friend in early 2020 (just before the
             lockdowns). Less than a year later I tried to find her Instagram on
-            Google, but instead I found her obituary. I went through every
-            emotion. Especially regret. I didn't feel like dancing.
+            Google, but instead I found her obituary. I didn't feel like
+            dancing, but I spent some time reflecting and listening to music we
+            used to share. Stuff like System of a Down. TMI.
           </p>
 
           <iframe

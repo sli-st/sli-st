@@ -18,15 +18,15 @@ const BlogPage = ({ data }) => {
                   <a
                     className="text-decoration-none lead"
                     aria-current="page"
-                    href="/m/perks"
+                    href="/a/sl"
                   >
-                    About the list
+                    About
                   </a>
                   <a
                     className="text-primary lead text-decoration-none"
-                    href="/m/join"
+                    href="/l/join"
                   >
-                    JOIN
+                    Join
                   </a>
                 </nav>
               </div>

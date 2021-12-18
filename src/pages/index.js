@@ -3,8 +3,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout pageTitle="Index">
     <Seo title="Index" />
 
@@ -30,15 +31,6 @@ const IndexPage = () => (
           <section className="row justify-content-center mt-3">
             <div className="col-4">
               <div className="row d-flex justify-content-between flex-column">
-                <div className="col-12 pb-4">
-                  <Link to="/mixes" className="">
-                    <StaticImage
-                      src="../images/index/recorded.png"
-                      alt="A kitten"
-                      className=""
-                    />
-                  </Link>
-                </div>
                 <div className="col-12">
                   <Link to="/u/" className="bg-primary">
                     <StaticImage
@@ -47,10 +39,21 @@ const IndexPage = () => (
                     />
                   </Link>
                 </div>
+                <div className="col-12 pt-4">
+                  <Link to="/mixes">
+                    <StaticImage
+                      src="../images/index/recorded.png"
+                      alt="A kitten"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
-            <a href="#" className="col-8 ">
-              <StaticImage src="../images/index/sflyer1.jpeg" alt="A kitten" />
+            <a
+              href="https://www.instagram.com/nobinari_mx/"
+              className="col-8 red-tint"
+            >
+              <StaticImage src="../images/promo.jpg" alt="A kitten" />
             </a>
           </section>
 
@@ -86,12 +89,12 @@ const IndexPage = () => (
             </Link>
 
             <Link
-              to="/a/"
+              to="/t/"
               className="col text-cente d-flex align-items-center text-decoration-none"
             >
               <span className="w-100 h-100 d-flex align-items-center justify-content-center border\ border-light border-start-0">
                 <div className="text-primary text-center fs-1 d-flex flex-column">
-                  <span>T+T</span>
+                  <span>{data.allMdx.totalCount}</span>
                 </div>
               </span>
             </Link>
@@ -104,3 +107,14 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  {
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/content/t/" } }
+      sort: { fields: slug, order: DESC }
+    ) {
+      totalCount
+    }
+  }
+`

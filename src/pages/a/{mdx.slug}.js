@@ -1,8 +1,7 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
-import Footer from "../../components/footer"
 import Seo from "../../components/seo"
 
 const BlogPost = ({ data }) => {
@@ -12,7 +11,7 @@ const BlogPost = ({ data }) => {
         <Seo title={data.mdx.frontmatter.title} />
         <article className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-md-7 col-xl-6 pt-3 pb-5 mb-5">
+            <div className="col-md-7 col-xl-6 pt-3">
               <h1 className="h6 text-secondary pt-3 pb-3 border-bottom border-1 border-primary bg-black sticky-top">
                 {data.mdx.frontmatter.title}
               </h1>
@@ -22,6 +21,16 @@ const BlogPost = ({ data }) => {
             </div>
           </div>
         </article>
+        <footer className="d-flex align-items-center flex-column pt-4 pb-5">
+          <Link to="/" className=" text-decoration-none">
+            <div className="text-primary px-3">About Index</div>
+          </Link>
+          <Link to="/" className=" text-decoration-none pt-4">
+            <div className="border border-primary text-primary px-3 fs-3">
+              SLi.ST
+            </div>
+          </Link>
+        </footer>
       </Layout>
     </div>
   )

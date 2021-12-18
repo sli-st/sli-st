@@ -1,27 +1,17 @@
 import * as React from "react"
-import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
-import Footer from "../../components/footer"
 import Seo from "../../components/seo"
 
 const BlogPost = ({ data }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image)
   return (
     <div className="vh-100">
       <Layout>
         <Seo title={data.mdx.frontmatter.title} />
         <article className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-md-7 col-xl-5">
-              <div className="row justify-content-center align-items-center sticky-md-top px-0">
-                <div className="col-lg-12 sticky-md-top pb-3 px-0">
-                  <GatsbyImage image={image} className="img-fluid" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-7 col-xl-4 pt-3 pb-5 mb-5">
+            <div className="col-md-7 col-xl-6 pt-3">
               <h1 className="h6 text-secondary pt-3 pb-3 border-bottom border-1 border-primary bg-black sticky-top">
                 {data.mdx.frontmatter.title}
               </h1>
@@ -31,6 +21,16 @@ const BlogPost = ({ data }) => {
             </div>
           </div>
         </article>
+        <footer className="d-flex align-items-center flex-column pt-4 pb-5">
+          <Link to="/" className=" text-decoration-none">
+            <div className="text-primary px-3">About Index</div>
+          </Link>
+          <Link to="/" className=" text-decoration-none pt-4">
+            <div className="border border-primary text-primary px-3 fs-3">
+              SLi.ST
+            </div>
+          </Link>
+        </footer>
       </Layout>
     </div>
   )
@@ -41,12 +41,6 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
-        date(formatString: "MMMM D, YYYY")
-        hero_image {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
       body
     }

@@ -1,8 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Footer from "../../components/footer"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
@@ -18,6 +17,25 @@ const BlogPage = ({ data }) => {
               </Link>
             </div>
           ))}
+          <div className="col-4 col-sm-3 d-flex justify-content-center ">
+            <Link
+              to="/a/sr"
+              className="text-decoration-none text-center fs-3 border border-primary p-5"
+            >
+              <div>About</div>
+              <div>These</div>
+              <div>Reflections</div>
+            </Link>
+          </div>
+          <div className="col-4 col-sm-3">
+            <Link to="/">
+              <StaticImage
+                src="../../images/logo.jpeg"
+                alt="A kitten"
+                className=""
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </Layout>
@@ -32,7 +50,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
+          date(formatString: "YYYY, MMMM, D ")
           title
           hero_image {
             childImageSharp {
