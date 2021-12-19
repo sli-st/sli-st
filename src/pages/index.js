@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
                   </Link>
                 </div>
                 <div className="col-12 pt-4">
-                  <Link to="/mixes">
+                  <Link to="/m">
                     <StaticImage
                       src="../images/index/recorded.png"
                       alt="A kitten"
