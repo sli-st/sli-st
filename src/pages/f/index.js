@@ -1,9 +1,8 @@
-import { Link } from "gatsby"
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
-const About = () => (
+const Sflyers = () => (
   <Layout pageTitle="Support">
     <Seo title="Support" />
     <div className="container-fluid">
@@ -20,17 +19,17 @@ const About = () => (
           <section className="row pt-5">
             <div className="col-lg-4">
               <a href="/sflyer1.jpeg" download>
-                <img className="img-fluid" src="/sflyer1.jpeg" />
+                <img className="img-fluid" src="/sflyer1.jpeg" alt="sflyer1" />
               </a>
             </div>
             <div className="col-lg-4">
               <a href="/sflyer2.jpeg" download>
-                <img className="img-fluid" src="/sflyer2.jpeg" />
+                <img className="img-fluid" src="/sflyer2.jpeg" alt="sflyer2" />
               </a>
             </div>
             <div className="col-lg-4">
               <a href="/sflyer3.jpeg" download>
-                <img className="img-fluid" src="/sflyer3.jpeg" />
+                <img className="img-fluid" src="/sflyer3.jpeg" alt="sflyer3" />
               </a>
             </div>
           </section>
@@ -40,4 +39,4 @@ const About = () => (
   </Layout>
 )
 
-export default About
+export default Sflyers

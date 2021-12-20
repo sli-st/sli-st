@@ -2,7 +2,6 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
-import Footer from "../../components/footer"
 import Seo from "../../components/seo"
 
 const BlogPost = ({ data }) => {
@@ -22,7 +21,6 @@ const BlogPost = ({ data }) => {
             </div>
           </div>
         </article>
-        <Footer />
       </Layout>
     </div>
   )

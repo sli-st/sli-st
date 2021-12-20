@@ -14,11 +14,12 @@ const IndexPage = () => (
             I had a falling out with an ex-friend in early 2020 (just before the
             lockdowns). Less than a year later I tried to find her Instagram on
             Google, but instead I found her obituary. I didn't feel like
-            dancing, but I spent some time reflecting and listening to music we
-            used to share. Stuff like System of a Down. TMI.
+            dancing, but I took some time to reflect and listen to music we used
+            to talk about. TMI.
           </p>
 
           <iframe
+            title="SoundCloud"
             className="mb-5"
             width="100%"
             scrolling="no"

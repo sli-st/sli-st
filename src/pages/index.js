@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
                   </Link>
                 </div>
                 <div className="col-12 pt-4">
-                  <Link to="/mixes">
+                  <Link to="/m">
                     <StaticImage
                       src="../images/index/recorded.png"
                       alt="A kitten"
@@ -50,10 +50,15 @@ const IndexPage = ({ data }) => (
               </div>
             </div>
             <a
-              href="https://www.instagram.com/nobinari_mx/"
-              className="col-8 red-tint"
+              href="/"
+              className="col-8 red-tint1 d-flex justify-content-center align-items-center"
             >
-              <StaticImage src="../images/promo.jpg" alt="A kitten" />
+              <Link to="/r/" className="col">
+                <StaticImage
+                  src="../images/index/sflyer1.jpeg"
+                  alt="A kitten"
+                />
+              </Link>
             </a>
           </section>
 
@@ -85,7 +90,7 @@ const IndexPage = ({ data }) => (
               </span>
             </Link>
             <Link to="/a/" className="col border-warning">
-              <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
+              <StaticImage src="../images/index/i.svg" alt="A kitten" />
             </Link>
 
             <Link

@@ -1,14 +1,12 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../../components/layout"
-
 import Seo from "../../components/seo"
-import SNavLink from "../../components/snavlink"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Members">
-      <Seo title="Members" />
+    <Layout pageTitle="List">
+      <Seo title="List" />
       <div className="intro-bg container-fluid">
         <div className="row justify-content-center">
           <div className="col-md-5">
@@ -33,21 +31,26 @@ const BlogPage = ({ data }) => {
 
               <div className="">
                 <nav className="text-secondary d-flex flex-column mlist">
-                  <a href="#">axchacon</a>
-                  <a href="#">b_wxng</a>
-                  <a href="#">dhiramprzz</a>
-                  <a href="#">elissavinh</a>
-                  <a href="#">_felix.vazquez_</a>
-                  <a href="#">_____hcanyun</a>
-                  <a href="#">_ironboard_</a>
-                  <a href="#">nobinari_mxL</a>
-                  <a href="#">nos_autem</a>
-                  <a href="#">slistcdmx</a>
-                  <a href="#">slist.cdmx</a>
-                  <a href="#">sli.stcdmx</a>
-                  <a href="#">sli.st.cdmx</a>
-                  <a href="#">slistslist</a>
-                  <a href="#">v.o.t.e.x.p.e.d.r.o</a>
+                  <a href="https://www.instagram.com/axchacon">axchacon</a>
+                  <a href="https://www.instagram.com/b_wxng">b_wxng</a>
+                  <a href="https://www.instagram.com/dhiramprzz">dhiramprzz</a>
+                  <a href="https://www.instagram.com/elissavinh">elissavinh</a>
+                  <a href="https://www.instagram.com/_felix.vazquez_">
+                    _felix.vazquez_
+                  </a>
+                  <a href="https://www.instagram.com/_____hcanyun">
+                    _____hcanyun
+                  </a>
+                  <a href="https://www.instagram.com/_ironboard_">
+                    _ironboard_
+                  </a>
+                  <a href="https://www.instagram.com/nobinari_mx">
+                    nobinari_mx
+                  </a>
+                  <a href="https://www.instagram.com/nos_autem">nos_autem</a>
+                  <a href="https://www.instagram.com/v.o.t.e.x.p.e.d.r.o">
+                    v.o.t.e.x.p.e.d.r.o
+                  </a>
                 </nav>
               </div>
             </section>

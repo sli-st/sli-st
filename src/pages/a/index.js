@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
-import Footer from "../../components/footer"
 import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
