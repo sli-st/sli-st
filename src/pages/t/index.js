@@ -1,13 +1,16 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle={data.allMdx.totalCount + " Rave Tips"}>
-      <Seo title={data.allMdx.totalCount + " Rave Tips"} />
+      <Seo
+        title={data.allMdx.totalCount + " Rave Tips"}
+        description="A constantly updating list of tips and tricks for raving. Brought to you by a frequent raver. There is bound to be at least one tip that is relevant for you."
+      />
       <div className="container-fluid">
         <div className="row justify-content-center mt-5">
           <div className="col-sm-5 text-light">

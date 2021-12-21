@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer"
 
 const BlogPost = ({ data }) => {
   return (

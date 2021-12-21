@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/footer"
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
@@ -20,13 +21,14 @@ const BlogPost = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="col-md-7 col-xl-4 pt-3 pb-5 mb-5">
+            <div className="col-md-7 col-xl-4 pt-3">
               <h1 className="h6 text-secondary pt-3 pb-3 border-bottom border-1 border-primary bg-black sticky-top">
                 {data.mdx.frontmatter.title}
               </h1>
               <div className="text-light bg-dark pt-4">
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
               </div>
+              <Footer to="/r" label="More Reflections" />
             </div>
           </div>
         </article>

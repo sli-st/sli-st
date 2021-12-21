@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer"
 
 const BlogPage = ({ data }) => {
   return (

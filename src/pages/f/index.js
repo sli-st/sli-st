@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer"
 
 const Sflyers = () => (
   <Layout pageTitle="Support">

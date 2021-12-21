@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import SignUpForm from "../../components/signupform"
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer"
 
 const IndexPage = () => (
   <Layout pageTitle="Info">
