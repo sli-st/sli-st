@@ -18,9 +18,9 @@ const BlogPage = ({ data }) => {
             </div>
           ))}
           <div className="col-4 col-sm-3 d-flex justify-content-center ">
-            <Link to="/a/sr" className="text-decoration-none text-center lead">
+            <Link to="/a/a6" className="text-decoration-none text-center lead">
               <div>About</div>
-              <div>These</div>
+              <div>Rave</div>
               <div>Reflections</div>
             </Link>
           </div>

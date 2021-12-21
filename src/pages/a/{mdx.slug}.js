@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/Footer"
 
 const BlogPost = ({ data }) => {
   return (
@@ -18,19 +19,10 @@ const BlogPost = ({ data }) => {
               <div className="text-light bg-dark pt-4">
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
               </div>
+              <Footer to="/a" label="About All" />
             </div>
           </div>
         </article>
-        <footer className="d-flex align-items-center flex-column pt-4 pb-5">
-          <Link to="/" className=" text-decoration-none">
-            <div className="text-primary px-3">About Index</div>
-          </Link>
-          <Link to="/" className=" text-decoration-none pt-4">
-            <div className="border border-primary text-primary px-3 fs-3">
-              SLi.ST
-            </div>
-          </Link>
-        </footer>
       </Layout>
     </div>
   )

@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/Footer"
 
 const Sflyers = () => (
   <Layout pageTitle="Support">
@@ -33,6 +34,7 @@ const Sflyers = () => (
               </a>
             </div>
           </section>
+          <Footer to="/a" label="About" />
         </div>
       </div>
     </div>

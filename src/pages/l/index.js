@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/Footer"
 
 const BlogPage = ({ data }) => {
   return (
@@ -16,7 +17,7 @@ const BlogPage = ({ data }) => {
                   <a
                     className="text-decoration-none lead"
                     aria-current="page"
-                    href="/a/sl"
+                    href="/a/a5"
                   >
                     About
                   </a>
@@ -54,6 +55,7 @@ const BlogPage = ({ data }) => {
                 </nav>
               </div>
             </section>
+            <Footer to="/a/a5" label="About" />
           </div>
         </div>
       </div>

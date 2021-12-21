@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/Footer"
 
 const BlogPost = ({ data }) => {
   return (
@@ -18,6 +19,7 @@ const BlogPost = ({ data }) => {
               <div className="text-light bg-dark pt-4">
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
               </div>
+              <Footer to="/u" label="All Updates" />
             </div>
           </div>
         </article>

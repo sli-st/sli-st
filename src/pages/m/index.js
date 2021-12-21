@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/Footer"
 
 const IndexPage = () => (
   <Layout pageTitle="Recorded Mixes">
@@ -33,6 +34,7 @@ const IndexPage = () => (
           >
             Download Original .WAV
           </a>
+          <Footer to="#" label="EPK Coming Soon" />
         </div>
       </div>
     </div>

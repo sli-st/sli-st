@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import Footer from "../../components/Footer"
 
 const BlogPage = ({ data }) => {
   return (
@@ -30,6 +31,7 @@ const BlogPage = ({ data }) => {
                 </div>
               ))}
             </div>
+            <Footer to="/u" label="Updates" />
           </div>
         </div>
       </div>
