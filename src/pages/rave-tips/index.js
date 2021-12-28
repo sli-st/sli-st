@@ -11,23 +11,19 @@ const BlogPage = ({ data }) => {
         title={data.allMdx.totalCount + " Rave Tips"}
         description="A constantly updating list of tips and tricks for raving. Brought to you by a frequent raver. There is bound to be at least one tip that is relevant for you."
       />
-      <div className="container-fluid">
-        <div className="row justify-content-center mt-5">
-          <div className="col-sm-5 text-light">
-            <h1 className="pt-3 text-center">
-              {data.allMdx.totalCount} Rave Tips
-            </h1>
-
-            <div className="text-start pt-5">
-              <ol reversed="reversed" className="decimal-leading-zero">
-                {data.allMdx.nodes.map(node => (
-                  <li className="py-1">{node.frontmatter.title}</li>
-                ))}
-              </ol>
-            </div>
-            <Footer to="/a/a4" label="About Rave Tips" />
-          </div>
-        </div>
+      <div className="container prose dark:prose-invert mx-auto">
+        <h1 className="pt-10 text-primary text-5xl ">
+          {data.allMdx.totalCount} Rave Tips
+        </h1>
+        <ol
+          reversed="reversed"
+          className="decimal-leading-zero list-decimal text-white"
+        >
+          {data.allMdx.nodes.map(node => (
+            <li className="py-1">{node.frontmatter.title}</li>
+          ))}
+        </ol>
+        <Footer to="/a/a4" label="About Rave Tips" />
       </div>
     </Layout>
   )

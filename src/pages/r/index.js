@@ -3,37 +3,24 @@ import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import Seo from "../../components/seo"
+import Footer from "../../components/footer"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Reflections">
       <Seo title="Reflections" />
-      <div className="container-fluid">
-        <div className="row justify-content-center g-3 align-items-center">
+      <div className="container">
+        <div className="columns-3 md:columns-4 gap-4">
           {data.allMdx.nodes.map(node => (
-            <div className="col-4 col-sm-3">
-              <Link className="flyer-link" to={`/r/${node.slug}`}>
-                <GatsbyImage image={getImage(node.frontmatter.hero_image)} />
-              </Link>
-            </div>
-          ))}
-          <div className="col-4 col-sm-3 d-flex justify-content-center ">
-            <Link to="/a/a6" className="text-decoration-none text-center lead">
-              <div>About</div>
-              <div>Rave</div>
-              <div>Reflections</div>
-            </Link>
-          </div>
-          <div className="col-4 col-sm-3">
-            <Link to="/">
-              <StaticImage
-                src="../../images/logo.jpeg"
-                alt="A kitten"
-                className=""
+            <Link className="" to={`/r/${node.slug}`}>
+              <GatsbyImage
+                image={getImage(node.frontmatter.hero_image)}
+                className="mb-[1rem]"
               />
             </Link>
-          </div>
+          ))}
         </div>
+        <Footer to="/a/a6" label="About Rave Reflections" />
       </div>
     </Layout>
   )

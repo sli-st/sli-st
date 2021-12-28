@@ -192,3 +192,7 @@ nav.mlist a {
 ol.decimal-leading-zero li {
   list-style-type: decimal-leading-zero;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

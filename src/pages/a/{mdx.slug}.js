@@ -13,7 +13,7 @@ const BlogPost = ({ data }) => {
         <article className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-md-7 col-xl-6 pt-3">
-              <h1 className="h6 text-secondary pt-3 pb-3 border-bottom border-1 border-primary bg-black sticky-top">
+              <h1 className="h6 text-primary pt-3 pb-3 border-bottom border-1 border-primary bg-black sticky-top">
                 {data.mdx.frontmatter.title}
               </h1>
               <div className="text-light bg-dark pt-4">

@@ -5,7 +5,6 @@ module.exports = {
     author: `SLi.ST`,
   },
   plugins: [
-    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -16,33 +15,8 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-audio",
-            options: {
-              preload: "auto",
-              loop: false,
-              controls: true,
-              muted: false,
-              autoplay: false,
-            },
-          },
-        ],
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          precision: 6,
-        },
-      },
-    },
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
@@ -68,13 +42,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `p`,
-        path: `${__dirname}/content/p/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `u`,
         path: `${__dirname}/content/u`,
       },
@@ -87,12 +54,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-mdx",
-    {
-      resolve: "gatsby-plugin-page-creator",
-      options: {
-        path: `${__dirname}/content/u`,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -142,13 +103,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: true, // optional parameter to include script in development
-        id: 2753980,
-        sv: 6,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-hotjar`,
+    //   options: {
+    //     includeInDevelopment: true, // optional parameter to include script in development
+    //     id: 2753980,
+    //     sv: 6,
+    //   },
+    // },
+    "gatsby-plugin-postcss",
   ],
 }

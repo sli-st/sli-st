@@ -10,13 +10,13 @@ const BlogPost = ({ data }) => {
     <div className="vh-100">
       <Layout>
         <Seo title={data.mdx.frontmatter.title} />
-        <article className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-md-7 col-xl-6 pt-3 pb-5 mb-5">
-              <h1 className="h6 text-secondary pt-3 pb-3 border-bottom border-1 border-primary bg-black sticky-top">
+        <article className="container">
+          <div className="flex justify-center">
+            <div className="max-w-prose">
+              <h1 className="text-primary pt-3 pb-3 border-b border-primary">
                 {data.mdx.frontmatter.title}
               </h1>
-              <div className="text-light bg-dark pt-4">
+              <div className="text-light pt-4">
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
               </div>
               <Footer to="/u" label="All Updates" />

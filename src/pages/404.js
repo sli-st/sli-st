@@ -13,7 +13,7 @@ const NotFoundPage = () => (
           404: Not Found <br></br>Go to SLi.ST
         </h1>
       </Link>
-      <p className="text-center text-secondary">
+      <p className="text-center text-primary">
         Please let me know if something is broken.
       </p>
     </div>

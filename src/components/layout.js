@@ -1,7 +1,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import "./layout.scss"
+import "./styles.css"
+// import "./layout.scss"
 
 const Layout = ({ pageTitle, children }) => {
   return (

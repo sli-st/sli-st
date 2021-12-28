@@ -8,17 +8,14 @@ const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Updates">
       <Seo title="Updates" />
-      <div className="container-fluid">
-        <div className="row justify-content-center">
-          <div className="col-12 col-sm-6">
+      <div className="container">
+        <div className="flex justify-center">
+          <div className="max-w-prose">
             {data.allMdx.nodes.map(node => (
               <div className="py-3 my-5">
-                <Link
-                  className="text-centr text-decoration-none text-light lead"
-                  to={`/u/${node.slug}`}
-                >
-                  <h1 className="lead text-primary">{node.frontmatter.date}</h1>
-                  <h1 className="lead">{node.frontmatter.title}</h1>
+                <Link className="text-centr text-light" to={`/u/${node.slug}`}>
+                  <span className=" text-primary">{node.frontmatter.date}</span>
+                  <h1>{node.frontmatter.title}</h1>
                 </Link>
               </div>
             ))}
