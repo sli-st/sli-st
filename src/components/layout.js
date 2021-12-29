@@ -8,7 +8,9 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div>
       <title>{pageTitle}</title>
-      <main className="bg-black">{children}</main>
+      <main className="theme-dark bg-background text-primary h-100">
+        {children}
+      </main>
     </div>
   )
 }

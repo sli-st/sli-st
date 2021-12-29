@@ -4,6 +4,7 @@ import Seo from "../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
+import ThemeToggle from "../components/themeToggle"
 
 const IndexPage = ({ data }) => (
   <Layout pageTitle="Index">
@@ -11,7 +12,7 @@ const IndexPage = ({ data }) => (
     <nav
       aria-label="Primary navigation"
       id="index-nav"
-      className="container md:px-80 xl:px-96 xl:mx-20 pt-4"
+      className="container md:px-80 xl:px-96 xl:mx-20 pt-4 h-screen"
     >
       <a
         href="https://www.instagram.com/slistxmas/"
@@ -21,7 +22,7 @@ const IndexPage = ({ data }) => (
           FLYERS {"->"} IG @slistxmas
         </div>
       </a>
-      <div className="pt-5 grid grid-cols-3 gap-3">
+      <div className="pt-5 grid grid-cols-3 gap-5">
         <Link to="#" className="col-span-1">
           <StaticImage src="../images/index/sflyer1.jpeg" alt="A kitten" />
         </Link>
@@ -86,9 +87,7 @@ const IndexPage = ({ data }) => (
         <Link to="/m">
           <StaticImage src="../images/index/recorded.png" alt="A kitten" />
         </Link>
-        <Link to="/m">
-          <StaticImage src="../images/icon.jpeg" alt="A kitten" />
-        </Link>
+        <ThemeToggle />
         <Link to="/a/">
           <StaticImage src="../images/index/i.svg" alt="A kitten" />
         </Link>

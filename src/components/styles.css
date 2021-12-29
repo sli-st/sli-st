@@ -2,21 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: black;
+body.dark {
+  --primary: red;
+  --background: black;
 }
 
-.text-red {
-  color: red;
-}
-
-.border-red {
-  border-color: red;
+body.light {
+  --primary: rgba(0, 0, 0, 0.8);
+  --background: rgba(255, 255, 255, 1);
 }
 
 :root {
-  --clr-neon: hsl(0 100% 54%);
-  --clr-bg: hsl(323 0% 16%);
 }
 
 .neon-button {
@@ -25,10 +21,19 @@ html {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 0.0625em solid;
+  color: var(--primary);
+  border: var(--primary) 0.0625em solid;
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 0 0.5em 0 var(--primary), 0 0 0.5em 0 var(--primary);
+}
+
+.border {
+  color: var(--primary);
+  border: var(--primary) 0.0625em solid;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--primary), 0 0 0.5em 0 var(--primary);
 }
