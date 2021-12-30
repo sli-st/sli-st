@@ -4,23 +4,21 @@ import Layout from "../../components/layout"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import Seo from "../../components/seo"
 import Footer from "../../components/footer"
+import Header from "../../components/header"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Reflections">
+    <Layout pageTitle="Reflections" to="/a/a6" label="About">
       <Seo title="Reflections" />
-      <div className="container">
-        <div className="columns-3 md:columns-4 gap-4">
-          {data.allMdx.nodes.map(node => (
-            <Link className="" to={`/r/${node.slug}`}>
-              <GatsbyImage
-                image={getImage(node.frontmatter.hero_image)}
-                className="mb-[1rem]"
-              />
-            </Link>
-          ))}
-        </div>
-        <Footer to="/a/a6" label="About Rave Reflections" />
+      <div className="columns-3 md:columns-4 gap-4">
+        {data.allMdx.nodes.map(node => (
+          <Link className="" to={`/r/${node.slug}`}>
+            <GatsbyImage
+              image={getImage(node.frontmatter.hero_image)}
+              className="mb-[1rem]"
+            />
+          </Link>
+        ))}
       </div>
     </Layout>
   )

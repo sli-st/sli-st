@@ -5,94 +5,87 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import ThemeToggle from "../components/themeToggle"
+import Header from "../components/header"
 
 const IndexPage = ({ data }) => (
-  <Layout pageTitle="Index">
+  <Layout pageTitle="Index" to="/about" label="About">
     <Seo title="Index" />
+    
     <nav
       aria-label="Primary navigation"
       id="index-nav"
-      className="container md:px-80 xl:px-96 xl:mx-20 pt-4 h-screen"
+      className="md:px-70 lg:mx-60 xl:px-80 xl:mx-5 text-primary text-center"
     >
-      <a
-        href="https://www.instagram.com/slistxmas/"
-        className="mb-10 text-decoration-none"
-      >
-        <div className="neon-button text-primary py-1.5 w-full text-center">
-          FLYERS {"->"} IG @slistxmas
-        </div>
-      </a>
-      <div className="pt-5 grid grid-cols-3 gap-5">
-        <Link to="#" className="col-span-1">
-          <StaticImage src="../images/index/sflyer1.jpeg" alt="A kitten" />
+      <div className="py-5 grid grid-cols-3 gap-3">
+      <Link to="#">
+          <StaticImage src="../images/index/black.png" alt="A kitten" />
         </Link>
-        <Link to="#" className="col-span-1">
-          <StaticImage src="../images/index/sflyer2.jpeg" alt="A kitten" />
+        
+        <Link
+          to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false"
+          className="grid neon-button"
+        >
+          <div className="px-2 place-self-center">
+              Anonymous Feedback Form
+            </div>
         </Link>
-        <Link to="#" className="col-span-1">
-          <StaticImage src="../images/index/flyer2.png" alt="A kitten" />
-        </Link>
-
-        <Link to="/r/" className="col-span-1">
+        <Link to="/r/" >
           <StaticImage src="../images/index/x.png" alt="A kitten" />
         </Link>
         <Link
           to="/rave-tips/"
-          className="d-flex grid aspect-square border border-primary"
+          className="grid neon-button"
         >
-          <span className="place-self-center">
-            <div className="text-primary text-center text-xl d-flex flex-column px-5">
-              <span>{data.allMdx.totalCount} Rave Tips</span>
+          <div className="place-self-center px-2">
+              {data.allMdx.totalCount} <br></br>Rave Tips
             </div>
-          </span>
+        </Link>
+        <Link to="/support">
+          <StaticImage src="../images/index/sflyer1.jpeg" alt="A kitten" />
         </Link>
         <Link
           to="/rave-guides/"
-          className="d-flex grid aspect-square border border-primary"
+          className="grid neon-button"
         >
           <span className="place-self-center">
-            <div className="text-primary text-center text-xl d-flex flex-column px-5">
-              <span>Rave Guide</span>
+            <div className="px-2 ">
+              <span>Pro <br></br>Rave Guides</span>
             </div>
           </span>
         </Link>
-        <Link
-          to="/rave-rants/"
-          className="d-flex grid aspect-square border border-primary"
-        >
-          <span className="place-self-center">
-            <div className="text-primary text-center text-xl d-flex flex-column px-5">
-              <span>Rave Rants</span>
-            </div>
-          </span>
-        </Link>
-        <Link to="/l/" className="col text-decoration-none col-span-1 grid">
+        <Link to="/list/" className="col grid">
           <div className="place-self-center">
-            <div className="text-xl border border-primary text-primary py-1 px-4">
+            <div className="text-xl border border-primary py-1 px-4">
               LIST
             </div>
           </div>
         </Link>
-
         <Link
-          to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false"
-          className="text-center no-underline grid"
+          to="/rave-rants/"
+          className="grid neon-button"
         >
           <span className="place-self-center">
-            <div className="text-primary text-center text-xl">
-              Anonymous Feedback Form
+            <div className="px-2">
+              Rave Rants & Rambles
             </div>
           </span>
         </Link>
-        <Link to="/m">
+        <Link to="/mixes" >
           <StaticImage src="../images/index/recorded.png" alt="A kitten" />
         </Link>
-        <ThemeToggle />
-        <Link to="/a/">
-          <StaticImage src="../images/index/i.svg" alt="A kitten" />
-        </Link>
+        <a
+        href="https://www.instagram.com/slistxmas/"
+        className="col-span-3 no-underline pt-5"
+      >
+        <div className="neon-button text-primary py-2 w-full text-2xl md:text-3xl">
+          FLYERS {"->"} IG @slistxmas
+        </div>
+      </a>
       </div>
+      
+      
     </nav>
+    
   </Layout>
 )
 

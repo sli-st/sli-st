@@ -1,14 +1,16 @@
 import * as React from "react"
 import PropTypes from "prop-types"
+import Header from "../components/header"
 
 import "./styles.css"
 // import "./layout.scss"
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, to, label }) => {
   return (
     <div>
       <title>{pageTitle}</title>
-      <main className="theme-dark bg-background text-primary h-100">
+      <Header to={to} label={label} />
+      <main className="theme-dark bg-background text-primary container">
         {children}
       </main>
     </div>

@@ -2,18 +2,19 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Footer from "../../components/footer"
+import MarkdownWrapper from "../../components/markdownwrapper"
 
 const Sflyers = () => (
-  <Layout pageTitle="Support">
+  <Layout pageTitle="Support" to="/a" label="About">
     <Seo title="Support" />
-    <div className="container prose">
-      <h1 className="text-center d-flex flex-column text-light pt-10">
-        <span>Want to support the project?</span>
-      </h1>
-      <p className="text-center text-primary">
-        Please click a flyer to download. Tag SLi.ST. And share!
+    <MarkdownWrapper>
+      <h1 className="pt-10">Want to support this project?</h1>
+      <p className="">
+        Please click a flyer to download. Tag SLi.ST so I can thank you. And
+        then just share it as a story or post for however long you'd like! Thank
+        You!
       </p>
-      <p className="text-center text-primary">Thank You!</p>
+
       <section className="grid grid-cols-3">
         <div className="col-span-1">
           <a href="/sflyer1.jpeg" download>
@@ -31,13 +32,17 @@ const Sflyers = () => (
           </a>
         </div>
         <div className="col-span-1">
-          <a href="/sflyer3.jpeg" download>
-            <img className="img-fluid" src="/sflyer3.jpeg" alt="sflyer3" />
+          <a href="/sflyer4.png" download>
+            <img className="img-fluid" src="/sflyer4.png" alt="sflyer3" />
+          </a>
+        </div>
+        <div className="col-span-1">
+          <a href="/sflyer5.png" download>
+            <img className="img-fluid" src="/sflyer5.png" alt="sflyer3" />
           </a>
         </div>
       </section>
-      <Footer to="/a" label="About" />
-    </div>
+    </MarkdownWrapper>
   </Layout>
 )
 

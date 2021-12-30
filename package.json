@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Sli.ST <s@sli.st>",
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@popperjs/core": "^2.9.2",
