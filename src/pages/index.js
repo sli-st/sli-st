@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
       id="index-nav"
       className="md:px-70 lg:mx-60 xl:px-80 xl:mx-5 text-primary text-center"
     >
-      <div className="py-5 grid grid-cols-3 gap-3">
+      <div className="py-5 grid grid-cols-3 gap-4">
       <Link to="#">
           <StaticImage src="../images/index/black.png" alt="A kitten" />
         </Link>

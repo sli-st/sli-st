@@ -9,7 +9,6 @@ const IndexPage = () => (
     <Seo title="Recorded Mixes" />
     <MarkdownWrapper>
       <h1>not for dancing (in public.</h1>
-
       <p>
         I had a falling out with an ex-friend just before the lockdowns. Less
         than a year later I tried to find her Instagram on Google, but instead I

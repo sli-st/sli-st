@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .dark {
-  --primary: rgb(255, 0, 0);
-  --secondary: rgb(255, 255, 255);
-  --background: rgb(0, 0, 0);
+  --primary: red;
+  --secondary: white;
+  --background: black;
 }
 
 .light {
-  --primary: #000;
+  --primary: black;
   --secondary: gray;
-  --background: #ececec;
+  --background: white;
 }
 
 html {
-  background-color: var(--background);
+  background-color: black;
 }
 
 .neon-button {
