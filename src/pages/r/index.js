@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Reflections" to="/a/a6" label="About">
       <Seo title="Reflections" />
-      <div className="columns-3 md:columns-4 gap-4">
+      <div className="columns-3 md:columns-4 gap-3">
         {data.allMdx.nodes.map(node => (
           <Link className="" to={`/r/${node.slug}`}>
             <GatsbyImage
