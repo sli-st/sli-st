@@ -13,9 +13,14 @@ const BlogPost = ({ data }) => {
       <Layout to="/r" label="+++">
         <Seo title={data.mdx.frontmatter.title} />
         <MarkdownWrapper>
-          <h1>{data.mdx.frontmatter.title}</h1>
-          <p className="">{data.mdx.timeToRead} min read</p>
-          <GatsbyImage image={image} />
+          <p className="text-center">{data.mdx.timeToRead} min read</p>
+          <h1 className="text-center">{data.mdx.frontmatter.title}</h1>
+          <div className="grid place-items-center">
+          <GatsbyImage
+            image={image}
+          />
+          </div>
+          
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </MarkdownWrapper>
       </Layout>

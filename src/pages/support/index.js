@@ -15,7 +15,7 @@ const Sflyers = () => (
         You!
       </p>
 
-      <section className="grid grid-cols-3">
+      <section className="grid grid-cols-3 gap-2">
         <div className="col-span-1">
           <a href="/sflyer1.jpeg" download>
             <img className="img-fluid" src="/sflyer1.jpeg" alt="sflyer1" />
@@ -39,6 +39,11 @@ const Sflyers = () => (
         <div className="col-span-1">
           <a href="/sflyer5.png" download>
             <img className="img-fluid" src="/sflyer5.png" alt="sflyer3" />
+          </a>
+        </div>
+        <div className="col-span-1">
+          <a href="/igqr.png" download>
+            <img className="img-fluid" src="/igqr.png" alt="sflyer3" />
           </a>
         </div>
       </section>

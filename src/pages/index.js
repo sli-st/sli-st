@@ -17,16 +17,15 @@ const IndexPage = ({ data }) => (
       className="md:px-70 lg:mx-60 xl:px-80 xl:mx-5 text-primary text-center"
     >
       <div className="py-5 grid grid-cols-3 gap-4">
-      <Link to="#">
-          <StaticImage src="../images/index/black.png" alt="A kitten" />
-        </Link>
+      <img className="img-fluid" src="/igqr.png" alt="sflyer3" />
+        
         
         <Link
           to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false"
           className="grid neon-button"
         >
           <div className="px-2 place-self-center">
-              Anonymous Feedback Form
+              Share Your Feedback
             </div>
         </Link>
         <Link to="/r/" >
@@ -53,12 +52,9 @@ const IndexPage = ({ data }) => (
             </div>
           </span>
         </Link>
-        <Link to="/list/" className="col grid">
-          <div className="place-self-center">
-            <div className="text-xl border border-primary py-1 px-4">
-              LIST
-            </div>
-          </div>
+        
+        <Link to="/mixes" >
+          <StaticImage src="../images/index/recorded.png" alt="A kitten" />
         </Link>
         <Link
           to="/rave-rants/"
@@ -70,9 +66,10 @@ const IndexPage = ({ data }) => (
             </div>
           </span>
         </Link>
-        <Link to="/mixes" >
-          <StaticImage src="../images/index/recorded.png" alt="A kitten" />
+        <Link to="/list/">
+          <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
         </Link>
+        
         <a
         href="https://www.instagram.com/slistxmas/"
         className="col-span-3 no-underline pt-5"

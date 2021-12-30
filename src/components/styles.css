@@ -21,11 +21,15 @@ html {
 .neon-button {
   color: var(--primary);
   border: var(--primary) 0.0625em solid;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
   box-shadow: inset 0 0 0.5em 0 var(--primary), 0 0 0.5em 0 var(--primary);
 }
 
 input:checked ~ .dot {
   transform: translateX(100%);
   background-color: var(--primary);
+}
+
+.prose {
+  max-width: 55ch;
 }
