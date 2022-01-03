@@ -3,15 +3,6 @@ module.exports = {
   darkMode: "class",
   important: true,
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      light: "#999999",
-      primary: "var(--primary)",
-      secondary: "var(--secondary)",
-      "text-main": "var(--text-main)",
-      background: "var(--background)",
-    },
     container: {
       center: true,
       padding: {
@@ -22,13 +13,33 @@ module.exports = {
       sans: "Verdana",
       serif: "Georgia",
     },
-  },
-  plugins: [require("@tailwindcss/typography")],
-  typography: {
-    default: {
-      css: {
-        maxWidth: "45ch",
+    extend: {
+      animation: {
+        tilt: "tilt 10s infinite linear",
+      },
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        light: "#999999",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        "text-main": "var(--text-main)",
+        background: "var(--background)",
+      },
+      keyframes: {
+        tilt: {
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)",
+          },
+          "25%": {
+            transform: "rotate(0.5deg)",
+          },
+          "75%": {
+            transform: "rotate(-0.5deg)",
+          },
+        },
       },
     },
   },
+  plugins: [require("@tailwindcss/typography")],
 }

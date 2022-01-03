@@ -8,7 +8,7 @@ import Header from "../../components/header"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Reflections" to="/a/a6" label="About">
+    <Layout pageTitle="Reflections" to="/about/rave-reflections" label="About">
       <Seo title="Reflections" />
       <div className="columns-3 md:columns-4 gap-3">
         {data.allMdx.nodes.map(node => (

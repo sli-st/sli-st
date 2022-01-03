@@ -9,13 +9,13 @@
 }
 
 .light {
-  --primary: black;
+  --primary: red;
   --secondary: gray;
   --background: white;
 }
 
 html {
-  background-color: var(--background);
+  background-color: black;
 }
 
 .neon-button {
@@ -23,6 +23,13 @@ html {
   border: var(--primary) 0.0625em solid;
   /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
   box-shadow: inset 0 0 0.5em 0 var(--primary), 0 0 0.5em 0 var(--primary);
+  @apply rounded-lg;
+}
+
+nav img {
+  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+
+  @apply rounded-2xl;
 }
 
 input:checked ~ .dot {
@@ -31,5 +38,6 @@ input:checked ~ .dot {
 }
 
 .prose {
-  max-width: 55ch;
+  max-width: 60ch;
+  color: #000000;
 }
