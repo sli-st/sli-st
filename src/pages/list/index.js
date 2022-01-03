@@ -7,7 +7,7 @@ const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="List" to="/about/list" label="About">
       <Seo title="List" />
-      <nav className="text-primary flex flex-col text-xl text-right md:px-40">
+      <nav className="text-primary flex flex-col text-xl text-right md:px-40 lg:px-96 pt-10">
         {[
           "axchacon",
           "b_wxng",

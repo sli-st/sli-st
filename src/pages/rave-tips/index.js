@@ -8,7 +8,7 @@ const BlogPage = ({ data }) => {
   return (
     <Layout
       pageTitle={data.allMdx.totalCount + " Rave Tips"}
-      to="/a/a4"
+      to="/about/rave-tips"
       label="About"
     >
       <Seo

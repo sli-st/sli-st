@@ -16,7 +16,8 @@ const Sflyers = () => (
         helps me find and share more flyers.
       </p>
 
-      <p>Don't forget to tag SLi.ST so I can thank you properly! Thanks!</p>
+      <p>Don't forget to tag SLi.ST so I can thank you properly!</p>
+      <p>Thanks!</p>
 
       <section className="grid grid-cols-4 gap-2">
         <div className="col-span-1">
