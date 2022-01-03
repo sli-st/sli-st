@@ -5,9 +5,9 @@ import Footer from "../../components/footer"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="List" to="/a/a5" label="About">
+    <Layout pageTitle="List" to="/about/list" label="About">
       <Seo title="List" />
-      <nav className="text-primary flex flex-col text-xl text-right md:px-96">
+      <nav className="text-primary flex flex-col text-xl text-right md:px-40">
         {[
           "axchacon",
           "b_wxng",

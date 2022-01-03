@@ -25,7 +25,7 @@ export default function ThemeToggle() {
 
                 <div className="block bg-secondary w-14 h-6 rounded-full"></div>
 
-                <div className="dot absolute left-1 top-1 bg-primary w-6 h-4 rounded-full transition"></div>
+                <div className="dot absolute left-1 top-1 bg-primary w-6 h-4 rounded-full transition "></div>
               </div>
             </label>
           </div>

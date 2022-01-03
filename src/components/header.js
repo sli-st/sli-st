@@ -13,7 +13,7 @@ const Header = ({ to, label }) => {
           <div className="text-secondary ">{label}</div>
         </Link>
         <Link to="/" className="col-span-1 justify-self-center">
-          <div className="border-2 border-primary text-primary px-2 text-lg">
+          <div className="border border-primary rounded text-primary px-3 py-1 text-lg shadow shadow-primary">
             SLi.ST
           </div>
         </Link>

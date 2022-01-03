@@ -5,17 +5,20 @@ import Footer from "../../components/footer"
 import MarkdownWrapper from "../../components/markdownwrapper"
 
 const Sflyers = () => (
-  <Layout pageTitle="Support" to="/a" label="About">
+  <Layout pageTitle="Support" to="/about" label="About">
     <Seo title="Support" />
     <MarkdownWrapper>
-      <h1 className="pt-10">Want to support this project?</h1>
+      <h1 className="pt-5">Want to support this project?</h1>
       <p className="">
-        Please click a flyer to download. Tag SLi.ST so I can thank you. And
-        then just share it as a story or post for however long you'd like! Thank
-        You!
+        The best way to support this project is by sharing it. You can download
+        one (or more!) of the flyers below and spread the word on social media.
+        Feel free to share it for as long as you like! Every bit of exposure
+        helps me find and share more flyers.
       </p>
 
-      <section className="grid grid-cols-3 gap-2">
+      <p>Don't forget to tag SLi.ST so I can thank you properly! Thanks!</p>
+
+      <section className="grid grid-cols-4 gap-2">
         <div className="col-span-1">
           <a href="/sflyer1.jpeg" download>
             <img className="img-fluid" src="/sflyer1.jpeg" alt="sflyer1" />
