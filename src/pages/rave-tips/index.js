@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
       />
       <MarkdownWrapper>
         <h1>{data.allMdx.totalCount} Rave Tips</h1>
-        <ol reversed="reversed" className="decimal-leading-zero list-decimal">
+        <ol reversed="reversed" className="decimal-leading-zero list-decimal ">
           {data.allMdx.nodes.map(node => (
             <li className="py-1">{node.frontmatter.title}</li>
           ))}

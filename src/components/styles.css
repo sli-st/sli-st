@@ -39,5 +39,4 @@ input:checked ~ .dot {
 
 .prose {
   max-width: 60ch;
-  color: #000000;
 }
