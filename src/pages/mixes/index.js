@@ -5,7 +5,7 @@ import Footer from "../../components/footer"
 import MarkdownWrapper from "../../components/markdownwrapper"
 
 const IndexPage = () => (
-  <Layout pageTitle="Recorded Mixes" to="/epk" label="EPK Soon~">
+  <Layout pageTitle="Recorded Mixes" to="/epk" label="EPK">
     <Seo title="Recorded Mixes" />
     <MarkdownWrapper>
       <h1>not for dancing (in public.</h1>
