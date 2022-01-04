@@ -20,36 +20,29 @@ const Sflyers = () => (
       <p>Thanks!</p>
 
       <section className="grid grid-cols-4 gap-2">
-        <div className="col-span-1">
-          <a href="/sflyer1.jpeg" download>
-            <img className="img-fluid" src="/sflyer1.jpeg" alt="sflyer1" />
-          </a>
-        </div>
-        <div className="col-span-1">
-          <a href="/sflyer2.jpeg" download>
-            <img className="img-fluid" src="/sflyer2.jpeg" alt="sflyer2" />
-          </a>
-        </div>
-        <div className="col-span-1">
-          <a href="/sflyer3.jpeg" download>
-            <img className="img-fluid" src="/sflyer3.jpeg" alt="sflyer3" />
-          </a>
-        </div>
-        <div className="col-span-1">
-          <a href="/sflyer4.png" download>
-            <img className="img-fluid" src="/sflyer4.png" alt="sflyer3" />
-          </a>
-        </div>
-        <div className="col-span-1">
-          <a href="/sflyer5.png" download>
-            <img className="img-fluid" src="/sflyer5.png" alt="sflyer3" />
-          </a>
-        </div>
-        <div className="col-span-1">
-          <a href="/igqr.png" download>
-            <img className="img-fluid" src="/igqr.png" alt="sflyer3" />
-          </a>
-        </div>
+        <a href="/sflyer1.jpeg" download>
+          <img className="img-fluid" src="/sflyer1.jpeg" alt="sflyer1" />
+        </a>
+
+        <a href="/sflyer2.jpeg" download>
+          <img className="img-fluid" src="/sflyer2.jpeg" alt="sflyer2" />
+        </a>
+
+        <a href="/sflyer3.jpeg" download>
+          <img className="img-fluid" src="/sflyer3.jpeg" alt="sflyer3" />
+        </a>
+
+        <a href="/sflyer4.png" download>
+          <img className="img-fluid" src="/sflyer4.png" alt="sflyer3" />
+        </a>
+
+        <a href="/sflyer5.png" download>
+          <img className="img-fluid" src="/sflyer5.png" alt="sflyer3" />
+        </a>
+
+        <a href="/igqr.png" download>
+          <img className="img-fluid" src="/igqr.png" alt="sflyer3" />
+        </a>
       </section>
     </MarkdownWrapper>
   </Layout>
