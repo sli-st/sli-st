@@ -7,23 +7,22 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="About" to="/updates" label="Updates">
-      <Seo title="About" />
+    <Layout pageTitle="EPK" to="/mixes" label="Recorded Mix">
+      <Seo title="EPK" />
       <MarkdownWrapper>
         <h1>SLi.ST - Press Kit</h1>
         <p>
           <span className="text-primary">Real name: </span>Simon Howlader
         </p>
         <p>
-          <span className="text-primary">Contact info: </span>
+          <span className="text-primary">Contact:</span>
           <br></br>
           Instagram #1: <a href="https://instagram.com/slistxmas">@slistxmas</a>
           <br></br>
-          Instagram #2:
+          Instagram #2:{" "}
           <a href="https://instagram.com/simontechyes">@simontechyes</a>
           <br></br>
-          WhatsApp:
-          <a href="https://wa.me/12123210632">+1 212-321-0632</a>
+          WhatsApp: <a href="https://wa.me/12123210632"> +1 212-321-0632</a>
         </p>
 
         <p>Learned to mix in CDMX - born and raised in NYC</p>
@@ -53,10 +52,11 @@ const BlogPage = ({ data }) => {
           few months in order to develop his personal mixing syle.
         </p>
         <p>
-          SLi.ST made his "grand" reentry to the scene at the NIX New Year after
-          party, wiggled in a few hours of mixing time and shocked every single
-          raver and DJ. After getting some much appreciated love, support, and
-          approval, SLi.ST is finally sliding into a DM near you (with his EPK).
+          SLi.ST made his "grand reentry" to the scene at the NIX New Year
+          afterparty, wiggled in a few hours of mixing time and shocked every
+          single raver and DJ. After getting some much appreciated love,
+          support, and approval, SLi.ST is finally sliding into a DM near you
+          (with his EPK).
         </p>
 
         <div className="columns-3 gap-4 py-16">
