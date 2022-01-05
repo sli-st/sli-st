@@ -1,75 +1,79 @@
 import * as React from "react"
-import { useState } from 'react'
+import { useState } from "react"
 
-
-import addToMailchimp from 'gatsby-plugin-mailchimp'
-
-
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 const SignUpForm = () => {
-  const [email, setEmail] = useState('');
-  const [username, setUsername] = useState('');
-  const [result, setResult] = useState('');
+  const [email, setEmail] = useState("")
+  const [username, setUsername] = useState("")
+  const [result, setResult] = useState("")
 
   var listFields = {
-    "username": username
+    username: username,
   }
 
-  const _handleSubmit = async (e) => {
-    const chimpResult = await addToMailchimp(email, listFields);
-    setResult(chimpResult.msg);
-    console.log(result);
-  };
+  const _handleSubmit = async e => {
+    const chimpResult = await addToMailchimp(email, listFields)
+    setResult(chimpResult.msg)
+    console.log(result)
+  }
 
   return (
-    <form onSubmit={event => {
-      event.preventDefault()
-      _handleSubmit(email, { listFields })
-    }
-    }>
-      <div className="form-group">
+    <form
+      onSubmit={event => {
+        event.preventDefault()
+        _handleSubmit(email, { listFields })
+      }}
+      className="xl:px-96 xl:pt-24 pb-56"
+    >
+      <div className="relative">
         <input
-          type="email"
+          id="email"
           name="email"
-          className="form-control bg-dark border border-light border-bottom-0 rounded-0 rounded-0 text-center py-sm-3"
-          id="exampleInputEmail1"
+          type="email"
+          className="peer h-10 w-full text-secondary placeholder-transparent focus:outline-none "
+          placeholder="john@doe.com"
           aria-describedby="emailHelp"
-          placeholder="EMAIL"
           value={email}
           onChange={event => setEmail(event.currentTarget.value)}
         />
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <span class="input-group-text text-light bg-dark border border-light border-end-0 rounded-0 text-center py-sm-3" id="basic-addon1">@</span>
-          </div>
-          <input
-            type="text"
-            name="username"
-            className="form-control bg-dark border border-light rounded-0 text-center py-sm-3" id="exampleInputEmail1"
-            placeholder="INSTAGRAM USERNAME"
-            value={username}
-            onChange={event => setUsername(event.currentTarget.value)}
-          />
-        </div>
-
+        <label
+          for="email"
+          class="absolute left-2 -top-7 text-secondary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
+        >
+          Email Address
+        </label>
       </div>
-      <div className="d-grid col-12 mx-auto">
-        <button type="submit" className="bg-dark btn btn-outline-secondary border-1 text-primary rounded-0">
-          <div className="d-flex justify-content-center align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-arrow-return-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z" />
-            </svg>
-            <span className="mx-1 lead">{" "}join the list</span>
-
-          </div>
-        </button>
+      <div class="mt-10 relative">
+        <input
+          id="username"
+          type="text"
+          name="username"
+          className="peer h-10 w-full text-secondary placeholder-transparent focus:outline-none "
+          placeholder="INSTAGRAM USERNAME"
+          value={username}
+          onChange={event => setUsername(event.currentTarget.value)}
+        />
+        <label
+          for="username"
+          class="absolute left-2 -top-7 text-secondary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
+        >
+          Instagram Username
+        </label>
       </div>
+
+      <button
+        type="submit"
+        className="mt-5 px-4 py-2 rounded bg-primary hover:bg-primary text-background font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 cursor-pointer"
+      >
+        Join
+      </button>
+
       <p>{result.result}</p>
       <p>{result.msg}</p>
       <div dangerouslySetInnerHTML={{ __html: result }} />
     </form>
-
-  );
+  )
 }
 
-export default SignUpForm;
+export default SignUpForm

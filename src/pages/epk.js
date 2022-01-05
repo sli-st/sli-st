@@ -25,39 +25,39 @@ const BlogPage = ({ data }) => {
           WhatsApp: <a href="https://wa.me/12123210632"> +1 212-321-0632</a>
         </p>
 
-        <p>Learned to DJ in CDMX - NYC born and raised</p>
+        <p>From NYC - Taught by CDMX</p>
         <p>
           <span className="text-primary">Genres/styles: </span>dark wave,
           progressive, minimal, melodic, hard, rave, techno
         </p>
         <p>
-          Thanks to multiple impromptu casual b2b sessions with some of the most
-          well renowned DJs in CDMX, and dancefloor appearance at some of the
-          hardest dark techno events of 2021, SLi.ST has earned himself a
-          reputation for his heavier tastes. Through that expectation, he likes
-          to tease his audiences with his dark selection of progressive house
-          and minimal techno while slowly creeping in what he's really known
-          for- angry, twisting, melodic techno that leaves his listeners feeling
-          cathartic, connected, and horny.
+          Due to his dancefloor presence at many of the hardest dark techno
+          events of 2021, and a bunch of casual b2b sessions with some of the
+          most prominent DJs in CDMX, SLi.ST has earned himself a reputation for
+          his heavier tastes. With that expectation in mind, he likes to tease
+          his audiences with his dark selection of progressive house and minimal
+          techno while slowly creeping in what he's really known for- angry,
+          twisting, melodic techno that leaves his listeners cathartic,
+          connected, and horny.
         </p>
         <p>
-          <span className="text-primary">Bio: </span>
+          <span className="text-primary">Biography: </span>
           <br></br>
-          SLi.ST began as a quarter-life crisis sometime in mid-July'21. After
-          finding himself at the right after, he started learning from one of
+          "SLi.ST" began as a quarter-life crisis sometime in July'21. After
+          inviting himself to the right afters, he started learning from one of
           the hardest industrial DJs in CDMX (8/28/21). By October 1st, SLi.ST
-          was invited to play at The Real Under and open for B Space at 49
-          Basan. After some encouragment from local DJs who came to watch him
-          play, SLi.ST finally got a mixer, entered the hyperbolic time chamber,
-          and pretty much disappeared from the dancefloors for the next few
-          months in order to develop his personal mixing syle.
+          was invited to play at The Real Under, and open for B Space at 49
+          Basan. Thanks to some positive responses from local DJs who came to
+          hear him play, SLi.ST finally got a mixer, entered the hyperbolic time
+          chamber, and pretty much disappeared from the dancefloors for the next
+          few months in order to develop his personal mixing syle.
         </p>
         <p>
-          SLi.ST made his "grand reentry" to the scene at the NIX New Year
-          afterparty. With a bit of persistance, SLi.ST managed to wiggle in a
-          few hours of mixing and shocked every single raver and DJ. After
-          getting some much appreciated love, support, and approval, SLi.ST is
-          finally sliding into a DM near you (with his EPK).
+          SLi.ST reentered the underground scene on New Year's Day at the NIX
+          New Year's afterparty. With a bit of persistance, SLi.ST managed to
+          wiggle in a few hours of mixing and shocked every single raver and DJ.
+          After recieving some much appreciated love, support, and approval,
+          SLi.ST is finally sliding into a DM near you (with his EPK).
         </p>
 
         <div className="columns-3 gap-4 py-16">

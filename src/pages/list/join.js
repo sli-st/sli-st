@@ -5,15 +5,10 @@ import SignUpForm from "../../components/signupform"
 import Footer from "../../components/footer"
 
 const IndexPage = () => (
-  <Layout pageTitle="Info">
-    <Seo title="Info" />
-    <div className="container-fluid pt-5 mt-5">
-      <section className="row justify-content-center pt-5 mt-5">
-        <div className="col-md-5 px-0 text-light">
-          <SignUpForm id="join" />
-          <Footer to="/a/a5" label="About" />
-        </div>
-      </section>
+  <Layout pageTitle="List" to="/about/list" label="About">
+    <Seo title="List" />
+    <div className=" mx-auto">
+      <SignUpForm id="join" />
     </div>
   </Layout>
 )

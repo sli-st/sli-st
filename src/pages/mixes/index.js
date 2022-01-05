@@ -12,7 +12,7 @@ const IndexPage = () => (
       <p>
         I had a falling out with an ex-friend just before the lockdowns. Less
         than a year later I tried to find her Instagram on Google, but instead I
-        found her obituary. I didn't feel like dancing.
+        found her obituary.
       </p>
 
       <iframe
