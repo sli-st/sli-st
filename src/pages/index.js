@@ -10,18 +10,18 @@ import Header from "../components/header"
 const IndexPage = ({ data }) => (
   <Layout pageTitle="Index" to="/about" label="About">
     <Seo title="Index" />
-    <nav className="md:px-36 lg:px-60 xl:px-80 text-secondary text-center flex flex-row justify-between pt-10 space-x-5">
+    <nav className="md:px-36 lg:px-60 xl:px-80 text-secondary text-center flex flex-row justify-between pt-5 md:pt-10 space-x-5">
       <Link to="/rave-tips" className="">
-        <span className="text-primary">{data.allMdx.totalCount}</span> Tips
+        <div className="text-primary">{data.allMdx.totalCount}</div> Tips
       </Link>
       <Link to="/rave-guides">
-        <span className="text-primary">0</span> Guides
+        <div className="text-primary">0</div> Guides
       </Link>
       <Link to="/rave-rants">
-        <span className="text-primary">0</span> Rants
+        <div className="text-primary">0</div> Rants
       </Link>
       <Link to="/r">
-        <span className="text-primary">13</span> Reflections
+        <div className="text-primary">13</div> Reflections
       </Link>
     </nav>
     <nav
@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => (
         Share Feedback
       </Link>
 
-      <Link to="/support">How To Support</Link>
+      <Link to="/support">Support</Link>
     </nav>
   </Layout>
 )
