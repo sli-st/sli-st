@@ -10,9 +10,9 @@ import Header from "../components/header"
 const IndexPage = ({ data }) => (
   <Layout pageTitle="Index" to="/about" label="About">
     <Seo title="Index" />
-    <nav className="text-center text-secondary flex flex-row justify-between md:px-36 lg:px-60 xl:px-96   pt-5 md:pt-10 ">
+    <nav className="text-lg text-center text-secondary flex flex-row justify-between md:px-36 lg:px-60 xl:px-96 pt-5 md:pt-10 ">
       <Link to="/rave-tips" className="">
-        <div className="text-primary">{data.allMdx.totalCount}</div> Tips
+        <div className="text-primary">102</div> Tips
       </Link>
       <Link to="/rave-guides">
         <div className="text-primary">0</div> Guides
@@ -29,13 +29,23 @@ const IndexPage = ({ data }) => (
       id="index-nav"
       className="md:px-40 lg:px-80 xl:px-96"
     >
-      <div className="pt-16 grid grid-cols-4 gap-5">
+      <div className="pt-16 grid grid-cols-4 gap-5 text-2xl text-white/[.70]">
         <Link to="/mixes" className="col-span-2 ">
-          <StaticImage src="../images/index/recorded.png" alt="A kitten" />
+          <div className="relative overflow-hidden">
+            <StaticImage src="../images/index/recorded.png" alt="A kitten" />
+            <div className="absolute inset-0 z-10 flex justify-center items-center ">
+              MIXES
+            </div>
+          </div>
         </Link>
 
         <Link to="/list/" className="col-span-2 ">
-          <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
+          <div className="relative overflow-hidden">
+            <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
+            <div className="absolute inset-0 z-10 flex justify-center items-center ">
+              LIST
+            </div>
+          </div>
         </Link>
         <div className="pt-16 col-span-4 ">
           <div className="grid gap-8 items-start justify-center">

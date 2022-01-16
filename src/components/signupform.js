@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 
 import addToMailchimp from "gatsby-plugin-mailchimp"
+import { Link } from "gatsby"
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("")
@@ -39,7 +40,7 @@ const SignUpForm = () => {
         />
         <label
           for="email"
-          class="absolute left-2 -top-7 text-secondary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
+          class="absolute left-2 -top-7 text-primary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
         >
           Email Address
         </label>
@@ -56,7 +57,7 @@ const SignUpForm = () => {
         />
         <label
           for="username"
-          class="absolute left-2 -top-7 text-secondary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
+          class="absolute left-2 -top-7 text-secondary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
         >
           Instagram Username
         </label>
@@ -66,12 +67,14 @@ const SignUpForm = () => {
         type="submit"
         className="mt-5 px-4 py-2 rounded bg-primary hover:bg-primary text-background font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 cursor-pointer"
       >
-        Join
+        SIGN UP
       </button>
 
-      <p>{result.result}</p>
-      <p>{result.msg}</p>
       <div dangerouslySetInnerHTML={{ __html: result }} />
+
+      <div className="pt-7 text-center">
+        <Link to="/list">view the list</Link>
+      </div>
     </form>
   )
 }

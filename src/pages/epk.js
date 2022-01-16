@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="EPK" to="/mixes" label="Recorded Mix">
       <Seo title="EPK" />
       <MarkdownWrapper>
-        <h1>SLi.ST - Press Kit</h1>
+        <h1>Press Kit</h1>
         <p>
           <span className="text-primary">Real name: </span>Simon Howlader
         </p>
@@ -38,7 +38,7 @@ const BlogPage = ({ data }) => {
           his audiences with his dark selection of progressive house and minimal
           techno while slowly creeping in what he's really known for- angry,
           twisting, melodic techno that leaves his listeners cathartic,
-          connected, and horny.
+          connected, and stimulated.
         </p>
         <p>
           <span className="text-primary">Biography: </span>
@@ -62,22 +62,20 @@ const BlogPage = ({ data }) => {
 
         <div className="columns-3 gap-4 py-16">
           <a href="/epk/flyer1.png" download>
-            <img className="img-fluid" src="/epk/flyer1.PNG" alt="sflyer1" />
+            <img className="img-fluid" src="/epk/flyer1.PNG" alt="1" />
           </a>
           <a href="/epk/flyer2.jpg" download>
-            <img className="img-fluid" src="/epk/flyer2.jpg" alt="sflyer2" />
+            <img className="img-fluid" src="/epk/flyer2.jpg" alt="2" />
           </a>
           <a href="/epk/flyer3.jpg" download>
-            <img className="img-fluid" src="/epk/flyer3.jpg" alt="sflyer2" />
+            <img className="img-fluid" src="/epk/flyer3.jpg" alt="3" />
           </a>
           <a href="/epk/logo.svg" download>
-            <img className="img-fluid" src="/epk/logo.svg" alt="sflyer1" />
+            <img className="img-fluid" src="/epk/logo.svg" alt="4" />
           </a>
-          <a href="/epk/pic2.jpeg" download>
-            <img className="img-fluid" src="/epk/pic2.jpeg" alt="sflyer1" />
-          </a>
+
           <a href="/epk/pic3.jpg" download>
-            <img className="img-fluid" src="/epk/pic3.jpg" alt="sflyer1" />
+            <img className="img-fluid" src="/epk/pic3.jpg" alt="6" />
           </a>
         </div>
         <iframe
@@ -94,10 +92,28 @@ const BlogPage = ({ data }) => {
             download="not for dancing.png"
             className="text-center mx-auto"
           >
-            Download Original .WAV
+            download original .WAV
           </a>
         </p>
-        <p className="text-center pt-10">
+
+        <iframe
+          title="SoundCloud"
+          className="mt-20 mb-10"
+          width="100%"
+          scrolling="no"
+          frameborder="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1196810608&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+        <p className="not-prose text-center text-primary">
+          <a
+            href="https://www.googleapis.com/drive/v3/files/1yHXdPLFJgM8rSBfCu-loz6118mm0FyQr?alt=media&key=AIzaSyAP4ujJMv90h9GJpoezieXoRLq9NRW9Wzk&v=[.wav]"
+            download="not for dancing.png"
+            className="text-center mx-auto"
+          >
+            download original .WAV
+          </a>
+        </p>
+        <p className="text-center pt-20">
           Came here on a dare. Stayed for dark techno.
         </p>
         <p className="text-center pb-20 text-primary">Let's sweat.</p>
