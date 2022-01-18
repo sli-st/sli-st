@@ -2,7 +2,6 @@ import * as React from "react"
 import { useState } from "react"
 
 import addToMailchimp from "gatsby-plugin-mailchimp"
-import { Link } from "gatsby"
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("")
@@ -39,7 +38,7 @@ const SignUpForm = () => {
           onChange={event => setEmail(event.currentTarget.value)}
         />
         <label
-          for="email"
+          htmlFor="email"
           class="absolute left-2 -top-7 text-primary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
         >
           Email Address
@@ -56,7 +55,7 @@ const SignUpForm = () => {
           onChange={event => setUsername(event.currentTarget.value)}
         />
         <label
-          for="username"
+          htmlFor="username"
           class="absolute left-2 -top-7 text-primary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
         >
           Instagram Username
