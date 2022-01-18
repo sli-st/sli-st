@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 
 import addToMailchimp from "gatsby-plugin-mailchimp"
+import { Link } from "gatsby"
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("")
@@ -44,7 +45,7 @@ const SignUpForm = () => {
           Email Address
         </label>
       </div>
-      <div class="mt-10 relative">
+      <div class="mt-5 relative">
         <input
           id="username"
           type="text"
@@ -66,10 +67,13 @@ const SignUpForm = () => {
         type="submit"
         className="mt-5 px-4 py-2 rounded bg-primary hover:bg-primary text-background font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 cursor-pointer"
       >
-        SIGN UP
+        JOIN
       </button>
 
       <div dangerouslySetInnerHTML={{ __html: result }} />
+      <div className="pt-7 text-center text-gray-700">
+        <Link to="/list">list of members updated on Mondays</Link>
+      </div>
     </form>
   )
 }
