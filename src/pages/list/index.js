@@ -8,6 +8,7 @@ const BlogPage = ({ data }) => {
       <Seo title="List" />
       <nav className="text-primary flex flex-col text-xl text-right md:px-40 lg:px-96 pt-10">
         {[
+          "alexnde.r",
           "axchacon",
           "b_wxng",
           "dhiramprzz",
@@ -17,9 +18,11 @@ const BlogPage = ({ data }) => {
           "ferparentee",
           "_____hcanyun",
           "_ironboard_",
+          "kikapu.tattoo",
           "nobinari_mx",
           "nos_autem",
           "simontechyes",
+          "so__fi_o",
           "vemosvemos_it",
           "v.o.t.e.x.p.e.d.r.o",
         ].map(userName => (
