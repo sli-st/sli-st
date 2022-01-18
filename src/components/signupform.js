@@ -32,7 +32,7 @@ const SignUpForm = () => {
           id="email"
           name="email"
           type="email"
-          className="peer h-10 w-full text-secondary placeholder-transparent focus:outline-none "
+          className="peer h-10 w-full text-black placeholder-transparent focus:outline-none "
           placeholder="john@doe.com"
           aria-describedby="emailHelp"
           value={email}
@@ -50,14 +50,14 @@ const SignUpForm = () => {
           id="username"
           type="text"
           name="username"
-          className="peer h-10 w-full text-secondary placeholder-transparent focus:outline-none "
+          className="peer h-10 w-full text-black placeholder-transparent focus:outline-none "
           placeholder="INSTAGRAM USERNAME"
           value={username}
           onChange={event => setUsername(event.currentTarget.value)}
         />
         <label
           for="username"
-          class="absolute left-2 -top-7 text-secondary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
+          class="absolute left-2 -top-7 text-primary text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-6 peer-focus:text-primary peer-focus:text-sm"
         >
           Instagram Username
         </label>
@@ -71,10 +71,6 @@ const SignUpForm = () => {
       </button>
 
       <div dangerouslySetInnerHTML={{ __html: result }} />
-
-      <div className="pt-7 text-center">
-        <Link to="/list">view the list</Link>
-      </div>
     </form>
   )
 }

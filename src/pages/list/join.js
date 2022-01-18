@@ -6,7 +6,7 @@ import Footer from "../../components/footer"
 import { Link } from "gatsby"
 
 const IndexPage = () => (
-  <Layout pageTitle="List" to="/about/list" label="About">
+  <Layout pageTitle="List" to="/list" label="List">
     <Seo title="List" />
     <div className=" mx-auto">
       <SignUpForm id="join" />

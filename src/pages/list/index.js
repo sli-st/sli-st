@@ -14,11 +14,14 @@ const BlogPage = ({ data }) => {
           "dhiramprzz",
           "elissavinh",
           "_felix.vazquez_",
+          "fajardoooooo",
+          "ferparentee",
           "_____hcanyun",
           "_ironboard_",
           "nobinari_mx",
           "nos_autem",
           "simontechyes",
+          "vemosvemos_it",
           "v.o.t.e.x.p.e.d.r.o",
         ].map(userName => (
           <a
