@@ -5,9 +5,12 @@ import SignUpForm from "../../components/signupform"
 
 const IndexPage = () => (
   <Layout pageTitle="List" to="/list" label="List">
-    <Seo title="List" />
-    <div className=" mx-auto">
-      <SignUpForm id="join" />
+    <Seo
+      title="List"
+      description="Secret signup form for the SLi.ST guestlist. Free entry for all participating events. Invite only."
+    />
+    <div className="pt-5 mx-auto">
+      <SignUpForm />
     </div>
   </Layout>
 )
