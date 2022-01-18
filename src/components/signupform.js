@@ -45,7 +45,7 @@ const SignUpForm = () => {
           Email Address
         </label>
       </div>
-      <div class="mt-5 relative">
+      <div class="mt-7 relative">
         <input
           id="username"
           type="text"
