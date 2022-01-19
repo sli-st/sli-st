@@ -1,8 +1,5 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import { StaticImage } from "gatsby-plugin-image"
-import { useState } from "react"
-import { Switch } from "@headlessui/react"
 
 export default function ThemeToggle() {
   return (
