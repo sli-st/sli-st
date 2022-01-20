@@ -11,9 +11,7 @@ const Layout = ({ pageTitle, children, to, label }) => {
       <title>{pageTitle}</title>
       <Header to={to} label={label} />
       <main className="theme-dark bg-background text-primary pt-5">
-       <div className="container">
-       {children}
-       </div>
+        <div className="container">{children}</div>
       </main>
     </div>
   )

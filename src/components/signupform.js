@@ -72,7 +72,7 @@ const SignUpForm = () => {
 
       <div dangerouslySetInnerHTML={{ __html: result }} />
       <div className="pt-7 text-center text-gray-700">
-        <Link to="/list">list of members updated on Mondays</Link>
+        <Link to="/list">list of members updated manually</Link>
       </div>
     </form>
   )

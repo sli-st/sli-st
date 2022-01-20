@@ -6,25 +6,28 @@ import MarkdownWrapper from "../../components/markdownwrapper"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="102 Rave Tips" to="/about/rave-tips" label="About">
+    <Layout pageTitle="105 Rave Tips" to="/about/rave-tips" label="About">
       <Seo
-        title="102 Rave Tips"
-        description="A constantly updating list of tips and tricks for raving. Brought to you by a frequent raver. There is bound to be at least one tip that is relevant for you."
+        title="104 Rave Tips"
+        description="A constantly updating list of tips and tricks for raving. Brought to you by a frequent raver. There is bound to be at least one tip that is relevant to you."
       />
       <MarkdownWrapper>
-        <h1>102 Rave Tips</h1>
-        <ol reversed="reversed" class="decimal-leading-zero list-decimal ">
-          <li>
-            Try to find recent footage of an event on social media if you're
-            unsure about an event.
-          </li>
+        <h1>104 Rave Tips</h1>
+        <ol
+          reversed="reversed"
+          className="decimal-leading-zero list-decimal px-10"
+        >
+          <li>Share to be shared with.</li>
+          <li>Raving with company can be security.</li>
+          <li>Raving solo is freedom.</li>
+          <li>Going solo is better than going with unwanted company.</li>
+          <li>Swiping through Instagram stories is research.</li>
+          <li>Research an event to avoid disappointment.</li>
           <li>You’re with you forever and forevermore.</li>
-          <li>Shop shop.</li>
+          <li>Shop with purpose.</li>
           <li>Window shop.</li>
           <li>Always decide.</li>
-          <li>Never know.</li>
-          <li>96% is knowing.</li>
-          <li>94% is okay.</li>
+          <li>Never as much as possible while knowing you can never know.</li>
           <li>
             Take yourself on your own journeys and then see who wants to join
             you.

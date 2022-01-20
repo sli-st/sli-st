@@ -8,14 +8,14 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => (
   <Layout pageTitle="Index" to="/about" label="About">
     <Seo title="Index" />
-    <nav className="text-lg text-center text-secondary flex flex-row justify-between md:px-36 lg:px-60 xl:px-96 pt-5 md:pt-10 ">
+    <nav className="text-lg text-center text-secondary flex flex-row justify-around md:px-36 lg:px-60 xl:px-96 pt-5 md:pt-10 ">
       <Link to="/rave-tips" className="">
-        <div className="text-primary">102</div> Tips
+        <div className="text-primary">105</div> Tips
       </Link>
-      <Link to="/rave-guides">
+      <Link to="#">
         <div className="text-primary">0</div> Guides
       </Link>
-      <Link to="/rave-rants">
+      <Link to="#">
         <div className="text-primary">0</div> Rants
       </Link>
       <Link to="/r">
@@ -30,7 +30,11 @@ const IndexPage = ({ data }) => (
       <div className="pt-16 grid grid-cols-4 gap-5 text-xl text-white/[.70]">
         <Link to="/mixes" className="col-span-2 ">
           <div className="relative overflow-hidden">
-            <StaticImage src="../images/index/recorded.png" alt="A kitten" />
+            <StaticImage
+              src="../images/index/recorded.png"
+              alt="A kitten"
+              className="rounded-2xl border dark:border-primary"
+            />
             <div className="absolute inset-0 z-10 flex justify-center items-center ">
               MIXES
             </div>
@@ -39,7 +43,11 @@ const IndexPage = ({ data }) => (
 
         <Link to="/list/" className="col-span-2 ">
           <div className="relative overflow-hidden">
-            <StaticImage src="../images/index/m.jpeg" alt="A kitten" />
+            <StaticImage
+              src="../images/index/m.jpeg"
+              alt="A kitten"
+              className="rounded-2xl "
+            />
             <div className="absolute inset-0 z-10 flex justify-center items-center ">
               LIST
             </div>

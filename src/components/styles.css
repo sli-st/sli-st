@@ -26,12 +26,6 @@ html {
   box-shadow: inset 0 0 0.5em 0 var(--primary), 0 0 0.5em 0 var(--primary);
 }
 
-nav img {
-  /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
-
-  @apply rounded-2xl;
-}
-
 input:checked ~ .dot {
   transform: translateX(100%);
   background-color: var(--primary);
