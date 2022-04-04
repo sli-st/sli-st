@@ -17,6 +17,23 @@ const BlogPage = ({ data }) => {
           reversed="reversed"
           className="decimal-leading-zero list-decimal px-10"
         >
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li>
+            If an organizer only posts videos of the mixer and not the
+            dancefloor, the dancefloor is empty.{" "}
+          </li>
           <li>Share to be shared with.</li>
           <li>Raving with company can be security.</li>
           <li>Raving solo is freedom.</li>
@@ -25,9 +42,9 @@ const BlogPage = ({ data }) => {
           <li>Research an event to avoid disappointment.</li>
           <li>You’re with you forever and forevermore.</li>
           <li>Shop with purpose.</li>
-          <li>Window shop.</li>
-          <li>Always decide.</li>
-          <li>Never as much as possible while knowing you can never know.</li>
+          <li>Don't be afraid to window shop.</li>
+          <li>Try to make your own decisions.</li>
+          <li>The future is uncertain by definition.</li>
           <li>
             Take yourself on your own journeys and then see who wants to join
             you.
@@ -37,38 +54,38 @@ const BlogPage = ({ data }) => {
           <li>Know thyself and thy moves.</li>
           <li>Rave to rave.</li>
           <li>Drink before if you’re going to drink.</li>
-          <li>A list is of people interested.</li>
+          <li>A list is of people moderately interested.</li>
           <li>Beyond every person is a persona.</li>
           <li>Behind every persona is a person.</li>
           <li>Be, but definitely not less.</li>
           <li>Be, but not more.</li>
           <li>Prep but don’t prepare.</li>
-          <li>Don’t trust promoters for anything besides their promotions. </li>
-          <li>Follow people with similar tastes for similar discoveries. </li>
-          <li>Every artistic decision is a decision.</li>
-          <li>Pray to yourself, for yourself… if pray.</li>
+          <li>Don’t trust promoters for anything besides their promotions.</li>
+          <li>Follow people with similar tastes for similar discoveries.</li>
+          <li>Every artistic decision was/is a decision.</li>
+          <li>Pray to yourself, for yourself, if you pray.</li>
           <li>Work on something at all times.</li>
           <li>Fool yourself no more than twice.</li>
           <li>Try to appreciate art and where it came from.</li>
-          <li>Give feedback for feedback</li>
-          <li>Hype the dj with your energy/drugs</li>
+          <li>Give feedback for feedback.</li>
+          <li>Hype the dj with your energy/drugs.</li>
           <li>11:11</li>
           <li>Your body creates drugs for your brain.</li>
           <li>Know your body on different drugs/food/emotions.</li>
           <li>Resolve issues when possible.</li>
-          <li>Choose spontaneity spontaneously.</li>
+          <li>Choose spontaneity- spontaneously.</li>
           <li>Try different genres and find the overlap.</li>
           <li>Try to enter for free and spend your savings at the bar.</li>
           <li>Know your strengths.</li>
           <li>Some people just want to hear that you like them.</li>
-          <li>Keep your intentions clear. </li>
+          <li>Keep your intentions clear.</li>
           <li>Know why you’re going to the party.</li>
           <li>Avoid twerking while your phone is in your back pocket.</li>
-          <li>Keep your valuables in your front pocket.</li>
+          <li>Keep your valuables in your front pockets.</li>
           <li>Share tips.</li>
-          <li>Drink water, if you can, before you go to sleep.</li>
+          <li>Drink water before you go to sleep.</li>
           <li>
-            Assume you will be hungover and take precautions before sleeping.{" "}
+            Assume you will be hungover and take precautions before sleeping.
           </li>
           <li>Don’t exchange money on the dance floor.</li>
           <li>Don’t share it in the open.</li>
@@ -85,13 +102,13 @@ const BlogPage = ({ data }) => {
           <li>Bringing snacks is okay.</li>
           <li>Vote with your energy.</li>
           <li>Don’t encourage bad mixing.</li>
-          <li>Don’t dance to bad music.</li>
+          <li>Don’t dance to music you don't like.</li>
           <li>
             If you’re going as a large group, consider negotiating for a
             discount before heading out.
           </li>
           <li>Wearing a mask is okay.</li>
-          <li>Cigarettes increase in value towards the end.</li>
+          <li>Cigarettes increase in value towards the end of a rave.</li>
           <li>You don’t have to be wise.</li>
           <li>It’s almost always wiser to sleep (in hindsight).</li>
           <li>You don’t have to after.</li>
@@ -109,14 +126,17 @@ const BlogPage = ({ data }) => {
           <li>Some weekends are softer than others.</li>
           <li>Thursdays are generally for disco.</li>
           <li>
-            25. Bring party favors or energy to every party for random perks.
+            Bring party favors or your energy to every party for random perks.
           </li>
           <li>
             Consider detoxes to lower your tolerance before an upcoming event.
           </li>
-          <li>Consider sleeping in order to better enjoy raving.</li>
-          <li>Figure out which days of the week are for which crowds.</li>
-          <li>'Everything in moderation, including moderation.'</li>
+          <li>Consider a nap before raving for more energy.</li>
+          <li>
+            Figure out which days of the week are for which crowds in your local
+            scene.
+          </li>
+          <li>"Everything in moderation, including moderation."</li>
           <li>Research the lineup to avoid wasting time.</li>
           <li>Partying completely sober is a valid option.</li>
           <li>Know your tastes.</li>
@@ -136,14 +156,12 @@ const BlogPage = ({ data }) => {
             If you stay awake long enough, you can have intense hallucinations.
           </li>
           <li>
-            Going to 1 good event is better than multiple mediocre events.
+            Going to 1 good event is better than going to multiple mediocre
+            events.
           </li>
           <li>Reflect on what's working and what isn't.</li>
           <li>Reflect on your drug experiences.</li>
-          <li>
-            Avoid listening to your favorite music in miserable environments.
-          </li>
-          <li>Reflect on your drug experiences.</li>
+          <li>Avoid listening to music you like in miserable environments.</li>
           <li>Don’t stay if you’re not enjoying yourself.</li>
           <li>Trust your gut.</li>
         </ol>
