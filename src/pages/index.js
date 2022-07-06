@@ -2,24 +2,27 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { graphql } from "gatsby"
+import IndexLink from "../components/indexlink"
+import MarkdownWrapper from "../components/markdownwrapper"
 
 const IndexPage = ({ data }) => (
-  <Layout pageTitle="Index" to="/about" label="About">
+  <Layout pageTitle="Index" to="/epk" label="EPK">
     <Seo title="Index" />
-    <nav className="text-lg text-center text-secondary flex flex-row justify-around md:px-36 lg:px-60 xl:px-96 pt-5 md:pt-10 ">
+    <nav className=" text-center text-secondary flex gap-5 flex-row justify-around md:px-36 lg:px-60 xl:px-96 pt-5 md:pt-10 ">
       <Link to="/rave-tips" className="">
-        <div className="text-primary">105</div> Tips
+        <div className="text-primary">105</div>Rave Tips
       </Link>
-      <Link to="#">
+      {/* <Link to="/guides">
         <div className="text-primary">0</div> Guides
+      </Link> */}
+      <Link to="/gigs">
+        <div className="text-primary">4</div> Sets
       </Link>
-      <Link to="#">
-        <div className="text-primary">0</div> Rants
+      <Link to="/list">
+        <div className="text-primary">36</div>Listees
       </Link>
-      <Link to="/r">
-        <div className="text-primary">13</div> Reflections
+      <Link to="/mixtapes">
+        <div className="text-primary">6</div> Mixtapes
       </Link>
     </nav>
     <nav
@@ -27,82 +30,57 @@ const IndexPage = ({ data }) => (
       id="index-nav"
       className="md:px-40 lg:px-80 xl:px-96"
     >
-      <div className="pt-16 grid grid-cols-4 gap-5 text-xl text-white/[.70]">
-        <Link to="/mixes" className="col-span-2 ">
-          <div className="relative overflow-hidden">
-            <StaticImage
-              src="../images/index/recorded.png"
-              alt="A kitten"
-              className="rounded-2xl border dark:border-primary"
-            />
-            <div className="absolute inset-0 z-10 flex justify-center items-center ">
-              MIXES
-            </div>
-          </div>
-        </Link>
-
-        <Link to="/list/" className="col-span-2 ">
-          <div className="relative overflow-hidden">
-            <StaticImage
-              src="../images/index/m.jpeg"
-              alt="A kitten"
-              className="rounded-2xl "
-            />
-            <div className="absolute inset-0 z-10 flex justify-center items-center ">
-              LIST
-            </div>
-          </div>
-        </Link>
+      <div className="grid grid-cols-4 text-xl text-white/[.70]">
         <div className="pt-16 col-span-4 ">
-          <div className="grid gap-8 items-start justify-center">
-            <div className="relative group ">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-primary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt text-xs "></div>
-              <a
-                href="https://instagram.com/cdmx.flyer.wey"
-                className="relative px-5 px-md-7 py-4 bg-background rounded-lg leading-none flex items-center divide-x divide-gray-600 w-full mx-0"
-              >
-                <span className="flex items-center space-x-3 md:space-x-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    className="text-secondary fill-secondary stroke-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                  </svg>
-
-                  <span className="pr-3 md:pr-5 text-secondary">Flyers</span>
-                </span>
-                <span className="pl-3 md:pl-5 text-primary group-hover:text-secondary transition duration-200">
-                  @cdmx.flyer.wey
-                </span>
-              </a>
-            </div>
+          <div className="grid gap-8 justify-center">
+            <IndexLink
+              d="M7 17.939h-1v-8.068c.308-.231.639-.429 1-.566v8.634zm3 0h1v-9.224c-.229.265-.443.548-.621.857l-.379-.184v8.551zm-2 0h1v-8.848c-.508-.079-.623-.05-1-.01v8.858zm-4 0h1v-7.02c-.312.458-.555.971-.692 1.535l-.308-.182v5.667zm-3-5.25c-.606.547-1 1.354-1 2.268 0 .914.394 1.721 1 2.268v-4.536zm18.879-.671c-.204-2.837-2.404-5.079-5.117-5.079-1.022 0-1.964.328-2.762.877v10.123h9.089c1.607 0 2.911-1.393 2.911-3.106 0-2.233-2.168-3.772-4.121-2.815zm-16.879-.027c-.302-.024-.526-.03-1 .122v5.689c.446.143.636.138 1 .138v-5.949z"
+              to="https://soundcloud.com/slistslist"
+              label="SoundCloud"
+              handle="SLi.ST"
+            />
+            <IndexLink
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              to="https://instagram.com/sli.st96"
+              label="Instagram"
+              handle="@sli.st96"
+            />
+            <IndexLink
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              to="https://instagram.com/slistnyc"
+              label="NYC Flyers"
+              handle="@slistnyc"
+            />
+            <IndexLink
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+              to="https://facebook.com/groups/cdmxflyers"
+              label="FB Group"
+              handle="CDMX Flyers"
+            />
+            <IndexLink
+              d="M19.899 19.899c.168.145.072.381-.132.618-.156.183-.305.283-.434.283l-.156-.06c-.157-.136-.089-.383.123-.625.144-.166.302-.276.44-.276l.159.06zm-1.421-5.899h-4.478v4.48l5.518 5.52 4.482-4.48-5.522-5.52zm-.447 3.364c.21-.245.479-.379.745-.379.188 0 .374.067.538.208.403.346.376.835.033 1.234-.234.272-.502.39-.752.39-.198 0-.385-.074-.534-.202-.354-.307-.407-.813-.03-1.251zm-2.031-.614c-.413 0-.75-.335-.75-.75s.338-.75.75-.75.75.335.75.75-.337.75-.75.75zm1.25 2.866l3.417-1.262.295.252-3.42 1.259-.292-.249zm2.944 1.225c-.233.272-.5.39-.75.39-.197 0-.384-.074-.533-.202-.353-.302-.405-.809-.032-1.25.21-.245.479-.379.745-.379.188 0 .374.066.539.208.402.345.377.834.031 1.233zm-1.864-2.516c-.158-.136-.09-.383.119-.627.144-.166.304-.275.442-.275l.157.059c.168.145.075.384-.128.621-.156.182-.307.283-.436.283l-.154-.061zm-6.33-10.325c1.066 0 2-.936 2-2.002v-1.098l-1.047-4.9h-1.906l-1.047 4.902v1.098c0 1.067.934 2 2 2zm3-2c0 1.067.934 2 2 2s1.998-.833 1.998-1.9v-1.098l-2.994-5.002h-1.943l.939 4.902v1.098zm5 0c0 1.067.934 2 2 2s2-.865 2-1.932v-1.097l-4.873-4.971h-2.014l2.887 4.902v1.098zm-8.312 13h-8.688v-7h18v1.693l2 1.999v-5.692h-22v14h15.69l-5.002-5zm-7.688-12.932v-1.097l2.887-4.971h-2.014l-4.873 4.971v1.098c0 1.066.934 1.931 2 1.931s2-.865 2-1.932zm1 0c0 1.067.934 1.932 2 1.932s2-.865 2-1.932v-1.097l.939-4.971h-1.943l-2.996 4.971v1.097z"
+              to="/discounts"
+              label="Discounts"
+              handle='"SCODE"'
+            />
           </div>
+          <MarkdownWrapper>
+            <p className="mt-10 mb-20 mx-2.5 md:mx-8 lg:mx-10 p-3 md:p-3 border border-stone-700 rounded-xl">
+              SLi.ST began as a community for sharing CDMX flyers on June 2021.
+              After I started sharing more about myself and my thoughts on the
+              rave scene, it seemed like I had tapped into the local counter
+              culture. It only seemmed right that I should name my DJ persona
+              after the community that has been introducing me to new music and
+              inspiring me with new ideas. We also seem to share a well refined
+              taste in dark music. Thanks to this project I've been able tos
+              experience many parts of the underground scene that even most
+              locals don't seem to know about. Thanks for including me.{" "}
+              <br></br> - SLi.ST (2022-07-06)
+            </p>
+          </MarkdownWrapper>
         </div>
       </div>
     </nav>
-    <nav className="flex flex-col align-middle justify-center mx-auto text-center space-y-5 pt-12 pb-14">
-      <Link to="https://us5.list-manage.com/survey?u=ffa00e0e7d456f08048753fe5&id=d2d82c8053&attribution=false">
-        Share Feedback
-      </Link>
-
-      <Link to="/support">Support</Link>
-    </nav>
   </Layout>
 )
-
 export default IndexPage
-
-export const query = graphql`
-  {
-    allMdx(
-      filter: { fileAbsolutePath: { regex: "/content/t/" } }
-      sort: { fields: slug, order: DESC }
-    ) {
-      totalCount
-    }
-  }
-`

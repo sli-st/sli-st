@@ -28,29 +28,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `r`,
-        path: `${__dirname}/content/r/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `t`,
-        path: `${__dirname}/content/t/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `u`,
-        path: `${__dirname}/content/u`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `about`,
         path: `${__dirname}/content/about`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `discounts`,
+        path: `${__dirname}/content/discounts/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gigs`,
+        path: `${__dirname}/content/gigs/`,
       },
     },
     "gatsby-plugin-mdx",

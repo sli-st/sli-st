@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Footer from "../../components/footer"
 import MarkdownWrapper from "../../components/markdownwrapper"
 
 const BlogPage = ({ data }) => {
@@ -38,11 +37,6 @@ export const query = graphql`
         frontmatter {
           date(formatString: "YY-MM-DD")
           title
-          hero_image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
         }
         id
         slug

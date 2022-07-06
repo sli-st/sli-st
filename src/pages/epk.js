@@ -7,116 +7,98 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="EPK" to="/mixes" label="Recorded Mix">
+    <Layout pageTitle="EPK" to="/mixtapes" label="Mixtapes">
       <Seo title="EPK" />
       <MarkdownWrapper>
         <h1>Press Kit</h1>
         <p>
-          <span className="text-primary">Real name: </span>Simon Howlader
-        </p>
-        <p>
           <span className="text-primary">Contact:</span>
           <br></br>
-          Instagram #1: <a href="https://instagram.com/slistxmas">@slistxmas</a>
+          Email: <a href="mailto: s@sli.st">s@sli.st</a>
           <br></br>
-          Instagram #2:{" "}
-          <a href="https://instagram.com/simontechyes">@simontechyes</a>
+          Instagram: <a href="https://instagram.com/sli.st96">@sli.st96</a>
           <br></br>
           WhatsApp: <a href="https://wa.me/12123210632"> +1 212-321-0632</a>
         </p>
-
-        <p>From NYC - Taught by CDMX</p>
         <p>
-          <span className="text-primary">Genres/styles: </span>dark wave,
-          progressive, minimal, melodic, hard, rave, techno
+          <span className="text-primary">Genres:</span> dark ambient, dark
+          melodic house and techno, minimal, apocalyptic industrial techno,
+          gabber, dnb and other genres but with a darker twist.
         </p>
         <p>
-          Due to his dancefloor presence at many of the hardest dark techno
-          events of 2021, and a bunch of casual b2b sessions with some of the
-          most prominent DJs in CDMX, SLi.ST has earned himself a reputation for
-          his heavier tastes. With that expectation in mind, he likes to tease
-          his audiences with his dark selection of progressive house and minimal
-          techno while slowly creeping in what he's really known for- angry,
-          twisting, melodic techno that leaves his listeners cathartic,
-          connected, and stimulated.
+          SLi.ST is going through a darkwave phase. Almost everything he plays
+          is deep, dark, and gut twisting - a bit dualistic and subtly euphoric.
+          His sets tend to include small shoutouts to unnexpected genres and
+          cultures as a reminder that most people have multiple layers: dembow,
+          synthwave, psytrance, rock, etc. etc.
+        </p>
+        <p>
+          <span className="text-primary">Mixtapes: </span>
+          <br></br>
+          <ul>
+            <li>
+              <Link to="/mixtapes">high quality download links</Link>
+            </li>
+            <li>
+              <a href="soundcloud.com/slistslist">SoundCloud</a>
+            </li>
+          </ul>
         </p>
         <p>
           <span className="text-primary">Biography: </span>
-          <br></br>
-          "SLi.ST" began as a quarter-life crisis sometime in July'21. After
-          inviting himself to the right afters, he started learning from one of
-          the hardest industrial DJs in CDMX (8/28/21). By October 1st, SLi.ST
-          was invited to play at The Real Under, and open for B Space at 49
-          Basan. Thanks to some positive responses from local DJs who came to
-          hear him play, SLi.ST finally got a mixer, entered the hyperbolic time
-          chamber, and pretty much disappeared from the dancefloors for the next
-          few months in order to develop his personal mixing syle.
+          <br></br>In March 2021 I was introduced to the underground rave scene
+          in NYC. 3 months later I traveled to CDMX and found that the CDMX
+          scene was much darker and more intense. In late 2021, I started
+          learning how to DJ from one of CDMX's hardest industrial DJs. Within
+          the next few months I was invited to play at The Real Under, open for
+          B Space at 49 Basan, and also DJ for a few hours at the NIX New Year's
+          afterparty.
         </p>
         <p>
-          SLi.ST reentered the underground scene on New Year's Day at the NIX
-          New Year's afterparty. With a bit of persistance, SLi.ST managed to
-          wiggle in a few hours of mixing and shocked every single raver and DJ.
-          After recieving some much appreciated love, support, and approval,
-          SLi.ST is finally sliding into a DM near you (with his EPK).
+          <span className="text-primary">Rider: </span>
+          <br></br>
+          <ul>
+            <li>flyers may use my DJ name and/or logo, but not my face</li>
+            <li>1 hour: $750 mxn, 2 hours: $1000; payment right after set</li>
+            <li>
+              4+ guestlist for local influencers to help promote the event
+            </li>
+          </ul>
         </p>
-
-        <div className="columns-3 gap-4 py-16">
-          <a href="/epk/flyer1.png" download>
-            <img className="img-fluid" src="/epk/flyer1.PNG" alt="1" />
+        <p>
+          <span className="text-primary">Text and Logos: </span>
+          <br></br>
+          <ul>
+            <li>
+              The lowercase i and period in "SLi.ST" are very important as they
+              reflect the URL of this website
+            </li>
+            <li>
+              if the font can be specified, please use SF Pro Ultrathin, or
+              another sans-serif font
+            </li>
+          </ul>
+        </p>
+        <div className="grid grid-cols-3 pb-20 not-prose">
+          <a href="/epk/black-white.svg" download>
+            <img className="img-fluid" src="/epk/black-white.svg" alt="5" />
           </a>
-          <a href="/epk/flyer2.jpg" download>
-            <img className="img-fluid" src="/epk/flyer2.jpg" alt="2" />
+          <a href="/epk/red-black.svg" download>
+            <img className="img-fluid" src="/epk/red-black.svg" alt="2" />
           </a>
-          <a href="/epk/flyer3.jpg" download>
-            <img className="img-fluid" src="/epk/flyer3.jpg" alt="3" />
+          <a href="/epk/white-red.svg" download>
+            <img className="img-fluid" src="/epk/white-red.svg" alt="4" />
           </a>
-          <a href="/epk/logo.svg" download>
-            <img className="img-fluid" src="/epk/logo.svg" alt="4" />
+          <a href="/epk/white-black.svg" download>
+            <img className="img-fluid" src="/epk/white-black.svg" alt="3" />
           </a>
-
-          <a href="/epk/pic3.jpg" download>
-            <img className="img-fluid" src="/epk/pic3.jpg" alt="6" />
+          <a href="/epk/black-red.svg" download>
+            <img className="img-fluid" src="/epk/black-red.svg" alt="6" />
+          </a>
+          <a href="/epk/red-white.svg" download>
+            <img className="img-fluid" src="/epk/red-white.svg" alt="1" />
           </a>
         </div>
-        <iframe
-          title="SoundCloud"
-          className="pt-10"
-          width="100%"
-          scrolling="no"
-          frameborder="no"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1170268132&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe>
-        <p className="not-prose text-center text-primary">
-          <a
-            href="https://www.googleapis.com/drive/v3/files/1FL9N2FEyCNPTtjxp25CYmmaCd5QksJu9?alt=media&key=AIzaSyAP4ujJMv90h9GJpoezieXoRLq9NRW9Wzk&v=[.wav]"
-            download="not for dancing.png"
-            className="text-center mx-auto"
-          >
-            download original .WAV
-          </a>
-        </p>
-
-        <iframe
-          title="SoundCloud"
-          className="mt-20 mb-10"
-          width="100%"
-          scrolling="no"
-          frameborder="no"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1196810608&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe>
-        <p className="not-prose text-center text-primary">
-          <a
-            href="https://www.googleapis.com/drive/v3/files/1yHXdPLFJgM8rSBfCu-loz6118mm0FyQr?alt=media&key=AIzaSyAP4ujJMv90h9GJpoezieXoRLq9NRW9Wzk&v=[.wav]"
-            download="not for dancing.png"
-            className="text-center mx-auto"
-          >
-            download original .WAV
-          </a>
-        </p>
-        <p className="text-center pt-20">
-          Came here on a dare. Stayed for dark techno.
-        </p>
-        <p className="text-center pb-20 text-primary">Let's sweat.</p>
       </MarkdownWrapper>
     </Layout>
   )
