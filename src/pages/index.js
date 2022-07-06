@@ -15,9 +15,9 @@ const IndexPage = ({ data }) => (
       {/* <Link to="/guides">
         <div className="text-primary">0</div> Guides
       </Link> */}
-      <Link to="/gigs">
+      {/* <Link to="/gigs">
         <div className="text-primary">4</div> Sets
-      </Link>
+      </Link> */}
       <Link to="/list">
         <div className="text-primary">36</div>Listees
       </Link>
