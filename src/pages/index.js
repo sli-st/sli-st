@@ -66,16 +66,16 @@ const IndexPage = ({ data }) => (
           </div>
           <MarkdownWrapper>
             <p className="mt-10 mb-20 mx-2.5 md:mx-8 lg:mx-10 p-3 md:p-3 border border-stone-700 rounded-xl">
-              SLi.ST began as a community for sharing CDMX flyers on June 2021.
-              After I started sharing more about myself and my thoughts on the
-              rave scene, it seemed like I had tapped into the local counter
-              culture. It only seemmed right that I should name my DJ persona
-              after the community that has been introducing me to new music and
-              inspiring me with new ideas. We also seem to share a well refined
-              taste in dark music. Thanks to this project I've been able tos
-              experience many parts of the underground scene that even most
-              locals don't seem to know about. Thanks for including me.{" "}
-              <br></br> - SLi.ST (2022-07-06)
+              June 2021: SLi.ST began as an IG community for sharing CDMX
+              flyers, and later my anonymous thoughts about the rave scene. A
+              lot of people resonated. A few months later it only seemed
+              appropriate that I should name my DJ persona after the community
+              that had been introducing me to new music and welcoming my
+              (sometimes) controversial posts. We also seem to like a lot of the
+              same music. Thanks to the community I've been able to experience
+              many parts of the underground scene that even most local ravers
+              don't seem to know about. Thanks for including me. <br></br> -
+              SLi.ST (2022-07-08)
             </p>
           </MarkdownWrapper>
         </div>
