@@ -12,6 +12,7 @@ const IndexPage = ({ data }) => (
       <Link to="/rave-tips" className="">
         <div className="text-primary">105</div>Rave Tips
       </Link>
+
       {/* <Link to="/guides">
         <div className="text-primary">0</div> Guides
       </Link> */}
@@ -66,16 +67,15 @@ const IndexPage = ({ data }) => (
           </div>
           <MarkdownWrapper>
             <p className="mt-10 mb-20 mx-2.5 md:mx-8 lg:mx-10 p-3 md:p-3 border border-stone-700 rounded-xl">
-              June 2021: SLi.ST began as an IG community for sharing CDMX
-              flyers, and later my anonymous thoughts about the rave scene. A
-              lot of people resonated. A few months later it only seemed
-              appropriate that I should name my DJ persona after the community
-              that had been introducing me to new music and welcoming my
-              (sometimes) controversial posts. We also seem to like a lot of the
-              same music. Thanks to the community I've been able to experience
-              many parts of the underground scene that even most local ravers
-              don't seem to know about. Thanks for including me. <br></br> -
-              SLi.ST (2022-07-08)
+              Back in June'21 I started resharing all the CDMX flyers I could
+              find on IG. Only a couple people knew who I was, but just about
+              everyone would reshare my posts when I tagged them. And so I
+              started shitposting about the rave scene which surprisingly
+              resonated with a lot of people. A few months later I started DJing
+              and it only felt right that I'd name myself after the community
+              that had been introducing me to new music, new scenes, and
+              welcoming my (sometimes) controversial posts. Thanks for including
+              me. - SLi.ST (2022-07-12)
             </p>
           </MarkdownWrapper>
         </div>

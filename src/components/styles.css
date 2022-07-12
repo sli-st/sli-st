@@ -2,31 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark {
-  --primary: red;
-  --secondary: white;
-  --background: black;
-}
-
-.light {
-  --primary: red;
-  --secondary: black;
-  --background: white;
+html {
 }
 
 html {
+  --primary: red;
+  --secondary: white;
+  --background: black;
   background-color: black;
 }
 
 .neon-button {
-  color: var(--primary);
+  color: red;
   /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.25em currentColor; */
-  box-shadow: inset 0 0 0.5em 0 var(--primary), 0 0 0.5em 0 var(--primary);
+  box-shadow: inset 0 0 0.5em 0 red, 0 0 0.5em 0 red;
 }
 
 input:checked ~ .dot {
   transform: translateX(100%);
-  background-color: var(--primary);
+  background-color: red;
 }
 
 .prose {
