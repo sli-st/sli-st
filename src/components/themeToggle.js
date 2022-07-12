@@ -15,9 +15,9 @@ export default function ThemeToggle() {
                   id="toggleB"
                   className="sr-only"
                   onChange={e =>
-                    toggleTheme(e.target.checked ? "dark" : "light")
+                    toggleTheme(e.target.checked ? "light" : "dark")
                   }
-                  checked={theme === "dark"}
+                  checked={theme === "light"}
                 />
 
                 <div className="block bg-secondary w-14 h-6 rounded-full"></div>
