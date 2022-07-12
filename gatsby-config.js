@@ -5,6 +5,7 @@ module.exports = {
     author: `SLi.ST`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -105,6 +106,5 @@ module.exports = {
     //   },
     // },
     "gatsby-plugin-postcss",
-    "gatsby-plugin-dark-mode",
   ],
 }

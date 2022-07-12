@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import ThemeToggle from "./themeToggle"
 
 const Header = ({ to, label }) => {
   return (
