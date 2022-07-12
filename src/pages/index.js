@@ -67,16 +67,14 @@ const IndexPage = ({ data }) => (
           </div>
           <MarkdownWrapper>
             <p className="mt-10 mb-20 mx-2.5 md:mx-8 lg:mx-10 p-3 md:p-3 border border-stone-700 rounded-xl">
-              Back in June'21 I made a Finsta exclusively for finding CDMX
-              events. When I realized others were also having trouble finding
-              parties, I started resharing every flyer I could find and tagging
-              them for visibility. I kept it very anonymous. For a couple
-              months, only one person knew who I was, but just about everyone
-              would reshare my posts when I tagged them. And so I started
-              shitposting about the rave scene which surprisingly resonated with
-              a lot of people. A few months later I started DJing and it only
-              felt right that I should name myself after the community that had
-              been introducing me to new music, new scenes, and welcoming my
+              I started SLi.ST in June'21 as a finsta for finding CDMX raves. In
+              order to also help others find events I started resharing and
+              tagging every flyer I could find. Despite my anonymity, most
+              people would reshare my posts which I found kind of ridiculous. So
+              then I started shitposting about the rave scene which surprisingly
+              resonated with a lot of people. A few months later I started DJing
+              and decided to name myself after the community that had been
+              introducing me to new music, new scenes, and welcoming my
               (sometimes) controversial posts. Thanks for including me. - SLi.ST
               (2022-07-12)
             </p>
