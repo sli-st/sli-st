@@ -15,14 +15,9 @@ const Layout = ({ pageTitle, children, to, label }) => {
         <div className="container">{children}</div>
       </main>
       <Script
-        async
         src="https://www.googletagmanager.com/gtag/js?id=G-80661C8JJ3"
+        strategy={ScriptStrategy.postHydrate}
       ></Script>
-      <Script>
-        window.dataLayer = window.dataLayer || [] function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-80661C8JJ3');
-      </Script>
     </div>
   )
 }
