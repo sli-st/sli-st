@@ -13,10 +13,7 @@ const Layout = ({ pageTitle, children, to, label }) => {
       <main className="pt-5">
         <div className="container">{children}</div>
       </main>
-      <script
-        defer
-        src="https://www.googletagmanager.com/gtag/js?id=G-80661C8JJ3"
-      ></script>
+      <script src="https://www.googletagmanager.com/gtag/js?id=G-80661C8JJ3"></script>
     </div>
   )
 }

@@ -67,15 +67,18 @@ const IndexPage = ({ data }) => (
           </div>
           <MarkdownWrapper>
             <p className="mt-10 mb-20 mx-2.5 md:mx-8 lg:mx-10 p-3 md:p-3 border border-stone-700 rounded-xl">
-              Back in June'21 I started resharing all the CDMX flyers I could
-              find on IG. Only a couple people knew who I was, but just about
-              everyone would reshare my posts when I tagged them. And so I
-              started shitposting about the rave scene which surprisingly
-              resonated with a lot of people. A few months later I started DJing
-              and it only felt right that I'd name myself after the community
-              that had been introducing me to new music, new scenes, and
-              welcoming my (sometimes) controversial posts. Thanks for including
-              me. - SLi.ST (2022-07-12)
+              Back in June'21 I made a Finsta exclusively for finding CDMX
+              events. When I realized others were also having trouble finding
+              parties, I started resharing every flyer I could find and tagging
+              them for visibility. I kept it very anonymous. For a couple
+              months, only one person knew who I was, but just about everyone
+              would reshare my posts when I tagged them. And so I started
+              shitposting about the rave scene which surprisingly resonated with
+              a lot of people. A few months later I started DJing and it only
+              felt right that I should name myself after the community that had
+              been introducing me to new music, new scenes, and welcoming my
+              (sometimes) controversial posts. Thanks for including me. - SLi.ST
+              (2022-07-12)
             </p>
           </MarkdownWrapper>
         </div>
