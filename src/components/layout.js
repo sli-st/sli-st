@@ -16,7 +16,7 @@ const Layout = ({ pageTitle, children, to, label }) => {
       </main>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-80661C8JJ3"
-        strategy={ScriptStrategy.postHydrate}
+        strategy="post-hydrate"
       ></Script>
     </div>
   )
