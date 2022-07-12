@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => (
           </div>
           <MarkdownWrapper>
             <p className="mt-10 mb-20 mx-2.5 md:mx-8 lg:mx-10 p-3 md:p-3 border border-stone-700 rounded-xl">
-              I started SLi.ST in June'21 as a finsta for finding CDMX raves. In
+              SLi.ST began as a finsta in June'21 for finding CDMX raves. In
               order to also help others find events I started resharing and
               tagging every flyer I could find. Despite my anonymity, most
               people would reshare my posts which I found kind of ridiculous. So
