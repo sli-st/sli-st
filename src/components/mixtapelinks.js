@@ -7,7 +7,7 @@ const MixtapeLinks = ({ number, date, description, aiff, mp3 }) => {
       <div className="relative px-5 px-md-7 py-4 bg-background rounded-lg leading-none mx-0">
         <p className="">
           <span className="text-primary pr-2">{number}.</span>
-          <span className="text-gray-500 group-hover:text-secondary transition duration-200">
+          <span className="text-secondary group-hover:text-primary transition duration-200">
             {date}
           </span>
         </p>
@@ -15,7 +15,7 @@ const MixtapeLinks = ({ number, date, description, aiff, mp3 }) => {
         <p className="py-7">{description}</p>
         <p className="flex justify-end gap-8">
           <a
-            className="p-1.5 border-stone-700 dark:border-white border rounded"
+            className="p-1.5 border-secondary text-secondary border rounded"
             href={mp3}
           >
             MP3

@@ -9,19 +9,19 @@ const Header = ({ to, label }) => {
           to={to}
           className="col-span-1 justify-self-start place-self-center"
         >
-          <div className="text-secondary ">{label}</div>
+          <div className="text-primary ">{label}</div>
         </Link>
         <Link
           to="/"
           className="col-span-1 justify-self-middle place-self-center"
         >
-          <div className="text-primary">SLi.ST</div>
+          <div className="text-primary text-lg">sli.st</div>
         </Link>
         <a
           href="https://instagram.com/sli.st96"
           className="col-span-1 justify-self-end place-self-center"
         >
-          <div className="text-secondary ">IG</div>
+          <div className="text-primary">IG</div>
         </a>
       </nav>
     </header>

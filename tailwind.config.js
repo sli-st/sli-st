@@ -10,7 +10,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: "Verdana",
+      sans: "Arial",
       serif: "Georgia",
     },
     extend: {
