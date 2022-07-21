@@ -9,10 +9,6 @@ module.exports = {
         DEFAULT: "1rem",
       },
     },
-    fontFamily: {
-      sans: "Arial",
-      serif: "Georgia",
-    },
     extend: {
       animation: {
         tilt: "tilt 10s infinite linear",

@@ -3,7 +3,7 @@ import * as React from "react"
 const IndexLink = ({ d, to, label, handle }) => {
   return (
     <div className="relative group">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-primary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-secondary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
       <a
         href={to}
         className="relative px-5 px-md-7 py-4 bg-background rounded-lg leading-none flex items-center divide-x divide-secondary w-full mx-0"

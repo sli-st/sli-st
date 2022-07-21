@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `SLi.ST`,
-    description: `Your source of flyers for underground raves, nightclubs, and other (interesting) music and art events in CDMX. By SLi.ST`,
-    author: `SLi.ST`,
+    title: `sli.st - home`,
+    description: `sli.st · /ˈesˌlɪst/ noun - a set of items from a particular art form, or arbitrary class, curated by sli.st ; DJ, persona, idea, online curator, this website's domain name, a community`,
+    author: `sli.st`,
   },
   plugins: [
     `gatsby-plugin-preact`,
