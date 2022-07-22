@@ -83,24 +83,34 @@ const BlogPage = ({ data }) => {
             </li>
           </ul>
         </p>
-        <div className="grid grid-cols-3 pb-20 not-prose">
-          <a href="/epk/black-white.svg" download>
-            <img className="img-fluid" src="/epk/black-white.svg" alt="5" />
-          </a>
-          <a href="/epk/red-black.svg" download>
-            <img className="img-fluid" src="/epk/red-black.svg" alt="2" />
-          </a>
-          <a href="/epk/white-red.svg" download>
-            <img className="img-fluid" src="/epk/white-red.svg" alt="4" />
-          </a>
+        <div className="grid grid-cols-4 pb-20 not-prose">
           <a href="/epk/white-black.svg" download>
-            <img className="img-fluid" src="/epk/white-black.svg" alt="3" />
+            <img
+              className="img-fluid"
+              src="/epk/white-black.svg"
+              alt="white-black"
+            />
           </a>
-          <a href="/epk/black-red.svg" download>
-            <img className="img-fluid" src="/epk/black-red.svg" alt="6" />
+          <a href="/epk/gray-white.svg" download>
+            <img
+              className="img-fluid"
+              src="/epk/gray-white.svg"
+              alt="gray-white"
+            />
           </a>
-          <a href="/epk/red-white.svg" download>
-            <img className="img-fluid" src="/epk/red-white.svg" alt="1" />
+          <a href="/epk/gray-black.svg" download>
+            <img
+              className="img-fluid"
+              src="/epk/gray-black.svg"
+              alt="gray-black"
+            />
+          </a>
+          <a href="/epk/black-white.svg" download>
+            <img
+              className="img-fluid"
+              src="/epk/black-white.svg"
+              alt="black-white"
+            />
           </a>
         </div>
       </MarkdownWrapper>
