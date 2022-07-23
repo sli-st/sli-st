@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="text-primary font-bold">Genres:</span> <br></br>
+          <span className="font-bold text-primary">Genres:</span> <br></br>
           dark ambient, dark melodic house and techno, minimal, apocalyptic
           industrial techno, gabber, dnb and other genres but with a darker
           twist.
@@ -34,7 +34,7 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="text-primary font-bold">Mixtapes: </span>
+          <span className="font-bold text-primary">Mixtapes: </span>
           <br></br>
           <ul>
             <li>
@@ -47,7 +47,12 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="text-primary font-bold">Biography: </span>
+          <span className="font-bold text-primary">Past DJ sets: </span>
+          <Link to="/reflections">Flyers and reflections</Link>
+        </p>
+        <br />
+        <p>
+          <span className="font-bold text-primary">Biography: </span>
           <br></br>In March 2021 I was introduced to the underground rave scene
           in NYC. 3 months later I traveled to CDMX and found that the CDMX
           scene was much darker and more intense. In late 2021, I started
@@ -58,7 +63,7 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="text-primary font-bold">Rider: </span>
+          <span className="font-bold text-primary">Rider: </span>
           <br></br>
           <ul>
             <li>flyers may use my DJ name and/or logo, but not my face</li>
@@ -70,7 +75,7 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="text-primary font-bold">Text and Logos: </span>
+          <span className="font-bold text-primary">Text and Logos: </span>
           <br></br>
           <ul>
             <li>
@@ -83,7 +88,7 @@ const BlogPage = ({ data }) => {
             </li>
           </ul>
         </p>
-        <div className="grid grid-cols-4 pb-20 not-prose">
+        <div className="not-prose grid grid-cols-4 pb-20">
           <a href="/epk/white-black.svg" download>
             <img
               className="img-fluid"
@@ -113,12 +118,6 @@ const BlogPage = ({ data }) => {
             />
           </a>
         </div>
-        <br></br>
-        <p>
-          <span className="text-primary font-bold">Past DJ sets: </span>
-          <br></br>
-          <Link to="/reflections">Flyers and reflections</Link>
-        </p>
       </MarkdownWrapper>
     </Layout>
   )
