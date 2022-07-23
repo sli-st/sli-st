@@ -23,16 +23,15 @@ const BlogPage = ({ data }) => {
         <p>
           <span className="font-bold text-primary">Biography:</span>
           <br />
-          Embarrassingly enough, sli.st had never gone to a rave until March
-          2021 when he was already 24 years old. 3 months later, he took a
-          flight to CDMX and within his first weekend he became completely
-          addicted to the local techno scene. The raves were darker and much
-          more intense than just about everything he had seen in NYC. sli.st
-          subsequently cancelled all of his travel plans, and by the end of
-          August he was learning how to DJ from one of CDMX's darkest hard
+          sli.st is 25 and from NYC, but despite all that he had never been to a
+          techno rave until March 2021. 3 months later, he came to CDMX on a
+          dare to find a supposedly nonexistent underground scene. Within his
+          first weekend, he was completely addicted to the darker sound of CDMX
+          and immediately cancelled all of his travel plans. By the end of
+          August he was learning how to DJ from one of CDMX's nastiest
           industrial DJs. Within the following month, he was invited to DJ at
-          The Real Under, open for B Space at 49 Basan, and also DJ for a few
-          hours at the NIX New Year's afterparty.
+          The Real Under a couple of times, open for B Space at 49 Basan, and
+          also DJ for a few hours at the New Year's after party at NIX.
         </p>
         <br />
         <p>
