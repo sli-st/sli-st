@@ -41,14 +41,14 @@ const BlogPage = ({ data }) => {
           a dark twist.
         </p>
         <p>
-          sli.st is currently going through a minimal and indusrial psy phase.
-          Nevertheless, his sets are dynamic with small shoutouts to unnexpected
-          genres such as synthwave, dembow, and even rock. He likes to weave in
-          seemingly random genres to earn his audience's trust before taking
-          them on a deep dive into some truly dark angry scary cathartic
-          melodies. His sets are designed to serve as a reminder that you and
-          your fellow ravers in the underground scene often have multiple layers
-          underneath all your black clothing.
+          sli.st is currently going through a speedy minimal and indusrial psy
+          phase. Nevertheless, his sets are dynamic with small shoutouts to
+          unnexpected genres such as synthwave, dembow, and even rock. He likes
+          to weave in a variety of genres to earn his audience's trust before
+          taking them on a deep dive into some truly dark angry scary cathartic
+          melodies. His sets are designed to serve as a reminder that we and our
+          fellow ravers in the underground scene often have multiple layers
+          underneath all our black clothing.
         </p>
         <br></br>
         <p>
@@ -59,7 +59,7 @@ const BlogPage = ({ data }) => {
               <Link to="/mixtapes">high quality download links</Link>
             </li>
             <li>
-              <a href="soundcloud.com/slistslist">SoundCloud</a>
+              <a href="soundcloud.com/slist96">SoundCloud</a>
             </li>
           </ul>
         </p>
