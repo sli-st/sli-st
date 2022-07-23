@@ -108,6 +108,5 @@ module.exports = {
     //   },
     // },
     "gatsby-plugin-postcss",
-    `gatsby-plugin-open-graph-images`,
   ],
 }
