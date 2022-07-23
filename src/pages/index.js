@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link } from "gatsby"
 import SocialLink from "../components/sociallink"
-import MarkdownWrapper from "../components/markdownwrapper"
 import ListLink from "../components/listlink"
 import LinkGroup from "../components/linkgroup"
 
