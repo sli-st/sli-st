@@ -23,13 +23,16 @@ const BlogPage = ({ data }) => {
         <p>
           <span className="font-bold text-primary">Biography:</span>
           <br />
-          sli.st was first introduced to techno in March 2021 via the
-          underground rave scene in NYC. 3 months later he traveled to CDMX and
-          found that the CDMX scene was darker and much more intense. In late
-          2021, sli.st started learning how to DJ from one of CDMX's hardest
-          industrial DJs. Within the next few months he was invited to play at
-          The Real Under, open for B Space at 49 Basan, and also DJ for a few
-          hours at the NIX New Year's afterparty.
+          Due to a relatively limited background in music, sli.st didn't go to
+          his first rave until March 2021 by which time he was already 24. 3
+          months later he traveled to CDMX. Within his first weekend, he
+          discovered a darker and much more intense techno scene than just about
+          everything he had found in NYC, and subsequently cancelled all of his
+          plans for traveling elsewhere. By the end of August sli.st was
+          learning how to DJ from one of CDMX's darkest hard industrial DJs.
+          Within the following month he was invited to play at The Real Under,
+          open for B Space at 49 Basan, and also DJ for a few hours at the NIX
+          New Year's afterparty.
         </p>
         <br />
         <p>
