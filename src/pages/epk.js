@@ -19,7 +19,19 @@ const BlogPage = ({ data }) => {
           <br></br>
           WhatsApp: <a href="https://wa.me/12123210632"> +1 212-321-0632</a>
         </p>
-        <br></br>
+        <br />
+        <p>
+          <span className="font-bold text-primary">Biography:</span>
+          <br />
+          sli.st was first introduced to techno in March 2021 via the
+          underground rave scene in NYC. 3 months later he traveled to CDMX and
+          found that the CDMX scene was darker and much more intense. In late
+          2021, sli.st started learning how to DJ from one of CDMX's hardest
+          industrial DJs. Within the next few months he was invited to play at
+          The Real Under, open for B Space at 49 Basan, and also DJ for a few
+          hours at the NIX New Year's afterparty.
+        </p>
+        <br />
         <p>
           <span className="font-bold text-primary">Genres:</span> <br></br>
           dark ambient, dark melodic house and techno, minimal, apocalyptic
@@ -51,17 +63,6 @@ const BlogPage = ({ data }) => {
           <Link to="/reflections">Flyers and reflections</Link>
         </p>
         <br />
-        <p>
-          <span className="font-bold text-primary">Biography: </span>
-          <br></br>In March 2021 I was introduced to the underground rave scene
-          in NYC. 3 months later I traveled to CDMX and found that the CDMX
-          scene was much darker and more intense. In late 2021, I started
-          learning how to DJ from one of CDMX's hardest industrial DJs. Within
-          the next few months I was invited to play at The Real Under, open for
-          B Space at 49 Basan, and also DJ for a few hours at the NIX New Year's
-          afterparty.
-        </p>
-        <br></br>
         <p>
           <span className="font-bold text-primary">Rider: </span>
           <br></br>
