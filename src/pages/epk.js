@@ -41,14 +41,14 @@ const BlogPage = ({ data }) => {
           a dark twist.
         </p>
         <p>
-          sli.st is currently going through a speedy minimal and indusrial psy
+          sli.st is currently going through a speedy minimal, and indusrial psy
           phase. Nevertheless, his sets are dynamic with small shoutouts to
           unnexpected genres such as synthwave, dembow, and even rock. He likes
-          to weave in a variety of genres to earn his audience's trust before
-          taking them on a deep dive into some truly dark angry scary cathartic
-          melodies. His sets are designed to serve as a reminder that we and our
-          fellow ravers in the underground scene often have multiple layers
-          underneath all our black clothing.
+          to weave in a few different genres to earn his audience's trust before
+          taking them on a deep dive into some truly dark cathartic melodies. He
+          likes his sets to serve as a reminder that we and our fellow ravers in
+          the underground scene often have multiple layers underneath all our
+          black clothing.
         </p>
         <br></br>
         <p>
