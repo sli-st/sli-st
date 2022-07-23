@@ -43,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `gigs`,
-        path: `${__dirname}/content/gigs/`,
+        name: `reflections`,
+        path: `${__dirname}/content/reflections/`,
       },
     },
     "gatsby-plugin-mdx",

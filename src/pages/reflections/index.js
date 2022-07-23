@@ -7,12 +7,15 @@ import Seo from "../../components/seo"
 const BlogPage = ({ data }) => {
   return (
     // to="/about/rave-reflections"
-    <Layout pageTitle="Sets" label="About">
-      <Seo title="Sets" />
+    <Layout pageTitle="Reflections" label="About">
+      <Seo title="Reflections" />
       <div className="gap-3">
-        <div className="columns-4">
+        <div
+          className="columns-3 
+        "
+        >
           {data.allMdx.nodes.map(node => (
-            <Link to={`/gigs/${node.slug}`}>
+            <Link to={`/reflections/${node.slug}`}>
               <GatsbyImage
                 image={getImage(node.frontmatter.hero_image)}
                 className="mb-[1rem]"
@@ -28,7 +31,7 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
   {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "/content/gigs/" } }
+      filter: { fileAbsolutePath: { regex: "/content/reflections/" } }
       sort: { fields: frontmatter___date, order: ASC }
     ) {
       nodes {

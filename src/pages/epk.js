@@ -113,6 +113,12 @@ const BlogPage = ({ data }) => {
             />
           </a>
         </div>
+        <br></br>
+        <p>
+          <span className="text-primary font-bold">Past DJ sets: </span>
+          <br></br>
+          <Link to="/reflections">Flyers and reflections</Link>
+        </p>
       </MarkdownWrapper>
     </Layout>
   )

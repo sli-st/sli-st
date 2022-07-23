@@ -16,7 +16,7 @@ const IndexPage = () => (
             number="6"
             date="2022-06-01"
             description="synthwave, minimal, apocalytpic gabber, psytechno"
-            aiff="https://drive.google.com/file/d/10V-wUIuQ0C6kwhNJo1fUQVDNL3xtc5uw/view?usp=sharing"
+            aiff="https://drive.google.com/file/d/1dvQ13OGK1HT5vXy8_FNvCcLEN1S2cFvi/view?usp=sharing"
             mp3="https://drive.google.com/file/d/10V-wUIuQ0C6kwhNJo1fUQVDNL3xtc5uw/view?usp=sharing"
           />
           <MixtapeLinks
@@ -38,14 +38,14 @@ const IndexPage = () => (
             date="2022-01-22"
             description="dark melodic house and a bit of italo"
             aiff="https://drive.google.com/file/d/1333GtfPOVqpv0fPmAAcE_Aam4EB8nj13/view?usp=sharing"
-            mp3="https://drive.google.com/file/d/1al35OnHFS77CWm6QLomkhvwSrkjYBr_P/view?usp=sharing"
+            mp3="https://drive.google.com/file/d/11eYHSl_fNiBaF7RKdKQdGaf9AGX2XCV-/view?usp=sharing"
           />
           <MixtapeLinks
             number="2"
             date="2022-01-14"
             description="dark trance techno, industrial techno classics,"
             aiff="https://drive.google.com/file/d/1al35OnHFS77CWm6QLomkhvwSrkjYBr_P/view?usp=sharing"
-            mp3="https://drive.google.com/file/d/1WRM6cCxQc2oQajg-JCuYTZPSIWzVqqnc/view?usp=sharing"
+            mp3="https://drive.google.com/file/d/1ikEeCqyuV9tqIJPdopaGxUxrpd60fReO/view?usp=sharing"
           />
           <MixtapeLinks
             number="1"
@@ -56,10 +56,7 @@ const IndexPage = () => (
           />
 
           <p className="text-center pb-20">
-            <a
-              className="text-primary"
-              href="https://soundcloud.com/slistslist"
-            >
+            <a className="text-primary" href="https://soundcloud.com/slist96">
               SoundCloud
             </a>
           </p>
