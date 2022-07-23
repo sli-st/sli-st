@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
   return (
     <div>
-      <Layout to="/reflections" label="+++">
+      <Layout to="/reflections" label="More">
         <Seo title={data.mdx.frontmatter.title} />
         <MarkdownWrapper>
           <p className="text-center">{data.mdx.timeToRead} min read</p>

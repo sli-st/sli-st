@@ -7,7 +7,7 @@ import Seo from "../../components/seo"
 const BlogPage = ({ data }) => {
   return (
     // to="/about/rave-reflections"
-    <Layout pageTitle="Reflections" label="About">
+    <Layout pageTitle="Reflections" label="About" to="/about/reflections">
       <Seo title="Reflections" />
       <div className="gap-3">
         <div

@@ -8,10 +8,9 @@ import MarkdownWrapper from "../../components/markdownwrapper"
 const BlogPost = ({ data }) => {
   return (
     <div className="vh-100">
-      <Layout to="/about" label="About All">
+      <Layout to="/about" label="About all">
         <Seo title={data.mdx.frontmatter.title} />
         <MarkdownWrapper>
-          <h1>{data.mdx.frontmatter.title}</h1>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </MarkdownWrapper>
       </Layout>

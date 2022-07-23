@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `sli.st - home`,
+    title: `sli.st`,
     description: `sli.st · /ˈesˌlɪst/ noun - a set of items from a particular art form, or arbitrary class, curated by sli.st ; DJ, persona, idea, online curator, this website's domain name, a community`,
     author: `sli.st`,
   },

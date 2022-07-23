@@ -1,13 +1,14 @@
 import { Link } from "gatsby"
 import * as React from "react"
 
-const ListLink = ({ d, to, label, handle }) => {
+const ListLink = ({ d, to, href, label, handle }) => {
   return (
     <div className="relative group">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-secondary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-secondary rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
       <Link
         to={to}
-        className="relative px-5 px-md-7 py-4 bg-background rounded-lg leading-none flex items-center divide-x divide-secondary w-full mx-0"
+        href={href}
+        className="relative pl-5 pl-md-7 py-4 bg-background rounded-lg leading-none flex items-center divide-x divide-secondary w-full mx-0"
       >
         <span className="flex items-center space-x-3 md:space-x-5">
           <svg

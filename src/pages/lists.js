@@ -8,22 +8,8 @@ import ListLink from "../components/listlink"
 import ExternalIndexLink from "../components/externalindexlink"
 
 const IndexPage = ({ data }) => (
-  <Layout pageTitle="Index" to="/epk" label="EPK">
+  <Layout pageTitle="Index" to="/about/lists" label="About">
     <Seo title="Index" />
-    {/* <nav className="text-lg text-center text-primary flex gap-5 flex-row justify-around md:px-36 lg:px-60 xl:px-96 pt-5 md:pt-10 ">
-      <Link to="/rave-tips" className="">
-        <div className="text-secondary">105</div>rave tips
-      </Link>
-      <Link to="/reflections">
-        <div className="text-secondary">5</div> reflections
-      </Link>
-      <Link to="/menus">
-        <div className="text-secondary">4</div> menus
-      </Link>
-      <Link to="/mixtapes">
-        <div className="text-secondary">6</div> mixtapes
-      </Link>
-    </nav> */}
     <nav
       aria-label="Primary navigation"
       id="index-nav"
@@ -50,18 +36,6 @@ const IndexPage = ({ data }) => (
           to="https://myanimelist.net/animelist/slist96"
           label="animes"
         />
-      </div>
-      <div className="grid grid-cols-4 text-xl text-secondary md:px-10">
-        <div className="pt-10 col-span-4 ">
-          <MarkdownWrapper>
-            <p className="mt-10 mb-20 mx-2.5 md:mx-5 p-3 md:p-3 border border-stone-700 rounded-xl">
-              sli.st is a reference to S tier lists. I've found that the DJs I
-              like tend to have similar tastes as me in other forms of media. I
-              imagine the reverse is probably true - people who like the same
-              stuff I do are also likely to enjoy similar music.
-            </p>
-          </MarkdownWrapper>
-        </div>
       </div>
     </nav>
   </Layout>

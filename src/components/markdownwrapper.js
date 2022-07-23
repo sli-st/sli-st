@@ -3,8 +3,8 @@ import * as React from "react"
 const MarkdownWrapper = ({ children }) => {
   return (
     <article
-      className="pt-5 mx-auto prose text-primary prose-headings:text-secondary 
-     prose-p:leading-loose lg:prose-lg lg:leading-8 prose-headings:font-normal prose-headings:leading-tight prose-a:text-primary"
+      className="prose mx-auto max-w-2xl pt-5 text-primary 
+     prose-headings:text-left prose-headings:font-normal prose-headings:leading-tight prose-headings:text-secondary prose-p:leading-loose prose-a:text-primary"
     >
       {children}
     </article>
