@@ -23,32 +23,29 @@ const BlogPage = ({ data }) => {
         <p>
           <span className="font-bold text-primary">Biography:</span>
           <br />
-          sli.st is 25 and from NYC, but despite all that he had never been to a
-          techno rave until March 2021. 3 months later, he came to CDMX on a
-          dare to search for a supposedly nonexistent underground scene. Within
-          his first weekend, he was completely addicted to the darker sound of
-          CDMX and immediately cancelled all future travel plans. By the end of
-          August he was learning how to DJ from one of CDMX's nastiest
-          industrial DJs. Within the following month, he was invited to play at
-          The Real Under a couple times, open for B Space at 49 Basan, and DJ
-          for a few hours at the New Year's after party at NIX.
+          25 and from NYC, and embarassingly new to techno. Went to his first
+          rave in March'21. Arrived in CDMX on June'21 and got addicted to the
+          darker sounds after his first weekend. Prompty cancelled all future
+          travel plans. By the end of August he was learning from one of the
+          hardest industrial DJs in CDMX. Within the following month, he was
+          invited to play at The Real Under, open for B Space at 49 Basan, and
+          DJ for a few hours at the New Year's after party at NIX. Currently
+          trying to collect all the gym badges before going back home at the end
+          of 2022.
         </p>
         <br />
         <p>
           <span className="font-bold text-primary">Genres:</span> <br></br>
-          dark ambient, dark melodic house and techno, minimal, apocalyptic
-          industrial techno, gabber, dnb, and other genres- but almost all with
-          a dark twist.
+          variety of electronic genres but almost exclusively the darker
+          variants: ambient, melodic techno, minimal, industrial acid,
+          apocalyptic gabber, a few seemingly random genres like dembow, pop,
+          synthwave, and rock.
         </p>
         <p>
-          sli.st is currently going through a speedy minimal, and indusrial psy
-          phase. Nevertheless, his sets are dynamic with small shoutouts to
-          unnexpected genres such as synthwave, dembow, and even rock. He likes
-          to weave in a few different genres to earn his audience's trust before
-          taking them on a deep dive into some truly dark cathartic melodies. He
-          likes his sets to serve as a reminder that we and our fellow ravers in
-          the underground scene often have multiple layers underneath all our
-          black clothing.
+          sli.st is currently going through a dark tech house, speedy minimal,
+          and apocalyptic industrial phase. His sets are fun, bouncy, but always
+          dark. He usually likes to sprinkle some different genres before taking
+          his audiences on a deep dive into some truly dark cathartic melodies.
         </p>
         <br></br>
         <p>
