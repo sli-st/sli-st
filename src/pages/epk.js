@@ -71,11 +71,20 @@ const BlogPage = ({ data }) => {
           <br></br>
           <ul>
             <li>flyers may use my DJ name and/or logo, but not my face</li>
-            <li>1 hour: $750 mxn, 2 hours: $1000; payment due after set</li>
+            <li>1 hour: $750 mxn, 2 hours: $1000; payment after set</li>
             <li>
-              4+ guestlist for local influencers to help promote the event
+              4+ guestlist for other local influencer friends to help promote
+              the event
             </li>
           </ul>
+        </p>
+        <p>
+          As a bonus, I am one of the biggest and most influential promoters of
+          the local techno scene through my work as @cdmx.flyer.wey (past
+          username). I am more than happy to leverage all my connections to help
+          spread the event flyer, and also help sell tickets online (preferably
+          with a discount for my followers) - via very agressive social media
+          marketing.
         </p>
         <br></br>
         <p>
