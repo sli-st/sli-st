@@ -18,7 +18,7 @@ module.exports = {
         current: "currentColor",
         light: "#999999",
         primary: "var(--primary)",
-        secondary: "var(--secondary)",
+        primary: "var(--primary)",
         "text-main": "var(--text-main)",
         background: "var(--background)",
       },

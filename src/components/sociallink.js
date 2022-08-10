@@ -8,7 +8,7 @@ const SocialLink = ({ d, to, label, handle }) => {
         width="36"
         height="36"
         fill="currentColor"
-        // className="text-secondary fill-secondary stroke-2"
+        // className="text-primary fill-primary stroke-2"
         viewBox="0 0 24 24"
       >
         <path d={d} />

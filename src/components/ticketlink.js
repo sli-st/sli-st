@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 const TicketLink = ({ d, to, label, handle }) => {
   return (
-    <div className="relative group">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-primary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt text-xs "></div>
+    <div className="group relative">
+      <div className="absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-primary to-primary text-xs opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200 "></div>
       <a
         href={to}
-        className="relative px-5 px-md-7 py-4 bg-background rounded-lg leading-none flex items-center divide-x divide-gray-600 w-full mx-0"
+        className="px-md-7 relative mx-0 flex w-full items-center divide-x divide-gray-600 rounded-lg bg-background px-5 py-4 leading-none"
       >
         <span className="flex items-center space-x-3 md:space-x-5">
           <svg
@@ -15,15 +15,15 @@ const TicketLink = ({ d, to, label, handle }) => {
             width="24"
             height="24"
             fill="currentColor"
-            // className="text-secondary fill-secondary stroke-2"
+            // className="text-primary fill-primary stroke-2"
             viewBox="0 0 24 24"
           >
             <path d={d} />
           </svg>
 
-          <span className="pr-3 md:pr-5 text-secondary">{label}</span>
+          <span className="pr-3 text-primary md:pr-5">{label}</span>
         </span>
-        <span className="pl-3 md:pl-5 text-primary group-hover:text-secondary transition duration-200">
+        <span className="pl-3 text-primary transition duration-200 group-hover:text-primary md:pl-5">
           {handle}
         </span>
       </a>

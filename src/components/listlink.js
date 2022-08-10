@@ -3,12 +3,12 @@ import * as React from "react"
 
 const ListLink = ({ d, to, href, label, handle }) => {
   return (
-    <div className="relative group">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary to-secondary rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+    <div className="group relative">
+      <div className="absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-primary to-primary opacity-60 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
       <Link
         to={to}
         href={href}
-        className="relative pl-5 pl-md-7 py-4 bg-background rounded-lg leading-none flex items-center divide-x divide-secondary w-full mx-0"
+        className="pl-md-7 relative mx-0 flex w-full items-center divide-x divide-primary rounded-lg bg-background py-4 pl-5 leading-none"
       >
         <span className="flex items-center space-x-3 md:space-x-5">
           <svg
@@ -16,15 +16,15 @@ const ListLink = ({ d, to, href, label, handle }) => {
             width="24"
             height="24"
             fill="currentColor"
-            // className="text-secondary fill-secondary stroke-2"
+            // className="text-primary fill-primary stroke-2"
             viewBox="0 0 24 24"
           >
             <path d={d} />
           </svg>
 
-          <span className="pr-3 md:pr-5 text-primary">{label}</span>
+          <span className="pr-3 text-primary md:pr-5">{label}</span>
         </span>
-        <span className="pl-3 md:pl-5 text-secondary group-hover:text-secondary transition duration-200">
+        <span className="pl-3 text-primary transition duration-200 group-hover:text-primary md:pl-5">
           {handle}
         </span>
       </Link>

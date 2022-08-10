@@ -7,7 +7,7 @@ import "./styles.css"
 
 const Layout = ({ pageTitle, children, to, label }) => {
   return (
-    <div>
+    <div class="pb-24">
       <title>{pageTitle}</title>
       <Header to={to} label={label} />
       <main className="pt-5">

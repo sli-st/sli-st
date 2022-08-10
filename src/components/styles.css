@@ -9,8 +9,7 @@
 }
 
 html {
-  --primary: #a3a3a3;
-  --secondary: #737373;
+  --primary: white;
   --background: black;
   background-color: black;
 }

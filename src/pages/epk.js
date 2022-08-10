@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import MarkdownWrapper from "../components/markdownwrapper"
+import MarkdownWrapper from "../components/textwrapper"
 // import { StaticImage } from "gatsby-plugin-image"
 
 const BlogPage = ({ data }) => {
@@ -21,36 +21,31 @@ const BlogPage = ({ data }) => {
         </p>
         <br />
         <p>
-          <span className="font-bold text-primary">Biography:</span>
-          <br />
-          25 and from NYC, and embarassingly new to techno. Went to his first
-          rave in March'21. Arrived in CDMX on June'21 and got addicted to the
-          darker sounds after his first weekend. Prompty cancelled all future
-          travel plans. By the end of August he was learning from one of the
-          hardest industrial DJs in CDMX. Within the following month, he was
-          invited to play at The Real Under, open for B Space at 49 Basan, and
-          DJ for a few hours at the New Year's after party at NIX. Currently
-          trying to collect all the gym badges before going back home at the end
-          of 2022.
+          <h2 className="font-bold text-primary">Biography:</h2>
+          From Queens NYC, 25, new to techno. Went to his first rave in March
+          2021, and then went to CDMX 3 months later. Got addicted to the darker
+          sounds after his first weekend. Prompty cancelled all future travel
+          plans. By the end of August he was learning from one of CDMX's hardest
+          industrial DJs. Within the following month, he was invited to play at
+          The Real Under, open for B Space at 49 Basan, and DJ for a few hours
+          at the New Year's after party at NIX. Currently trying to collect all
+          the gym badges before going back home at the end of 2022.
         </p>
         <br />
         <p>
-          <span className="font-bold text-primary">Genres:</span> <br></br>
-          variety of electronic genres but almost exclusively the darker
-          variants: ambient, melodic techno, minimal, industrial acid,
-          apocalyptic gabber, a few seemingly random genres like dembow, pop,
-          synthwave, and rock.
+          <h2 className="font-bold text-primary">Genres:</h2>
+          As a DJ, sli.st likes to keep it dark. His interests range from dark
+          ambient to apocalyptic gabber, but he also likes to play dembow, pop,
+          synthwave, and more- when he can.
         </p>
         <p>
-          sli.st is currently going through a dark tech house, speedy minimal,
-          and apocalyptic industrial phase. His sets are fun, bouncy, but always
-          dark. He usually likes to sprinkle some different genres before taking
-          his audiences on a deep dive into some truly dark cathartic melodies.
+          Even when sli.st plays a seemingly happy track, you can always expect
+          to hear some dark element
         </p>
         <br></br>
         <p>
-          <span className="font-bold text-primary">Mixtapes: </span>
-          <br></br>
+          <h2 className="font-bold text-primary">Mixtapes: </h2>
+
           <ul>
             <li>
               <Link to="/mixtapes">high quality download links</Link>
@@ -62,13 +57,13 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="font-bold text-primary">Past DJ sets: </span>
+          <h2 className="font-bold text-primary">Past DJ sets: </h2>
           <Link to="/reflections">Flyers and reflections</Link>
         </p>
-        <br />
+
         <p>
-          <span className="font-bold text-primary">Rider: </span>
-          <br></br>
+          <h2 className="font-bold text-primary">Rider: </h2>
+
           <ul>
             <li>flyers may use my DJ name and/or logo, but not my face</li>
             <li>1 hour: $750 mxn, 2 hours: $1000; payment after set</li>
@@ -88,8 +83,8 @@ const BlogPage = ({ data }) => {
         </p>
         <br></br>
         <p>
-          <span className="font-bold text-primary">Text and Logos: </span>
-          <br></br>
+          <h2 className="font-bold text-primary">Text and Logos: </h2>
+
           <ul>
             <li>
               "sli.st" should preferably be kept lowercase as it is a reference

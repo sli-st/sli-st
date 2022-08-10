@@ -2,14 +2,14 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import MarkdownWrapper from "../../components/markdownwrapper"
+import MarkdownWrapper from "../../components/textwrapper"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="About sli.st" to="/updates" label="Updates">
       <Seo title="About sli.st" />
       <MarkdownWrapper>
-        <h1 class="pb-0 mb-0">sli.st</h1>
+        <h1 class="mb-0 pb-0">sli.st</h1>
         <p>
           sli.st is my attempt at giving back to the underground rave scene. The
           scene and the music has saved my mental health and I want to spread
