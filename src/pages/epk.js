@@ -27,7 +27,7 @@ const BlogPage = ({ data }) => {
         <li>Name: Simon Howlader</li>
         <li>DJ Name: sli.st</li>
         <li>Age: 25</li>
-        <li>Bengali roots, NYC born and raised, CDMX DJ</li>
+        <li>From: NYC, Bengali roots, CDMX DJ</li>
       </ul>
       <p>
         sli.st is a <span class="font-bold">dark </span>

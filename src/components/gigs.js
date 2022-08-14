@@ -32,7 +32,7 @@ export default function Header() {
       `}
       render={data => (
         <div>
-          <h1>Parties I've played at:</h1>
+          <h1>Appearances</h1>
           <div className="gap-3">
             <div
               className="md:columns-3 
