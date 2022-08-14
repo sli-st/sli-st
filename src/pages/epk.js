@@ -5,7 +5,7 @@ import TextWrapper from "../components/textwrapper"
 import Mixtapes from "../components/mixtapes"
 import Gigs from "../components/gigs"
 import { graphql } from "gatsby"
-import LogoSection from "../components/flyerweysection"
+import FlyerWeySection from "../components/flyerweysection"
 
 // import { StaticImage } from "gatsby-plugin-image"
 
@@ -25,23 +25,25 @@ const BlogPage = ({ data }) => {
       <h1>Biography</h1>
       <ul>
         <li>Name: Simon Howlader</li>
+        <li>DJ Name: sli.st</li>
         <li>Age: 25</li>
         <li>Bengali roots, NYC born and raised, CDMX DJ</li>
       </ul>
       <p>
         sli.st is a <span class="font-bold">dark </span>
-        electronic DJ - from lofi to gabber, he only plays
+        electronic DJ. From lofi to gabber, he keeps it
         <span class="font-bold"> dark</span>. Happy music makes him physically
         uncomfortable. His sets sometimes feature "random" genres like dembow,
-        europop, or Japanese trap - but always the
+        europop, or Japanese trap - but only the
         <span class="font-bold"> darker </span>
         variants.
       </p>
 
       <Mixtapes />
       <Gigs data={data} />
-      <LogoSection />
-      <h1>Rider: </h1>
+
+      <FlyerWeySection />
+      <h1>Rider</h1>
       <ul>
         <li>1 hour: $750 mxn, 2 hours: $1000; payment after set</li>
         <li>

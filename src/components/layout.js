@@ -5,6 +5,7 @@ import { Script } from "gatsby"
 import Seo from "../components/seo"
 import "./styles.css"
 import TextWrapper from "./textwrapper"
+import Footer from "./footer"
 
 const Layout = ({ pageTitle, children, to, label }) => {
   return (
@@ -12,13 +13,14 @@ const Layout = ({ pageTitle, children, to, label }) => {
       <Seo title={pageTitle} />
       <title>{pageTitle}</title>
       <Header to={to} label={label} />
-      <main className="container pt-5 pb-32">
+      <main className="container pt-20 pb-32">
         <div className="flex flex-row place-content-center ">
-          <div className="sm:w-[60vw]">
+          <div className="md:w-[60vw]">
             <TextWrapper>{children}</TextWrapper>
           </div>
         </div>
       </main>
+      <Footer />
 
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-80661C8JJ3"

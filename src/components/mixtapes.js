@@ -78,14 +78,14 @@ const Mixtapes = ({ d, to, href, label }) => {
           ></iframe>
         </div>
       </nav>
-      {/* <p class="text-center">
+      <p class="text-center">
         <a
-          className=" border border-white p-4 text-center text-primary"
+          className=" text-center text-primary"
           href="https://soundcloud.com/slist96"
         >
           SoundCloud
         </a>
-      </p> */}
+      </p>
     </div>
   )
 }
