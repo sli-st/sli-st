@@ -2,100 +2,103 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import MarkdownWrapper from "../components/textwrapper"
+import TextWrapper from "../components/textwrapper"
+import EPKlink from "../components/epklink"
+import ListLink from "../components/listlink"
+import Mixtapes from "../components/mixtapes"
+import Gigs from "../components/gigs"
 // import { StaticImage } from "gatsby-plugin-image"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="EPK" to="/mixtapes" label="Mixtapes">
       <Seo title="EPK" />
-      <MarkdownWrapper>
+      <TextWrapper>
         <h1>Press Kit</h1>
         <p>
-          <br></br>
           Email: <a href="mailto: s@sli.st">s@sli.st</a>
-          <br></br>
+          <br />
           Instagram: <a href="https://instagram.com/sli.st96">@sli.st96</a>
-          <br></br>
+          <br />
           WhatsApp: <a href="https://wa.me/12123210632"> +1 212-321-0632</a>
         </p>
-        <br />
-        <p>
-          <h2 className="font-bold text-primary">Biography:</h2>
-          From Queens NYC, 25, new to techno. Went to his first rave in March
-          2021, and then went to CDMX 3 months later. Got addicted to the darker
-          sounds after his first weekend. Prompty cancelled all future travel
-          plans. By the end of August he was learning from one of CDMX's hardest
-          industrial DJs. Within the following month, he was invited to play at
-          The Real Under, open for B Space at 49 Basan, and DJ for a few hours
-          at the New Year's after party at NIX. Currently trying to collect all
-          the gym badges before going back home at the end of 2022.
-        </p>
-        <br />
-        <p>
-          <h2 className="font-bold text-primary">Genres:</h2>
-          As a DJ, sli.st likes to keep it dark. His interests range from dark
-          ambient to apocalyptic gabber, but he also likes to play dembow, pop,
-          synthwave, and more- when he can.
-        </p>
-        <p>
-          Even when sli.st plays a seemingly happy track, you can always expect
-          to hear some dark element
-        </p>
-        <br></br>
-        <p>
-          <h2 className="font-bold text-primary">Mixtapes: </h2>
 
-          <ul>
-            <li>
-              <Link to="/mixtapes">high quality download links</Link>
-            </li>
-            <li>
-              <a href="soundcloud.com/slist96">SoundCloud</a>
-            </li>
-          </ul>
-        </p>
-        <br></br>
+        <h1>Biography</h1>
+        <ul>
+          <li>Name: Simon Howlader</li>
+          <li>Age: 25</li>
+          <li>NYC born and raised, Bengali roots</li>
+        </ul>
         <p>
-          <h2 className="font-bold text-primary">Past DJ sets: </h2>
-          <Link to="/reflections">Flyers and reflections</Link>
+          sli.st is a <span class="font-bold">dark </span>
+          electronic DJ. From lofi to gabber, he only plays
+          <span class="font-bold"> dark</span>. Happy music makes him physically
+          uncomfortable. His sets sometimes feature "random" genres like dembow,
+          europop, and synthwave - but always the
+          <span class="font-bold"> darker </span>
+          variants.
         </p>
 
-        <p>
-          <h2 className="font-bold text-primary">Rider: </h2>
+        <div id="mixtapes">
+          <Mixtapes />
+        </div>
 
-          <ul>
-            <li>flyers may use my DJ name and/or logo, but not my face</li>
-            <li>1 hour: $750 mxn, 2 hours: $1000; payment after set</li>
-            <li>
-              4+ guestlist for other local influencer friends to help promote
-              the event
-            </li>
-          </ul>
+        <Gigs data={data} />
+        <p>
+          sli.st was first introduced to the rave scene in March 2021. In June
+          he travelled to CDMX and, after a few weeks of intense raving, sli.st
+          started an online community to help map out the local rave scene. 2
+          months later he was learning from one of CDMX's hardest industrial
+          DJs. Over the next few months he was invited to play at The Real
+          Under, open for B Space at 49 Basan, and DJ for a few hours at the New
+          Year's after party at NIX.
         </p>
         <p>
-          As a bonus, I am one of the biggest and most influential promoters of
-          the local techno scene through my work as @cdmx.flyer.wey (past
-          username). I am more than happy to leverage all my connections to help
-          spread the event flyer, and also help sell tickets online (preferably
-          with a discount for my followers) - via very agressive social media
-          marketing.
+          Through his online community, sli.st has become one of the most
+          influential niche curators of the CDMX dark techno scene. When sli.st
+          hears about a party he believes in, he agressively helps spread the
+          word.
         </p>
-        <br></br>
-        <p>
-          <h2 className="font-bold text-primary">Text and Logos: </h2>
 
-          <ul>
-            <li>
-              "sli.st" should preferably be kept lowercase as it is a reference
-              to the URL of this website
-            </li>
-            <li>
-              if the font can be specified, please use Arial, or another
-              sans-serif font
-            </li>
-          </ul>
-        </p>
+        <div className="gap-4 md:columns-3">
+          <img className="img-fluid" src="/epk/green.jpg" alt="black-white" />
+          <img
+            className="img-fluid"
+            src="/epk/reddrink.jpg"
+            alt="black-white"
+          />
+          <img
+            className="img-fluid"
+            src="/epk/greendrink.jpg"
+            alt="black-white"
+          />
+          <img className="img-fluid" src="/epk/braids.jpg" alt="black-white" />
+          <img
+            className="img-fluid"
+            src="/epk/chillcig.jpg"
+            alt="black-white"
+          />
+          <img className="img-fluid" src="/epk/twocigs.jpg" alt="black-white" />
+        </div>
+
+        <h1>Rider: </h1>
+        <ul>
+          <li>1 hour: $750 mxn, 2 hours: $1000; payment after set</li>
+          <li>
+            4+ guestlist for other local influencer friends to help promote the
+            event
+          </li>
+        </ul>
+
+        <h1>Text and Logo Preferences: </h1>
+        <ul>
+          <li>
+            "sli.st" should be spelled with the period and kept lowercase as it
+            is a reference to the URL of this website
+          </li>
+          <li>Arial font, standard spacing</li>
+        </ul>
+
         <div className="not-prose grid grid-cols-4 pb-20">
           <a href="/epk/white-black.svg" download>
             <img
@@ -126,9 +129,33 @@ const BlogPage = ({ data }) => {
             />
           </a>
         </div>
-      </MarkdownWrapper>
+      </TextWrapper>
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/content/reflections/" } }
+      sort: { fields: frontmatter___date, order: ASC }
+    ) {
+      nodes {
+        frontmatter {
+          date(formatString: "YYYY, MMMM, D ")
+          title
+          hero_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+        id
+        slug
+        excerpt
+      }
+    }
+  }
+`
 
 export default BlogPage

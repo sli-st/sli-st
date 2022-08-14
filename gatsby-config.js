@@ -15,6 +15,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -24,27 +31,6 @@ module.exports = {
         rule: {
           include: `${__dirname}/src/images`,
         },
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `about`,
-        path: `${__dirname}/content/about`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `discounts`,
-        path: `${__dirname}/content/discounts/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `reflections`,
-        path: `${__dirname}/content/reflections/`,
       },
     },
     "gatsby-plugin-mdx",
@@ -61,35 +47,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
-    //     trackingIds: [
-    //       "G-80661C8JJ3", // Google Analytics / GA
-    //       "AW-CONVERSION_ID", // Google Ads / Adwords / AW
-    //       "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-    //     ],
-    //     // This object gets passed directly to the gtag config command
-    //     // This config will be shared across all trackingIds
-    //     gtagConfig: {
-    //       optimize_id: "OPT_CONTAINER_ID",
-    //       anonymize_ip: true,
-    //       cookie_expires: 0,
-    //       defer: true,
-    //     },
-    //     // This object is used for configuration specific to this plugin
-    //     pluginConfig: {
-    //       // Puts tracking script in the head instead of the body
-    //       head: false,
-    //       // Setting this parameter is also optional
-    //       respectDNT: true,
-    //       // Avoids sending pageview hits from custom paths
-    //       exclude: ["/preview/**", "/do-not-track/me/too/"],
-    //       defer: true,
-    //     },
-    //   },
-    // },
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
