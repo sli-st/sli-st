@@ -5,7 +5,7 @@ import MixtapeLink from "./mixtapelink"
 const Mixtapes = ({ d, to, href, label }) => {
   return (
     <div>
-      <nav aria-label="Primary navigation" id="index-nav" className="">
+      <nav aria-label="Primary navigation" id="mixtapes" className="">
         <h1>Mixtapes</h1>
 
         <MixtapeLink
