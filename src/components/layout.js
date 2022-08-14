@@ -4,7 +4,6 @@ import Header from "../components/header"
 import { Script } from "gatsby"
 import Seo from "../components/seo"
 import "./styles.css"
-import TextWrapper from "./textwrapper"
 import Footer from "./footer"
 
 const Layout = ({ pageTitle, children, to, label }) => {
@@ -15,8 +14,11 @@ const Layout = ({ pageTitle, children, to, label }) => {
       <Header to={to} label={label} />
       <main className="container pt-20 pb-32">
         <div className="flex flex-row place-content-center ">
-          <div className="md:w-[60vw]">
-            <TextWrapper>{children}</TextWrapper>
+          <div
+            className="prose mx-auto max-w-2xl text-primary prose-headings:pt-16 prose-headings:text-left
+     prose-headings:font-normal prose-headings:leading-tight prose-headings:text-primary prose-p:leading-loose prose-a:text-primary md:w-[60vw]"
+          >
+            {children}
           </div>
         </div>
       </main>

@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import TextWrapper from "../components/textwrapper"
 import Mixtapes from "../components/mixtapes"
 import Gigs from "../components/gigs"
 import { graphql } from "gatsby"

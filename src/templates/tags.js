@@ -1,9 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TextWrapper from "../components/textwrapper"
 
 export const query = graphql`
   query($tag: String) {
@@ -39,25 +37,22 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title={`"${tag}" tag`} />
-
       <h1>{tagHeader}</h1>
-      <TextWrapper>
-        {edges.map(({ node }) => {
-          const { excerpt } = node
-          const { title, date, tags } = node.frontmatter
-          const { slug } = node
+      {edges.map(({ node }) => {
+        const { excerpt } = node
+        const { title } = node.frontmatter
+        const { slug } = node
 
-          return (
-            <div key={slug}>
-              <Link to={`/${slug}`}>
-                <h3>{title}</h3>
-              </Link>
+        return (
+          <div key={slug}>
+            <Link to={`/${slug}`}>
+              <h3>{title}</h3>
+            </Link>
 
-              <p>{excerpt}</p>
-            </div>
-          )
-        })}
-      </TextWrapper>
+            <p>{excerpt}</p>
+          </div>
+        )
+      })}
     </Layout>
   )
 }

@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
 import * as React from "react"
 import MixtapeLink from "./mixtapelink"
 
-const Mixtapes = ({ d, to, href, label }) => {
+const Mixtapes = ({}) => {
   return (
     <div>
       <nav aria-label="Primary navigation" id="mixtapes" className="">

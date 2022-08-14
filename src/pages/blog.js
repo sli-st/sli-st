@@ -1,13 +1,12 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import TextWrapper from "../components/textwrapper"
 import ListLink from "../components/listlink"
 import kebabCase from "lodash/kebabCase"
 
 const BlogPage = ({
   data: {
-    allMdx: { group, totalCount, nodes },
+    allMdx: { group, nodes },
   },
 }) => {
   return (

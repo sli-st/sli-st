@@ -6,19 +6,15 @@ const FlyerWeySection = ({ d, to, href, label }) => {
       <div class="py-16">
         <p>
           sli.st was first introduced to the rave scene in March 2021. 3 months
-          later he travelled to CDMX and, after a few weeks of intense raving,
-          sli.st started an online community to help map out the local rave
-          scene. 2 months later he started learning from one of the hardest
-          industrial DJs of the CDMX underground. Over the next few months he
-          was invited to play at The Real Under and open for B Space at 49
-          Basan. Most Notably, he helped close out the New Year's after party at
-          NIX.
+          later he went to CDMX in search of more techno. After a few weeks of
+          raving, sli.st started an online flyer sharing community to help map
+          out the local rave scene. 2 months later he started learning from one
+          of the best industrial DJs of the CDMX underground.
         </p>
         <p>
-          Through his online community, sli.st has become one of the most
-          influential niche curators of the CDMX dark techno scene. When sli.st
-          hears about a party he believes in, he agressively helps spread the
-          word.
+          Thanks to his online community, sli.st has become a trusted curator of
+          the CDMX dark techno scene. When sli.st gets excited about a party, he
+          agressively helps spread the word.
         </p>
       </div>
       <div className="gap-4 py-20 md:columns-3 ">
