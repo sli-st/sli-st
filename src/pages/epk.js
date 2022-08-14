@@ -1,12 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TextWrapper from "../components/textwrapper"
-import EPKlink from "../components/epklink"
-import ListLink from "../components/listlink"
 import Mixtapes from "../components/mixtapes"
 import Gigs from "../components/gigs"
+import { graphql } from "gatsby"
+
 // import { StaticImage } from "gatsby-plugin-image"
 
 const BlogPage = ({ data }) => {
