@@ -4,13 +4,14 @@ import Seo from "../components/seo"
 
 import SocialLink from "../components/sociallink"
 import ListLink from "../components/listlink"
+import { Link } from "gatsby"
 
 const IndexPage = ({ data }) => (
   <Layout pageTitle="Home" to="/about/meaning" label="Meaning">
     <Seo title="Home" />
-    <nav aria-label="Primary navigation" className=" md:px-28">
+    <nav aria-label="Primary navigation" className=" h-[100vh] md:px-28">
       <div className="flex flex-col justify-center gap-10 text-primary ">
-        <div class="flex flex-row justify-between border-b border-primary p-4 px-0">
+        <div class="flex flex-row justify-between border-b border-primary py-4">
           <SocialLink
             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
             to="https://instagram.com/sli.st96"
@@ -28,127 +29,119 @@ const IndexPage = ({ data }) => (
         <ListLink to="/lists" label="Curated entertainment lists" />
         <a href="https://instagram.com/nyc.flyer.girl">NYC Flyers</a>
         <a href="https://facebook.com/groups/cdmxflyers">CDMX Flyers Group</a>
-        {/* <Link to="/discounts">Discount Codes</Link> */}
-        <div class="">
-          <h1>105 Rave Tips</h1>
-          <ol reversed="reversed" className="decimal-leading-zero list-decimal">
-            <li>
-              If you only see videos of the mixer, the dancefloor is empty.
-            </li>
-            <li>Share to be shared with.</li>
-            <li>Raving with company can be security.</li>
-            <li>Raving solo is freedom.</li>
-            <li>Going solo is better than going with unwanted company.</li>
-            <li>Swiping through Instagram stories is research.</li>
-            <li>Research an event to avoid disappointment.</li>
-            <li>You’re with you forever and forevermore.</li>
-            <li>Shop with purpose.</li>
-            <li>Don't be afraid to window shop.</li>
-            <li>Try to make your own decisions.</li>
-            <li>The future is uncertain by definition.</li>
-            <li>Plan your own trip and then see who wants to join you.</li>
-            <li>Don’t pretend to like.</li>
-            <li>Know your preferred footwear.</li>
-            <li>Know thyself and thy moves.</li>
-            <li>Rave to rave.</li>
-            <li>Drink before if you’re going to drink.</li>
-            <li>A list is of people moderately interested.</li>
-            <li>Beyond every person is a persona.</li>
-            <li>Behind every persona is a person.</li>
-            <li>Be, but definitely not less.</li>
-            <li>Be, but not more.</li>
-            <li>Prep but don’t prepare.</li>
-            <li>
-              Don’t trust promoters for anything besides their promotions.
-            </li>
-            <li>Follow people with similar tastes for similar discoveries.</li>
-            <li>Every artistic decision was/is a decision.</li>
-            <li>Pray to yourself, for yourself, if you pray.</li>
-            <li>Work on something at all times.</li>
-            <li>Fool yourself no more than twice.</li>
-            <li>Try to appreciate art and where it came from.</li>
-            <li>Give feedback for feedback.</li>
-            <li>Hype the dj with your energy/drugs.</li>
-            <li>11:11</li>
-            <li>Your body creates drugs for your brain.</li>
-            <li>Know your body on different drugs/food/emotions.</li>
-            <li>Resolve issues when possible.</li>
-            <li>Choose spontaneity- spontaneously.</li>
-            <li>Try different genres and find the overlap.</li>
-            <li>Try to enter for free and spend your savings at the bar.</li>
-            <li>Know your strengths.</li>
-            <li>Some people just want to hear that you like them.</li>
-            <li>Keep your intentions clear.</li>
-            <li>Know why you’re going to the party.</li>
-            <li>Avoid twerking while your phone is in your back pocket.</li>
-            <li>Keep your valuables in your front pockets.</li>
-            <li>Share tips.</li>
-            <li>Drink water before you go to sleep.</li>
-            <li>If drunk, drink water before sleeping.</li>
-            <li>Don’t exchange money on the dance floor.</li>
-            <li>Don’t share it in the open.</li>
-            <li>Bribe the bar to bring in a bottle.</li>
-            <li>Barter.</li>
-            <li>The price of a drug does not reflect quality.</li>
-            <li>The entry cover does not reflect quality.</li>
-            <li>51. Drink more water than alcohol.</li>
-            <li>You can't know what’s in any drug without testing.</li>
-            <li>Rugs that smell bad can still be very strong.</li>
-            <li>Beware of drinking too much water.</li>
-            <li>Consider raving on an empty stomach.</li>
-            <li>Not planning everything is okay.</li>
-            <li>Bringing snacks is okay.</li>
-            <li>Vote with your energy.</li>
-            <li>Don’t encourage bad mixing.</li>
-            <li>Don’t dance to music you don't like.</li>
-            <li>Going as a large group? Ask for a group discount.</li>
-            <li>Wearing a mask is okay.</li>
-            <li>Cigarettes increase in value towards the end of a rave.</li>
-            <li>You don’t have to be wise.</li>
-            <li>It’s almost always wiser to sleep (in hindsight).</li>
-            <li>You don’t have to after.</li>
-            <li>There’s always an after.</li>
-            <li>Beware of DJs who don't seem to care.</li>
-            <li>It’s okay to take a break.</li>
-            <li>Chugging the cheapest alcohol right before raving is okay.</li>
-            <li>Using ear plugs is okay.</li>
-            <li>Wearing shades is okay.</li>
-            <li>DJs tend to have the best connects.</li>
-            <li>Tacha is tacha.</li>
-            <li>Some weekends are softer than others.</li>
-            <li>Thursdays are generally for disco.</li>
-            <li>Bring party favors to parties for random perks.</li>
-            <li>
-              Drug detox to lower your tolerance before an upcoming event.
-            </li>
-            <li>Consider a nap before raving for more energy.</li>
-            <li>Different days of the week are for different crowds.</li>
-            <li>"Everything in moderation, including moderation."</li>
-            <li>Research the lineup to avoid wasting time.</li>
-            <li>Partying completely sober is a valid option.</li>
-            <li>Know your tastes.</li>
-            <li>Become a music snob to some degree.</li>
-            <li>If you frequent a place, regularly tip for random perks.</li>
-            <li>If you smoke you can sometimes open invisible doors.</li>
-            <li>Consider ear plugs.</li>
-            <li>Prioritize protecting your trip.</li>
-            <li>Abandon bad afters.</li>
-            <li>Figure out which days are best for raving.</li>
-            <li>Figure out what kind(s) of nutrients you enjoy raving on.</li>
-            <li>Treat foods like drugs.</li>
-            <li>Stay awake for hallucinations on a budget.</li>
-            <li>1 good event is better than multiple mediocre events.</li>
-            <li>Reflect on what's working and what isn't.</li>
-            <li>Reflect on your drug experiences.</li>
-            <li>
-              Avoid listening to music you like in miserable environments.
-            </li>
-            <li>Don’t stay if you’re not enjoying yourself.</li>
-            <li>Trust your gut.</li>
-          </ol>
-        </div>
+        <Link to="/discounts">Discount Codes</Link>
       </div>
     </nav>
+    <section class="md:px-28">
+      <h1>105 Rave Tips</h1>
+      <ol reversed="reversed" className="decimal-leading-zero list-decimal">
+        <li>If you only see videos of the mixer, the dancefloor is empty.</li>
+        <li>Share to be shared with.</li>
+        <li>Raving with company can be security.</li>
+        <li>Raving solo is freedom.</li>
+        <li>Going solo is better than going with unwanted company.</li>
+        <li>Swiping through Instagram stories is research.</li>
+        <li>Research an event to avoid disappointment.</li>
+        <li>You’re with you forever and forevermore.</li>
+        <li>Shop with purpose.</li>
+        <li>Don't be afraid to window shop.</li>
+        <li>Try to make your own decisions.</li>
+        <li>The future is uncertain by definition.</li>
+        <li>Plan your own trip and then see who wants to join you.</li>
+        <li>Don’t pretend to like.</li>
+        <li>Know your preferred footwear.</li>
+        <li>Know thyself and thy moves.</li>
+        <li>Rave to rave.</li>
+        <li>Drink before if you’re going to drink.</li>
+        <li>A list is of people moderately interested.</li>
+        <li>Beyond every person is a persona.</li>
+        <li>Behind every persona is a person.</li>
+        <li>Be, but definitely not less.</li>
+        <li>Be, but not more.</li>
+        <li>Prep but don’t prepare.</li>
+        <li>Don’t trust promoters for anything besides their promotions.</li>
+        <li>Follow people with similar tastes for similar discoveries.</li>
+        <li>Every artistic decision was/is a decision.</li>
+        <li>Pray to yourself, for yourself, if you pray.</li>
+        <li>Work on something at all times.</li>
+        <li>Fool yourself no more than twice.</li>
+        <li>Try to appreciate art and where it came from.</li>
+        <li>Give feedback for feedback.</li>
+        <li>Hype the dj with your energy/drugs.</li>
+        <li>11:11</li>
+        <li>Your body creates drugs for your brain.</li>
+        <li>Know your body on different drugs/food/emotions.</li>
+        <li>Resolve issues when possible.</li>
+        <li>Choose spontaneity- spontaneously.</li>
+        <li>Try different genres and find the overlap.</li>
+        <li>Try to enter for free and spend your savings at the bar.</li>
+        <li>Know your strengths.</li>
+        <li>Some people just want to hear that you like them.</li>
+        <li>Keep your intentions clear.</li>
+        <li>Know why you’re going to the party.</li>
+        <li>Avoid twerking while your phone is in your back pocket.</li>
+        <li>Keep your valuables in your front pockets.</li>
+        <li>Share tips.</li>
+        <li>Drink water before you go to sleep.</li>
+        <li>If drunk, drink water before sleeping.</li>
+        <li>Don’t exchange money on the dance floor.</li>
+        <li>Don’t share it in the open.</li>
+        <li>Bribe the bar to bring in a bottle.</li>
+        <li>Barter.</li>
+        <li>The price of a drug does not reflect quality.</li>
+        <li>The entry cover does not reflect quality.</li>
+        <li>51. Drink more water than alcohol.</li>
+        <li>You can't know what’s in any drug without testing.</li>
+        <li>Rugs that smell bad can still be very strong.</li>
+        <li>Beware of drinking too much water.</li>
+        <li>Consider raving on an empty stomach.</li>
+        <li>Not planning everything is okay.</li>
+        <li>Bringing snacks is okay.</li>
+        <li>Vote with your energy.</li>
+        <li>Don’t encourage bad mixing.</li>
+        <li>Don’t dance to music you don't like.</li>
+        <li>Going as a large group? Ask for a group discount.</li>
+        <li>Wearing a mask is okay.</li>
+        <li>Cigarettes increase in value towards the end of a rave.</li>
+        <li>You don’t have to be wise.</li>
+        <li>It’s almost always wiser to sleep (in hindsight).</li>
+        <li>You don’t have to after.</li>
+        <li>There’s always an after.</li>
+        <li>Beware of DJs who don't seem to care.</li>
+        <li>It’s okay to take a break.</li>
+        <li>Chugging the cheapest alcohol right before raving is okay.</li>
+        <li>Using ear plugs is okay.</li>
+        <li>Wearing shades is okay.</li>
+        <li>DJs tend to have the best connects.</li>
+        <li>Tacha is tacha.</li>
+        <li>Some weekends are softer than others.</li>
+        <li>Thursdays are generally for disco.</li>
+        <li>Bring party favors to parties for random perks.</li>
+        <li>Drug detox to lower your tolerance before an upcoming event.</li>
+        <li>Consider a nap before raving for more energy.</li>
+        <li>Different days of the week are for different crowds.</li>
+        <li>"Everything in moderation, including moderation."</li>
+        <li>Research the lineup to avoid wasting time.</li>
+        <li>Partying completely sober is a valid option.</li>
+        <li>Know your tastes.</li>
+        <li>Become a music snob to some degree.</li>
+        <li>If you frequent a place, regularly tip for random perks.</li>
+        <li>If you smoke you can sometimes open invisible doors.</li>
+        <li>Consider ear plugs.</li>
+        <li>Prioritize protecting your trip.</li>
+        <li>Abandon bad afters.</li>
+        <li>Figure out which days are best for raving.</li>
+        <li>Figure out what kind(s) of nutrients you enjoy raving on.</li>
+        <li>Treat foods like drugs.</li>
+        <li>Stay awake for hallucinations on a budget.</li>
+        <li>1 good event is better than multiple mediocre events.</li>
+        <li>Reflect on what's working and what isn't.</li>
+        <li>Reflect on your drug experiences.</li>
+        <li>Avoid listening to music you like in miserable environments.</li>
+        <li>Don’t stay if you’re not enjoying yourself.</li>
+        <li>Trust your gut.</li>
+      </ol>
+    </section>
   </Layout>
 )
 export default IndexPage

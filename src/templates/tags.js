@@ -4,11 +4,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const query = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: {
+        frontmatter: { tags: { in: [$tag] } }
+        fileAbsolutePath: { regex: "/blog/" }
+      }
     ) {
       totalCount
       edges {
@@ -16,7 +19,6 @@ export const query = graphql`
           excerpt
           frontmatter {
             title
-
             date(formatString: "MMMM DD, YYYY")
             tags
           }

@@ -34,7 +34,10 @@ const BlogPage = ({
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(
+      sort: { fields: frontmatter___date, order: DESC }
+      filter: { frontmatter: { tags: { ne: "discount" } } }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

@@ -22,6 +22,13 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `discounts`,
+        path: `${__dirname}/src/content/discounts`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
