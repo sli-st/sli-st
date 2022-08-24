@@ -19,22 +19,17 @@ const BlogPage = ({ data }) => {
       <nav>
         <div className="grid grid-cols-12 gap-8">
           {data.current.nodes.map(node => (
-            <div className="group relative col-span-12 mb-10 md:col-span-6 md:mx-0 lg:col-span-6 ">
-              <div className="absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-primary to-primary text-xs opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200 "></div>
+            <div className="col-span-12 mb-10 md:col-span-6 md:mx-0 lg:col-span-6 ">
               <a
                 href={node.frontmatter.link}
-                className="relative mx-0 flex w-full items-center divide-x divide-gray-600 rounded-lg bg-background leading-none"
+                className="relative mx-0 flex w-full flex-col no-underline"
               >
-                <div className="flex flex-col rounded-lg">
-                  <GatsbyImage
-                    className="border-start border-bottom rounded-t-lg"
-                    image={getImage(node.frontmatter.flyer)}
-                  />
-                  <span className=" transition duration-200 group-hover:text-primary">
-                    <div className="rounded-b-xl border-t-4 border-primary bg-black p-3 text-center">
-                      <MDXRenderer>{node.body}</MDXRenderer>
-                    </div>
-                  </span>
+                <GatsbyImage
+                  image={getImage(node.frontmatter.flyer)}
+                  class="rounded-t-md"
+                />
+                <div className="not-prose font-bolder rounded-b-md bg-[red] py-2 text-center text-base text-black">
+                  <MDXRenderer>{node.body}</MDXRenderer>
                 </div>
               </a>
             </div>
@@ -45,22 +40,17 @@ const BlogPage = ({ data }) => {
       <nav>
         <div className="grid grid-cols-12 gap-8 ">
           {data.past.nodes.map(node => (
-            <div className="group relative col-span-12 mb-10 md:col-span-6 md:mx-0 lg:col-span-6 ">
-              <div className="absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-primary to-primary text-xs opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200 "></div>
+            <div className="col-span-12 mb-10 md:col-span-6 md:mx-0 lg:col-span-6 ">
               <a
                 href={node.frontmatter.link}
-                className="relative mx-0 flex w-full items-center divide-x divide-gray-600 rounded-lg bg-background leading-none"
+                className="relative mx-0 flex w-full flex-col no-underline"
               >
-                <div className="flex flex-col rounded-lg">
-                  <GatsbyImage
-                    className="border-start border-bottom rounded-t-lg"
-                    image={getImage(node.frontmatter.flyer)}
-                  />
-                  <span className=" transition duration-200 group-hover:text-primary">
-                    <div className="rounded-b-xl border-t-4 border-primary bg-black p-3 text-center">
-                      <MDXRenderer>{node.body}</MDXRenderer>
-                    </div>
-                  </span>
+                <GatsbyImage
+                  image={getImage(node.frontmatter.flyer)}
+                  class="rounded-t-md"
+                />
+                <div className="not-prose font-bolder rounded-b-md bg-[red] py-2 text-center text-base text-black">
+                  <MDXRenderer>{node.body}</MDXRenderer>
                 </div>
               </a>
             </div>
